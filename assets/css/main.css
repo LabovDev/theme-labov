@@ -2214,7 +2214,7 @@ Homepage
       width: 100%;
       max-width: 1080px;
       margin: 0 auto;
-      padding: 80px 50px 80px 50px;
+      padding: 40px 25px;
       font: normal normal 100 15px/150% Titillium Web, sans-serif;
       font-size: 45px;
       line-height: 55px;
@@ -4346,11 +4346,10 @@ Responsive
     display: block; }
     /* line 3284, main.scss */
     #home-hero .top {
-      display: block;
-      margin-top: 20px; }
+      display: block; }
       /* line 3288, main.scss */
       #home-hero .top h2 {
-        font-size: 34px;
+        font-size: 18px;
         line-height: 110%;
         box-sizing: border-box; }
         /* line 3293, main.scss */
