@@ -35,9 +35,9 @@
               </div>
               <div class="wrap">
                 <ul class="home-verticals">
-                  <li><a href="<?php echo site_url('automotive-powersports-rv') ?>" data-image="automotive">Automotive, Powersports and RV</a></li>
-                  <li><a href="<?php echo site_url('manufacturing-b2b-industrial') ?>" data-image="manufacturing">Manufacturing, B2B and Industrial</a></li>
-                  <li><a href="<?php echo site_url('premium-brands-services') ?>" data-image="premium">Premium Brands and Services</a></li>
+                  <li><a href="<?php echo site_url('automotive-powersports-rv') ?>" data-image="automotive">Automotive, Powersports &amp; RV</a></li>
+                  <li><a href="<?php echo site_url('manufacturing-b2b-industrial') ?>" data-image="manufacturing">Manufacturing, B2B &amp; Industrial</a></li>
+                  <li><a href="<?php echo site_url('premium-brands-services') ?>" data-image="premium">Premium Brands &amp; Services</a></li>
                 </ul>
               </div>
             </div>

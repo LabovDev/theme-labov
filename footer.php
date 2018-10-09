@@ -63,9 +63,9 @@
 
             <form id="contact-form" method="post" action="./#contact-form">
               <input type="text" name="address" value="" placeholder="Address" id="address">
-              <div class="underline"><input type="text" name="full_name" value="<?php echo htmlspecialchars($_POST['full_name']) ?>" placeholder="Your Name"></div>
-              <div class="underline"><input type="text" name="email_address" value="<?php echo htmlspecialchars($_POST['email_address']) ?>" placeholder="Email Address"></div>
-              <div class="underline"><input type="text" name="phone_number" value="<?php echo htmlspecialchars($_POST['phone_number']) ?>" placeholder="Phone Number"></div>
+              <div class="underline"><input type="text" name="full_name" value="<?php echo htmlspecialchars($_POST['full_name']) ?>" placeholder="Name"></div>
+              <div class="underline"><input type="text" name="email_address" value="<?php echo htmlspecialchars($_POST['email_address']) ?>" placeholder="Email"></div>
+              <div class="underline"><input type="text" name="phone_number" value="<?php echo htmlspecialchars($_POST['phone_number']) ?>" placeholder="Phone"></div>
               <div class="underline"><textarea name="message" placeholder="Message"><?php echo htmlspecialchars($_POST['message']) ?></textarea></div>
               <div class="g-recaptcha" data-sitekey="6LdavB0UAAAAAPtS6r2hIuXcuYVu1uPK2EQgYjnv"></div>
               <input type="submit" name="dosubmit" value="Send">
@@ -112,7 +112,7 @@
                         260.497.0111 (ext. 242)
                     </p>
 
-                    <h5>Employment</h5>
+                    <h5 class="hdr--emp">Employment</h5>
                     <p>
                         <a href="mailto:hr@labov.com">hr@labov.com</a>
                     </p>
@@ -121,7 +121,8 @@
         </div>
     </div>
     <div class="wrap">
-        <p class="copyright">© <?php echo date("Y") ?> LABOV Marketing Communications and Training. All Rights Reserved.</p>
+        <p class="copyright">© <?php echo date("Y") ?> LABOV Marketing Communications and Training.
+        <p class="copyright">All Rights Reserved.</p>
     </div>
 
 </footer>
