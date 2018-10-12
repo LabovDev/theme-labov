@@ -3,6 +3,7 @@
 @import 'hamburgers/hamburgers.scss';
 @import 'typography.scss';
 @import 'colorbox.scss';
+@import 'mixins.scss';
 
 /*
 --------------------------------------------------
@@ -701,16 +702,16 @@ Homepage
     align-items: center;
 
     h2 {
-        width:100%;
-        max-width:1080px;
+        width: 76%;
+        max-width: 800px;
         margin:0 auto;
-        padding:40px 25px;
+        padding: 36px;
         font:$tt-thin;
-        font-size:45px;
-        line-height:55px;
+        font-size: 46px;
+        line-height:1.4;
         position:relative;
         align-self:center;
-        top:90px;
+        top: 0;
 
         .inner {
           color:white;
@@ -731,18 +732,18 @@ Homepage
 
         .left {
             position:absolute;
-            height:60px;
+            height:20px;
             left:0;
-            top:-60px;
+            top:-20px;
             width:50%;
             background-color: $heroBG;
             mix-blend-mode: multiply;
         }
         .right {
             position:absolute;
-            height:60px;
+            height:20px;
             right:0;
-            bottom:-60px;
+            bottom:-20px;
             width:50%;
             background-color: $heroBG;
             mix-blend-mode: multiply;
@@ -760,16 +761,19 @@ Homepage
       font-size:32px;
       line-height:32px;
       position:relative;
+      top: -180px;
 
       .intro {
         font:$tt;
-        font-size:45px;
-        line-height:110%;
+        font-size: 36px;
+        line-height: 110%;
+        max-width: 870px;
+        margin: 0 auto;
         text-shadow: 0 0 6px rgba(0,0,0,0.9);
 
         i, em {
           font:$tt-italic;
-          font-size:45px;
+          font-size: inherit;
           line-height:110%;
         }
       }
@@ -798,39 +802,39 @@ Homepage
     }
 
     ul {
-
+      width: 100%;
+      position: relative;
+      top: 100px;
+      @include flx-p(
+        row,
+        wrap,
+        space-evenly,
+        flex-start,
+        flex-start
+      )
     }
 
     ul, li {
-      display:inline-block;
       list-style-type:none;
       margin:0;
       padding:0;
     }
 
-    li {
-      //margin:15px 0;
-      //margin-right:-255px;
-    }
-
     a {
-	    background-color: rgba(0,0,0,0.3);
-      display:block;
-      font-size: 18px;
-      line-height:24px;
-      color:white;
-      padding:14px;
-      margin:30px 20px;
+	    background-color: rgba(0,0,0,0.5);
+      font-size: 1.6vw;
+      line-height: 1;
+      color: #EAAA00;
+      padding: 18px 32px;
+      margin:30px 0;
       text-decoration:none;
-      border:1px solid white;
+      border:1px solid #EAAA00;
+      border-radius: 100px; 
       transition:all 0.5s;
 
       &:hover {
-        background:white;
-        color:#60CBF2;
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
-        -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
-        box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+        color: #000;
+        background-color: #EAAA00; 
       }
 }
 
@@ -1283,16 +1287,6 @@ News Landing
 //     opacity: .5;
     position:relative;
     z-index:100;
-
-    &.press-release {
-      background:url('../img/news/press-release.png') 50% 50%;
-      background-size:cover;
-    }
-
-    &.thought-leadership {
-      background:url('../img/news/thought-leadership.png') 50% 50%;
-      background-size:cover;
-    }
 
     &:last-of-type {
       margin-right:0px;
@@ -3155,19 +3149,15 @@ Responsive
 				justify-content: center;
 	      align-items: center;
 				align-content: center;
-        font-size:24px;
-        line-height:110%;
+        font-size: 20px;
+        line-height:1.4;
         box-sizing:border-box;
-        height: 220px;
-        
-        .left, .right {
-          display:none;
-        }
+        height: 150px;        
       }
     }
 
     .bottom {
-      padding-top:90px;
+      padding-top:150px;
       padding-bottom:0px;
 
       .intro {
@@ -3180,18 +3170,20 @@ Responsive
 
       a {
         box-sizing:border-box;
-        margin:30px 0;
-        line-height:120%;
-        font: $tt-semibold;
-        font-size: 18px;
+        font-size: 3.5vw;
+        display: block;
+        padding: 12px 24px;
       }
     }
     
     .wrap { padding: 0; }
 
     ul, li {
-      display:block;
       padding:0;
+    }
+
+    ul li {
+      width: 80%; 
     }
 
   }
@@ -3743,42 +3735,39 @@ Responsive
 
 }
 
+@media (max-width: 800px) {
+  #home-hero .top h2 { top: 80px; }
+
+  #home-hero {
+    ul {
+      @include flx-p(
+        column,
+        nowrap,
+        flex-start,
+        center,
+        flex-start
+      )
+    }
+    li {
+      width: 55%;
+      a { 
+        display: block;
+        font-size: 3vw;
+        margin: 8px 0;
+        padding: 16px 32px;
+      }
+    }
+  }
+}
+
 @media (max-height: 800px) {
   #hero-wrap {
     zoom:80%;
   }
 }
 
-@media (max-width: 1300px) {
-  .single-post {
-    padding:0 30px;
-  }
-}
-
-@media (max-width: 1440px) {
-  #vertical.premium .main.content {
-    .we-are {
-      //padding:80px 30px;
-      h3 {
-        font-size:34px;
-        line-height:44px;
-      }
-    }
-  }
-
-  #vertical.premium .main.content .result .slide {
-    margin:0 30px;
-  }
-}
-
-@media (max-width: 1080px) {
-  #vertical .content.main {
-    .logos .row .col {
-      flex:0 1 31% !important;
-      margin:5% 1% !important;
-      padding:0 40px !important;
-    }
-  }
+@media all and (max-width: 980px) {
+  #home-hero .top h2 { font-size: 4.4vw; }
 }
 
 @media (max-width: 1000px) {
@@ -3881,5 +3870,41 @@ Responsive
     }
   }
 }
+
+@media (max-width: 1080px) {
+  #vertical .content.main {
+    .logos .row .col {
+      flex:0 1 31% !important;
+      margin:5% 1% !important;
+      padding:0 40px !important;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .single-post {
+    padding:0 30px;
+  }
+}
+
+@media (max-width: 1440px) {
+  #vertical.premium .main.content {
+    .we-are {
+      //padding:80px 30px;
+      h3 {
+        font-size:34px;
+        line-height:44px;
+      }
+    }
+  }
+
+  #vertical.premium .main.content .result .slide {
+    margin:0 30px;
+  }
+}
+
+
+
+
 
 
