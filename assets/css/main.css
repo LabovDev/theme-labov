@@ -2863,7 +2863,7 @@ News Landing
 .single-post h1 {
   font: normal normal 300 15px/150% Titillium Web, sans-serif;
   font-size: 60px;
-  line-height: 68px;
+  line-height: 1;
   color: #0094cb; }
 /* line 1486, main.scss */
 .single-post h2 {
