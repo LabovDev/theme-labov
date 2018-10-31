@@ -641,6 +641,7 @@ Homepage
 #home-hero > div {
     display: -webkit-flex;
     display: flex;
+    padding: 18px;
 
     -webkit-flex: 1;
     flex:1;
@@ -702,16 +703,23 @@ Homepage
     align-items: center;
 
     h2 {
-        width: 76%;
-        max-width: 800px;
-        margin:0 auto;
-        padding: 36px;
-        font:$tt-thin;
-        font-size: 46px;
-        line-height:1.4;
-        position:relative;
-        align-self:center;
-        top: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 18px;
+      font:$tt-thin;
+      font-size: 46px;
+      line-height:1.2;
+      position:relative;
+      align-self:center;
+      top: 0;
+      height: 220px;
 
         .inner {
           color:white;
@@ -757,7 +765,7 @@ Homepage
       box-sizing:border-box;
       width:100%;
       align-self:flex-end;
-      font:$tt-thin;
+      font:$tt;
       font-size:32px;
       line-height:32px;
       position:relative;
@@ -807,7 +815,7 @@ Homepage
       top: 100px;
       @include flx-p(
         row,
-        wrap,
+        nowrap,
         space-evenly,
         flex-start,
         flex-start
@@ -821,12 +829,12 @@ Homepage
     }
 
     a {
-	    background-color: rgba(0,0,0,0.5);
-      font-size: 1.6vw;
+	    background-color: #EAAA00;
+      font-size: 18px;
       line-height: 1;
-      color: #EAAA00;
-      padding: 18px 32px;
-      margin:30px 0;
+      color: #fff;
+      padding: 8px 30px;
+      margin: 0;
       text-decoration:none;
       border:1px solid #EAAA00;
       border-radius: 100px; 
@@ -3111,13 +3119,13 @@ Responsive
     .more-labov {
 
       li {
-        display:block !important;
+        display: block !important;
         margin:0 0 20px 0;
       }
 
       .social-icons {
         margin: 0 0 0 !important;
-        display:block !important;
+        display: block !important;
 
         a {
           margin:0 10px 0 0 !important;
@@ -3135,7 +3143,7 @@ Responsive
 
   #home-hero > div {
       display: block;
-      padding:20px;
+      padding: 18px;
   }
 
   #home-hero {
@@ -3153,27 +3161,29 @@ Responsive
         font-size: 20px;
         line-height:1.4;
         box-sizing:border-box;
-        height: 150px;        
+        height: 170px !important;
+        top: 140px !important;        
       }
     }
 
     .bottom {
-      padding-top:150px;
+      padding-top:300px;
       padding-bottom:0px;
+      top: -110px !important;
 
       .intro {
-        font-size:18px;
+        font-size: 5vw;
 
         i {
-            font-size:18px;
+            font-size: 5vw;
         }
       }
 
       a {
         box-sizing:border-box;
-        font-size: 3.5vw;
+        font-size: 4vw;
         display: block;
-        padding: 12px 24px;
+        padding: 18px 24px;
       }
     }
     
@@ -3184,7 +3194,7 @@ Responsive
     }
 
     ul li {
-      width: 80%; 
+      width: 100%; 
     }
 
   }
@@ -3737,10 +3747,22 @@ Responsive
 }
 
 @media (max-width: 800px) {
-  #home-hero .top h2 { top: 80px; }
+  #home-hero {
+    .top h2 { 
+      height: 170px;
+      top: 40px;
+    }
+    .bottom { 
+      top: -40px;
+      .intro {
+        font-size: 5vw;
+      }
+    }
+  }
 
   #home-hero {
     ul {
+      top: 40px;
       @include flx-p(
         column,
         nowrap,
@@ -3750,12 +3772,13 @@ Responsive
       )
     }
     li {
-      width: 55%;
-      a { 
-        display: block;
+      width: 60%;
+      margin-bottom: 18px;
+      a {
+        box-sizing:border-box;
         font-size: 3vw;
-        margin: 8px 0;
-        padding: 16px 32px;
+        display: block;
+        padding: 18px 24px;
       }
     }
   }
@@ -3768,10 +3791,16 @@ Responsive
 }
 
 @media all and (max-width: 980px) {
-  #home-hero .top h2 { font-size: 4.4vw; }
+  #home-hero .top h2 { 
+    font-size: 5vw;
+  }
 }
 
 @media (max-width: 1000px) {
+
+  #home-hero a {
+    font-size: 1.76vw;
+  }
 
   #vertical .content.main {
     .case-studies {
