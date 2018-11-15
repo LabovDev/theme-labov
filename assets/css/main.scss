@@ -64,6 +64,7 @@ body, td, input, textarea {
 
 em, i {
     font: $tt-italic;
+    font-size: 100%;
 }
 
 a {
@@ -773,6 +774,9 @@ Homepage
           height:100%;
           background-color: $heroBG;
           mix-blend-mode: multiply;
+          @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            opacity: .5;
+          }
         }
 
         .left {
@@ -783,6 +787,9 @@ Homepage
             width:50%;
             background-color: $heroBG;
             mix-blend-mode: multiply;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+              opacity: .5;
+            }
         }
         .right {
             position:absolute;
@@ -792,6 +799,9 @@ Homepage
             width:50%;
             background-color: $heroBG;
             mix-blend-mode: multiply;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+              opacity: .5;
+            }
         }
     }
   }
@@ -853,7 +863,7 @@ Homepage
       @include flx-p(
         row,
         nowrap,
-        space-evenly,
+        space-around,
         flex-start,
         flex-start
       )
@@ -3830,11 +3840,11 @@ Responsive
   }
 }
 
-@media (max-height: 800px) {
-  #hero-wrap {
-    zoom:80%;
-  }
-}
+// @media (max-height: 800px) {
+//   #hero-wrap {
+//     zoom:80%;
+//   }
+// }
 
 @media all and (max-width: 980px) {
   #home-hero .top h2 { 
