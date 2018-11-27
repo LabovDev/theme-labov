@@ -2967,7 +2967,7 @@ News Landing
 .single-post h1 {
   font: normal normal 300 15px/150% Titillium Web, sans-serif;
   font-size: 60px;
-  line-height: 58px;
+  line-height: 1;
   color: #0094cb;
   letter-spacing: -1px; }
 /* line 1548, main.scss */

@@ -9,7 +9,7 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/main.css">
+    <link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/themes/theme-labov/assets/css/main.css">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
