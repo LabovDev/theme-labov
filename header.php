@@ -36,9 +36,9 @@
               <div class="content">
                 <div class="left">
                   <ul class="main">
-                    <li><a href="<?php echo site_url('automotive-powersports-rv') ?>">Automotive, Powersports and RV</a></li>
-                    <li><a href="<?php echo site_url('manufacturing-b2b-industrial') ?>">Manufacturing, B2B and Industrial</a></li>
-                    <li><a href="<?php echo site_url('premium-brands-services') ?>">Premium Brands and Services</a></li>
+                    <li><a href="<?php echo site_url('automotive-powersports-rv') ?>">Automotive, Powersports &amp; RV</a></li>
+                    <li><a href="<?php echo site_url('manufacturing-b2b-industrial') ?>">Manufacturing, B2B &amp; Industrial</a></li>
+                    <li><a href="<?php echo site_url('premium-brands-services') ?>">Premium Brands &amp; Services</a></li>
                   </ul>
                   <ul class="sub">
                     <li><a href="<?php echo site_url("news") ?>">News &amp; Insights</a></li>

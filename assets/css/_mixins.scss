@@ -1,0 +1,33 @@
+//*  MIXINS
+//*===========================================
+
+@mixin flx-p($f-dir, $f-wrap, $j-cont, $a-item, $a-cont) {
+	display: flex;
+	flex-direction: $f-dir;
+	flex-wrap: $f-wrap;
+	justify-content: $j-cont;
+	align-items: $a-item;
+	align-content: $a-cont;
+}
+
+@mixin flx-c($order, $f-grow, $f-shrink, $f-basis, $a-self) {
+	order: $order;
+	flex-grow: $f-grow;
+	flex-shrink: $f-shrink;
+	flex-basis: $f-basis;
+	align-self: $a-self;
+}
+
+@mixin b-rad($radius) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin trans($t-prop, $t-time, $t-meth) {
+	-webkit-transition: $t-prop, $t-time, $t-meth;
+	-moz-transition: $t-prop, $t-time, $t-meth;
+	-ms-transition: $t-prop, $t-time, $t-meth;
+	-o-transition: $t-prop, $t-time, $t-meth;
+	transition: $t-prop, $t-time, $t-meth;
+}
