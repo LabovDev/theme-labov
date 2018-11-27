@@ -1687,27 +1687,28 @@ body, td, input, textarea {
 
 /* line 64, main.scss */
 em, i {
-  font: italic normal normal 15px/150% Titillium Web, sans-serif; }
+  font: italic normal normal 15px/150% Titillium Web, sans-serif;
+  font-size: 100%; }
 
-/* line 68, main.scss */
+/* line 69, main.scss */
 a {
   color: #60CBF2; }
 
-/* line 72, main.scss */
+/* line 73, main.scss */
 .wrap {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 20px; }
 
-/* line 78, main.scss */
+/* line 79, main.scss */
 .wrap.small {
   max-width: 1024px; }
 
-/* line 82, main.scss */
+/* line 83, main.scss */
 #nav-wrap {
   position: relative;
   z-index: 200; }
-  /* line 86, main.scss */
+  /* line 87, main.scss */
   #nav-wrap .blue-bar {
     width: 100%;
     position: fixed;
@@ -1715,41 +1716,41 @@ a {
     left: 0;
     height: 90px;
     transition: all 0.2s; }
-    /* line 94, main.scss */
+    /* line 95, main.scss */
     #nav-wrap .blue-bar.scrolled {
       background: #0094cb;
       transition: all 0.2s; }
 
-/* line 101, main.scss */
+/* line 102, main.scss */
 #logo {
   position: fixed;
   left: 25px;
   top: 24px;
   z-index: 10;
   transition: all 0.2s; }
-  /* line 107, main.scss */
+  /* line 108, main.scss */
   #logo img {
     height: 40px;
     width: auto; }
-  /* line 113, main.scss */
+  /* line 114, main.scss */
   #logo.scrolled {
     top: 24px; }
 
-/* line 118, main.scss */
+/* line 119, main.scss */
 #menu-toggle {
   position: fixed;
   top: 19px;
   right: 10px;
   z-index: 10;
   transition: all 0.2s; }
-  /* line 124, main.scss */
+  /* line 125, main.scss */
   #menu-toggle * {
     outline: 0; }
-  /* line 134, main.scss */
+  /* line 135, main.scss */
   #menu-toggle.scrolled .hamburger:hover .hamburger-inner, #menu-toggle.scrolled .hamburger:hover .hamburger-inner::before, #menu-toggle.scrolled .hamburger:hover .hamburger-inner::after {
     background-color: white; }
 
-/* line 142, main.scss */
+/* line 143, main.scss */
 nav {
   position: fixed;
   top: 0;
@@ -1758,7 +1759,7 @@ nav {
   display: flex;
   flex-direction: column;
   right: -100%; }
-  /* line 153, main.scss */
+  /* line 154, main.scss */
   nav .content {
     position: absolute;
     height: 100%;
@@ -1768,19 +1769,19 @@ nav {
     overflow-y: scroll;
     box-sizing: border-box;
     padding: 230px 50px 50px; }
-    /* line 167, main.scss */
+    /* line 168, main.scss */
     nav .content::-webkit-scrollbar {
       display: none; }
-  /* line 172, main.scss */
+  /* line 173, main.scss */
   nav a {
     color: white;
     text-decoration: none;
     transition: color 0.25s; }
-    /* line 177, main.scss */
+    /* line 178, main.scss */
     nav a:hover {
       color: white; }
 
-/* line 183, main.scss */
+/* line 184, main.scss */
 nav > div {
   display: flex;
   min-height: 100vh;
@@ -1788,66 +1789,66 @@ nav > div {
   padding: 230px 50px 50px;
   width: 100%;
   box-sizing: border-box; }
-  /* line 192, main.scss */
+  /* line 193, main.scss */
   nav > div .left, nav > div .right {
     border-top: 2px solid white;
     box-sizing: border-box;
     padding-top: 40px; }
-  /* line 198, main.scss */
+  /* line 199, main.scss */
   nav > div ul, nav > div li {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-  /* line 204, main.scss */
+  /* line 205, main.scss */
   nav > div li a {
     color: #60CBF2; }
-    /* line 207, main.scss */
+    /* line 208, main.scss */
     nav > div li a:hover {
       color: white; }
-  /* line 212, main.scss */
+  /* line 213, main.scss */
   nav > div .left {
     float: left;
     width: 75%; }
-    /* line 216, main.scss */
+    /* line 217, main.scss */
     nav > div .left ul.main li a {
       font-size: 48px;
       line-height: 200%; }
-    /* line 221, main.scss */
+    /* line 222, main.scss */
     nav > div .left ul.sub {
       margin-top: 40px; }
-      /* line 224, main.scss */
+      /* line 225, main.scss */
       nav > div .left ul.sub li a {
         font: normal normal 100 15px/150% Titillium Web, sans-serif;
         font-size: 32px;
         line-height: 200%; }
-  /* line 232, main.scss */
+  /* line 233, main.scss */
   nav > div .right {
     float: right;
     width: 20%;
     margin-left: 5%;
     color: white; }
-    /* line 238, main.scss */
+    /* line 239, main.scss */
     nav > div .right a {
       color: #60CBF2;
       transition: color 0.25s; }
-      /* line 242, main.scss */
+      /* line 243, main.scss */
       nav > div .right a:hover {
         color: white; }
-    /* line 246, main.scss */
+    /* line 247, main.scss */
     nav > div .right p {
       font-size: 18px;
       line-height: 24px; }
-    /* line 251, main.scss */
+    /* line 252, main.scss */
     nav > div .right p + h5 {
       margin-top: 40px; }
 
-/* line 257, main.scss */
+/* line 258, main.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-/* line 263, main.scss */
+/* line 264, main.scss */
 footer {
   background: #000 url("../img/footer-bg-2.jpg") 50% 50%;
   background-size: cover;
@@ -1855,63 +1856,63 @@ footer {
   color: #b5b5b5;
   position: relative;
   z-index: 2; }
-  /* line 271, main.scss */
+  /* line 272, main.scss */
   footer a {
     color: #60CBF2;
     transition: all 0.25s;
     position: relative; }
-    /* line 276, main.scss */
+    /* line 277, main.scss */
     footer a:hover {
       color: white; }
-  /* line 281, main.scss */
+  /* line 282, main.scss */
   footer h2 {
     color: #60CBF2;
     font: normal normal 100 15px/150% Titillium Web, sans-serif;
     font-size: 50px;
     line-height: 110%;
     margin-bottom: 30px; }
-  /* line 289, main.scss */
+  /* line 290, main.scss */
   footer h5 {
     margin-bottom: 0px; }
-  /* line 293, main.scss */
+  /* line 294, main.scss */
   footer p + h5 {
     margin-top: 40px; }
-  /* line 297, main.scss */
+  /* line 298, main.scss */
   footer .left {
     float: left;
     width: 40%; }
-  /* line 302, main.scss */
+  /* line 303, main.scss */
   footer .right {
     float: right;
     width: 45%; }
-  /* line 307, main.scss */
+  /* line 308, main.scss */
   footer .copyright {
     font-size: 15px;
     color: white;
     text-align: right;
     margin-top: 50px; }
-  /* line 314, main.scss */
+  /* line 315, main.scss */
   footer .logo {
     height: 40px;
     width: auto;
     display: block;
     float: left; }
-  /* line 321, main.scss */
+  /* line 322, main.scss */
   footer .addr {
     font-size: 18px;
     line-height: 22px; }
-    /* line 325, main.scss */
+    /* line 326, main.scss */
     footer .addr .map-marker {
       float: left; }
-      /* line 328, main.scss */
+      /* line 329, main.scss */
       footer .addr .map-marker img {
         height: 40px;
         width: auto;
         margin-right: 22px; }
-  /* line 336, main.scss */
+  /* line 337, main.scss */
   footer .underline {
     position: relative; }
-    /* line 339, main.scss */
+    /* line 340, main.scss */
     footer .underline:after {
       content: " ";
       display: block;
@@ -1922,14 +1923,14 @@ footer {
       bottom: -1px;
       left: 0px;
       transition: width 0.25s; }
-  /* line 352, main.scss */
+  /* line 353, main.scss */
   footer .underline.focus:after {
     width: 100%; }
-  /* line 356, main.scss */
+  /* line 357, main.scss */
   footer input[type="text"]#address {
     position: absolute;
     left: -99999999999px; }
-  /* line 361, main.scss */
+  /* line 362, main.scss */
   footer input[type="text"] {
     border: none;
     background: transparent;
@@ -1945,10 +1946,10 @@ footer {
     outline: 0;
     box-sizing: border-box;
     transition: color 0.25s; }
-    /* line 377, main.scss */
+    /* line 378, main.scss */
     footer input[type="text"]:focus {
       color: white; }
-    /* line 381, main.scss */
+    /* line 382, main.scss */
     footer input[type="text"]::-webkit-input-placeholder {
       color: #ccc; }
     footer input[type="text"]:-ms-input-placeholder {
@@ -1957,10 +1958,10 @@ footer {
       color: #ccc; }
     footer input[type="text"]::placeholder {
       color: #ccc; }
-  /* line 386, main.scss */
+  /* line 387, main.scss */
   footer input[type="text"]:focus {
     color: white; }
-  /* line 391, main.scss */
+  /* line 392, main.scss */
   footer textarea {
     padding: 10px;
     background: #222;
@@ -1975,7 +1976,7 @@ footer {
     outline: 0;
     border-bottom: 1px solid #ccc;
     resize: none; }
-    /* line 406, main.scss */
+    /* line 407, main.scss */
     footer textarea::-webkit-input-placeholder {
       color: #ccc; }
     footer textarea:-ms-input-placeholder {
@@ -1984,13 +1985,13 @@ footer {
       color: #ccc; }
     footer textarea::placeholder {
       color: #ccc; }
-  /* line 411, main.scss */
+  /* line 412, main.scss */
   footer textarea:focus {
     color: white; }
-  /* line 415, main.scss */
+  /* line 416, main.scss */
   footer .g-recaptcha {
     margin-top: 24px; }
-  /* line 419, main.scss */
+  /* line 420, main.scss */
   footer input[type="submit"] {
     border-radius: 50px;
     background: #ffd966;
@@ -2005,44 +2006,44 @@ footer {
     margin-top: 20px;
     float: right;
     cursor: pointer; }
-  /* line 437, main.scss */
+  /* line 438, main.scss */
   footer .more-labov {
     margin: 0px 0 60px 0;
     display: inline-block;
     font-size: 22px; }
-    /* line 442, main.scss */
+    /* line 443, main.scss */
     footer .more-labov a {
       color: #B5B5B5;
       text-decoration: none;
       margin: 0 30px 0 0;
       transition: all 0.25s; }
-      /* line 448, main.scss */
+      /* line 449, main.scss */
       footer .more-labov a:hover {
         color: white; }
-    /* line 453, main.scss */
+    /* line 454, main.scss */
     footer .more-labov ul {
       list-style-type: none;
       display: inline-block;
       margin: 0;
       padding: 0; }
-      /* line 459, main.scss */
+      /* line 460, main.scss */
       footer .more-labov ul li {
         display: inline-block; }
-    /* line 464, main.scss */
+    /* line 465, main.scss */
     footer .more-labov .social-icons {
       display: inline-block;
       margin-left: 20px;
       font-size: 30px; }
-      /* line 469, main.scss */
+      /* line 470, main.scss */
       footer .more-labov .social-icons a {
         margin: 0 5px; }
-      /* line 473, main.scss */
+      /* line 474, main.scss */
       footer .more-labov .social-icons i {
         margin: 0 20px 0 0; }
-  /* line 478, main.scss */
+  /* line 479, main.scss */
   footer .contact-info {
     margin-top: 60px; }
-  /* line 482, main.scss */
+  /* line 483, main.scss */
   footer .form-errors {
     background: #EB5D5B;
     padding: 15px;
@@ -2050,21 +2051,21 @@ footer {
     font-size: 16px;
     line-height: 110%;
     margin-bottom: 30px; }
-    /* line 490, main.scss */
+    /* line 491, main.scss */
     footer .form-errors p {
       margin: 0;
       padding: 0; }
-    /* line 495, main.scss */
+    /* line 496, main.scss */
     footer .form-errors p + p {
       margin-top: 10px; }
-  /* line 500, main.scss */
+  /* line 501, main.scss */
   footer .form-sent {
     padding: 15px;
     color: white;
     background: #0094cb;
     margin-bottom: 30px; }
 
-/* line 508, main.scss */
+/* line 509, main.scss */
 .page-header {
   background-size: cover;
   background-repeat: no-repeat;
@@ -2073,32 +2074,32 @@ footer {
   text-align: center;
   display: flex;
   align-items: center; }
-  /* line 523, main.scss */
+  /* line 524, main.scss */
   .page-header h1 {
     color: #0094cb;
     font-size: 220px;
     line-height: 200px;
     margin-bottom: 60px; }
-  /* line 530, main.scss */
+  /* line 531, main.scss */
   .page-header h2 {
     font: normal normal 600 15px/150% Titillium Web, sans-serif;
     font-size: 64px;
     line-height: 70px; }
-  /* line 536, main.scss */
+  /* line 537, main.scss */
   .page-header p {
     font-size: 30px;
     line-height: 150%; }
-  /* line 541, main.scss */
+  /* line 542, main.scss */
   .page-header > div {
     flex: 1;
     display: flex; }
-  /* line 546, main.scss */
+  /* line 547, main.scss */
   .page-header .scroll-arrow {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%; }
-    /* line 552, main.scss */
+    /* line 553, main.scss */
     .page-header .scroll-arrow img {
       position: absolute;
       width: 48px;
@@ -2109,26 +2110,26 @@ footer {
       transition: all 0.5s;
       cursor: pointer;
       fill: #0094cb; }
-    /* line 564, main.scss */
+    /* line 565, main.scss */
     .page-header .scroll-arrow img:hover {
       bottom: 42px; }
 
-/* line 570, main.scss */
+/* line 571, main.scss */
 .hamburger {
   transition: background-color 0s !important; }
 
-/* line 576, main.scss */
+/* line 577, main.scss */
 .hamburger:hover .hamburger-inner, .hamburger:hover .hamburger-inner::before, .hamburger:hover .hamburger-inner::after {
   background-color: #0094CB; }
 
-/* line 584, main.scss */
+/* line 585, main.scss */
 .hamburger.is-active:hover .hamburger-inner::before {
   background-color: transparent; }
-/* line 587, main.scss */
+/* line 588, main.scss */
 .hamburger.is-active:hover .hamburger-inner, .hamburger.is-active:hover .hamburger-inner::after {
   background-color: white; }
 
-/* line 593, main.scss */
+/* line 594, main.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -2137,7 +2138,7 @@ footer {
   overflow: hidden;
   max-width: 100%; }
 
-/* line 601, main.scss */
+/* line 602, main.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -2154,7 +2155,7 @@ Homepage
 
 --------------------------------------------------
 */
-/* line 620, main.scss */
+/* line 621, main.scss */
 #hero-wrap {
   min-height: 950px;
   height: 100%;
@@ -2165,7 +2166,7 @@ Homepage
   position: relative;
   z-index: 1; }
 
-/* line 632, main.scss */
+/* line 633, main.scss */
 #home-hero > div {
   display: flex;
   flex: 1;
@@ -2175,12 +2176,12 @@ Homepage
   box-sizing: border-box;
   text-align: center; }
 
-/* line 649, main.scss */
+/* line 650, main.scss */
 #home-hero {
   width: 100%;
   display: flex;
   flex-direction: column; }
-  /* line 656, main.scss */
+  /* line 657, main.scss */
   #home-hero .bg-image {
     position: absolute;
     top: 0;
@@ -2188,28 +2189,28 @@ Homepage
     width: 100%;
     height: 100%;
     opacity: 0; }
-    /* line 664, main.scss */
+    /* line 665, main.scss */
     #home-hero .bg-image:first-of-type {
       opacity: 1; }
-    /* line 668, main.scss */
+    /* line 669, main.scss */
     #home-hero .bg-image.automotive {
       background: url("../img/home-hero/automotive-vert.jpg") 50% 50% no-repeat;
       background-size: cover; }
-    /* line 672, main.scss */
+    /* line 673, main.scss */
     #home-hero .bg-image.manufacturing {
       background: url("../img/home-hero/vertical-1-bg.jpg") 50% 50% no-repeat;
       background-size: cover; }
-    /* line 676, main.scss */
+    /* line 677, main.scss */
     #home-hero .bg-image.premium {
       background: url("../img/home-hero/premium-bg.jpg") 50% 50% no-repeat;
       background-size: cover; }
-  /* line 682, main.scss */
+  /* line 683, main.scss */
   #home-hero .top {
     width: 100%;
     display: flex;
     flex: 1;
     align-items: center; }
-    /* line 695, main.scss */
+    /* line 696, main.scss */
     #home-hero .top h2 {
       width: 100%;
       max-width: 1080px;
@@ -2221,11 +2222,11 @@ Homepage
       position: relative;
       align-self: center;
       top: 90px; }
-      /* line 707, main.scss */
+      /* line 708, main.scss */
       #home-hero .top h2 .inner {
         color: white;
         position: relative; }
-      /* line 712, main.scss */
+      /* line 713, main.scss */
       #home-hero .top h2::before {
         content: '';
         position: absolute;
@@ -2236,7 +2237,7 @@ Homepage
         height: 100%;
         background-color: #0094cb;
         mix-blend-mode: multiply; }
-      /* line 724, main.scss */
+      /* line 725, main.scss */
       #home-hero .top h2 .left {
         position: absolute;
         height: 60px;
@@ -2245,7 +2246,7 @@ Homepage
         width: 50%;
         background-color: #0094cb;
         mix-blend-mode: multiply; }
-      /* line 733, main.scss */
+      /* line 734, main.scss */
       #home-hero .top h2 .right {
         position: absolute;
         height: 60px;
@@ -2254,7 +2255,7 @@ Homepage
         width: 50%;
         background-color: #0094cb;
         mix-blend-mode: multiply; }
-  /* line 745, main.scss */
+  /* line 746, main.scss */
   #home-hero .bottom {
     padding-top: 20px;
     padding-bottom: 120px;
@@ -2265,24 +2266,24 @@ Homepage
     font-size: 32px;
     line-height: 32px;
     position: relative; }
-    /* line 756, main.scss */
+    /* line 757, main.scss */
     #home-hero .bottom .intro {
       font: normal normal normal 15px/150% Titillium Web, sans-serif;
       font-size: 45px;
       line-height: 110%;
       text-shadow: 0 0 12px rgba(0, 0, 0, 0.6); }
-      /* line 762, main.scss */
+      /* line 763, main.scss */
       #home-hero .bottom .intro i, #home-hero .bottom .intro em {
         font: italic normal normal 15px/150% Titillium Web, sans-serif;
         font-size: 45px;
         line-height: 110%; }
-    /* line 769, main.scss */
+    /* line 770, main.scss */
     #home-hero .bottom .yellow-arrow {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%; }
-      /* line 775, main.scss */
+      /* line 776, main.scss */
       #home-hero .bottom .yellow-arrow img {
         position: absolute;
         width: 48px;
@@ -2292,16 +2293,16 @@ Homepage
         bottom: 50px;
         transition: all 0.5s;
         cursor: pointer; }
-      /* line 786, main.scss */
+      /* line 787, main.scss */
       #home-hero .bottom .yellow-arrow img:hover {
         bottom: 42px; }
-  /* line 796, main.scss */
+  /* line 797, main.scss */
   #home-hero ul, #home-hero li {
     display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  /* line 808, main.scss */
+  /* line 809, main.scss */
   #home-hero a {
     background-color: rgba(0, 0, 0, 0.3);
     display: block;
@@ -2313,12 +2314,12 @@ Homepage
     text-decoration: none;
     border: 1px solid white;
     transition: all 0.5s; }
-    /* line 820, main.scss */
+    /* line 821, main.scss */
     #home-hero a:hover {
       background: white;
       color: #60CBF2;
       box-shadow: 0px 0px 10px 0px white; }
-  /* line 829, main.scss */
+  /* line 830, main.scss */
   #home-hero #home-verticals {
     overflow: hidden;
     background: url("../img/vertical-1-bg.jpg") 50% 50% no-repeat;
@@ -2329,7 +2330,7 @@ Homepage
     width: 100%;
     height: 100%;
     flex-direction: column; }
-    /* line 840, main.scss */
+    /* line 841, main.scss */
     #home-hero #home-verticals .overlay {
       position: absolute;
       right: 0;
@@ -2356,25 +2357,25 @@ About
 
 --------------------------------------------------
 */
-/* line 881, main.scss */
+/* line 882, main.scss */
 .twelve-hours .left, .twelve-hours .right {
   width: 50%;
   padding: 160px 0;
   box-sizing: border-box;
   height: 824px; }
-/* line 888, main.scss */
+/* line 889, main.scss */
 .twelve-hours .left {
   float: left;
   background-image: radial-gradient(#fff, #DFDFDF);
   text-align: center; }
-/* line 898, main.scss */
+/* line 899, main.scss */
 .twelve-hours .right {
   float: right;
   background: url("../img/12-bg.jpg") 50% 50% no-repeat;
   background-size: cover;
   color: white;
   position: relative; }
-  /* line 905, main.scss */
+  /* line 906, main.scss */
   .twelve-hours .right > div {
     position: absolute;
     width: 100%;
@@ -2384,17 +2385,17 @@ About
     box-sizing: border-box;
     padding-left: 95px;
     padding-right: 95px; }
-  /* line 915, main.scss */
+  /* line 916, main.scss */
   .twelve-hours .right h2 {
     font-size: 54px;
     line-height: 60px;
     margin-bottom: 50px; }
-  /* line 921, main.scss */
+  /* line 922, main.scss */
   .twelve-hours .right p {
     font-size: 24px;
     line-height: 150%;
     max-width: 800px; }
-  /* line 928, main.scss */
+  /* line 929, main.scss */
   .twelve-hours .right a.btn {
     border: 1px solid white;
     display: inline-block;
@@ -2408,49 +2409,49 @@ About
     font-size: 18px;
     transition: all 0.25s;
     margin-top: 30px; }
-    /* line 942, main.scss */
+    /* line 943, main.scss */
     .twelve-hours .right a.btn:hover {
       background: white;
       color: #60CBF2; }
 
-/* line 950, main.scss */
+/* line 951, main.scss */
 .leadership {
   text-align: center;
   padding: 120px 0 200px; }
-  /* line 954, main.scss */
+  /* line 955, main.scss */
   .leadership h2 {
     font: normal normal 100 15px/150% Titillium Web, sans-serif;
     font-size: 64px;
     line-height: 64px;
     color: #0094cb; }
-  /* line 961, main.scss */
+  /* line 962, main.scss */
   .leadership hr {
     height: 2px;
     border: none;
     background: #60CBF2;
     margin: 60px 0;
     position: relative; }
-  /* line 969, main.scss */
+  /* line 970, main.scss */
   .leadership .row {
     display: flex;
     justify-content: space-between; }
-    /* line 973, main.scss */
+    /* line 974, main.scss */
     .leadership .row + .row {
       margin-top: 60px; }
-    /* line 977, main.scss */
+    /* line 978, main.scss */
     .leadership .row .col {
       width: 29%; }
-      /* line 982, main.scss */
+      /* line 983, main.scss */
       .leadership .row .col .person .img {
         margin-bottom: 20px;
         position: relative; }
-        /* line 986, main.scss */
+        /* line 987, main.scss */
         .leadership .row .col .person .img img {
           width: 100%;
           max-width: 100%;
           height: auto;
           position: relative; }
-        /* line 993, main.scss */
+        /* line 994, main.scss */
         .leadership .row .col .person .img::before {
           content: '';
           background-image: linear-gradient(to left bottom, white 0%, white 50%, transparent 50%);
@@ -2460,7 +2461,7 @@ About
           top: 0px;
           left: 0;
           z-index: 10; }
-        /* line 1004, main.scss */
+        /* line 1005, main.scss */
         .leadership .row .col .person .img::after {
           content: '';
           background-image: linear-gradient(to right top, white 0%, white 50%, transparent 50%);
@@ -2470,10 +2471,10 @@ About
           bottom: 5px;
           left: 0;
           z-index: 10; }
-        /* line 1015, main.scss */
+        /* line 1016, main.scss */
         .leadership .row .col .person .img:hover .hover {
           opacity: 1; }
-        /* line 1019, main.scss */
+        /* line 1020, main.scss */
         .leadership .row .col .person .img .hover {
           display: block;
           position: absolute;
@@ -2485,7 +2486,7 @@ About
           height: 100%;
           background: url("../img/bio-hover-fade.png") left 0px bottom 6px no-repeat;
           z-index: 100; }
-          /* line 1031, main.scss */
+          /* line 1032, main.scss */
           .leadership .row .col .person .img .hover::before {
             content: '';
             background-image: linear-gradient(to left bottom, white 0%, white 50%, transparent 50%);
@@ -2495,7 +2496,7 @@ About
             top: 0px;
             left: 0;
             z-index: 10; }
-          /* line 1042, main.scss */
+          /* line 1043, main.scss */
           .leadership .row .col .person .img .hover::after {
             content: '';
             background-image: linear-gradient(to right top, white 0%, white 50%, transparent 50%);
@@ -2505,17 +2506,17 @@ About
             bottom: 6px;
             left: 0;
             z-index: 10; }
-      /* line 1055, main.scss */
+      /* line 1056, main.scss */
       .leadership .row .col .person a {
         text-decoration: none;
         color: black;
         outline: 0; }
-      /* line 1061, main.scss */
+      /* line 1062, main.scss */
       .leadership .row .col .person h3 {
         font: normal normal 300 15px/150% Titillium Web, sans-serif;
         font-size: 32px;
         line-height: 110%; }
-      /* line 1066, main.scss */
+      /* line 1067, main.scss */
       .leadership .row .col .person p {
         font: normal normal 100 15px/150% Titillium Web, sans-serif;
         font-size: 24px;
@@ -2523,60 +2524,60 @@ About
         margin: 5px 0 0 0;
         padding: 0; }
 
-/* line 1078, main.scss */
+/* line 1079, main.scss */
 #team-member {
   background: white;
   padding: 0px 120px;
   position: relative; }
-  /* line 1083, main.scss */
+  /* line 1084, main.scss */
   #team-member .inner {
     max-width: 960px;
     min-width: 500px;
     margin: 0 auto;
     box-sizing: border-box; }
-    /* line 1089, main.scss */
+    /* line 1090, main.scss */
     #team-member .inner .row {
       display: flex;
       justify-content: space-between;
       min-height: 900px; }
-    /* line 1095, main.scss */
+    /* line 1096, main.scss */
     #team-member .inner .col {
       padding: 130px 0;
       width: 40%; }
-      /* line 1099, main.scss */
+      /* line 1100, main.scss */
       #team-member .inner .col h1 {
         font: normal normal 100 15px/150% Titillium Web, sans-serif;
         font-size: 48px;
         line-height: 52px; }
-      /* line 1105, main.scss */
+      /* line 1106, main.scss */
       #team-member .inner .col .job-title {
         font: normal normal 100 15px/150% Titillium Web, sans-serif;
         font-size: 20px; }
-      /* line 1110, main.scss */
+      /* line 1111, main.scss */
       #team-member .inner .col .meta, #team-member .inner .col .bio {
         font: normal normal 300 15px/150% Titillium Web, sans-serif;
         font-size: 24px; }
-      /* line 1115, main.scss */
+      /* line 1116, main.scss */
       #team-member .inner .col .meta {
         padding: 20px 0 20px; }
-        /* line 1118, main.scss */
+        /* line 1119, main.scss */
         #team-member .inner .col .meta a {
           text-decoration: none; }
-        /* line 1122, main.scss */
+        /* line 1123, main.scss */
         #team-member .inner .col .meta .sep {
           display: inline-block;
           padding: 0 10px;
           color: #ddd; }
-      /* line 1129, main.scss */
+      /* line 1130, main.scss */
       #team-member .inner .col .img {
         position: relative; }
-        /* line 1132, main.scss */
+        /* line 1133, main.scss */
         #team-member .inner .col .img img {
           max-width: 100%;
           width: 100%;
           height: auto;
           position: relative; }
-        /* line 1139, main.scss */
+        /* line 1140, main.scss */
         #team-member .inner .col .img::before {
           content: ' ';
           background-image: linear-gradient(to left bottom, white 0%, white 50%, transparent 50%);
@@ -2586,7 +2587,7 @@ About
           top: 0px;
           left: 0;
           z-index: 10; }
-        /* line 1150, main.scss */
+        /* line 1151, main.scss */
         #team-member .inner .col .img::after {
           content: ' ';
           background-image: linear-gradient(to right top, white 0%, white 50%, transparent 50%);
@@ -2596,23 +2597,23 @@ About
           bottom: 6px;
           left: 0;
           z-index: 10; }
-      /* line 1162, main.scss */
+      /* line 1163, main.scss */
       #team-member .inner .col img.word-cloud {
         max-width: 100%;
         height: auto;
         margin: 50px 0 0 0;
         display: block; }
-      /* line 1169, main.scss */
+      /* line 1170, main.scss */
       #team-member .inner .col + .col {
         width: 60%;
         box-sizing: border-box;
         padding-left: 56px; }
 
-/* line 1178, main.scss */
+/* line 1179, main.scss */
 .video-lightbox {
   position: relative;
   height: 100%; }
-  /* line 1182, main.scss */
+  /* line 1183, main.scss */
   .video-lightbox .inner {
     max-height: 80%;
     max-width: 80%;
@@ -2621,7 +2622,7 @@ About
     padding: 80px 20px 20px;
     position: relative; }
 
-/* line 1192, main.scss */
+/* line 1193, main.scss */
 .lightbox-close {
   max-width: 40px;
   height: auto;
@@ -2638,14 +2639,14 @@ News Landing
 
 --------------------------------------------------
 */
-/* line 1210, main.scss */
+/* line 1211, main.scss */
 .news-header {
   height: 580px;
   background: url("../img/news-header-bg.jpg") 50% bottom;
   background-size: cover;
   position: relative;
   margin-bottom: 70px; }
-  /* line 1217, main.scss */
+  /* line 1218, main.scss */
   .news-header h1 {
     font: normal normal bold 15px/150% Titillium Web, sans-serif;
     font-size: 10vw;
@@ -2663,27 +2664,27 @@ News Landing
     width: 100%;
     top: 400px; }
     @media all and (min-width: 1280px) {
-      /* line 1217, main.scss */
+      /* line 1218, main.scss */
       .news-header h1 {
         font-size: 130px; } }
-  /* line 1236, main.scss */
+  /* line 1237, main.scss */
   .news-header.small {
     background: url("../img/news-single-bg.jpg") 50% bottom;
     background-size: cover;
     height: 400px; }
 
-/* line 1243, main.scss */
+/* line 1244, main.scss */
 #posts {
   margin-bottom: 60px;
   color: white; }
-  /* line 1247, main.scss */
+  /* line 1248, main.scss */
   #posts .row {
     display: flex;
     justify-content: space-between; }
-    /* line 1251, main.scss */
+    /* line 1252, main.scss */
     #posts .row + .row {
       margin-top: 60px; }
-  /* line 1256, main.scss */
+  /* line 1257, main.scss */
   #posts .article_wrap {
     background-position: center center;
     background-size: cover;
@@ -2691,7 +2692,7 @@ News Landing
     margin-right: 60px;
     background-color: #0098cd;
     background-blend-mode: screen; }
-  /* line 1265, main.scss */
+  /* line 1266, main.scss */
   #posts .col {
     background: rgba(0, 152, 205, 0.76);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 152, 205, 0.5)), color-stop(100%, rgba(0, 202, 233, 0.5)));
@@ -2700,18 +2701,18 @@ News Landing
     padding: 15px 18px 50px 20px;
     position: relative;
     z-index: 100; }
-    /* line 1279, main.scss */
+    /* line 1280, main.scss */
     #posts .col.press-release {
       background: url("../img/news/press-release.png") 50% 50%;
       background-size: cover; }
-    /* line 1284, main.scss */
+    /* line 1285, main.scss */
     #posts .col.thought-leadership {
       background: url("../img/news/thought-leadership.png") 50% 50%;
       background-size: cover; }
-    /* line 1289, main.scss */
+    /* line 1290, main.scss */
     #posts .col:last-of-type {
       margin-right: 0px; }
-    /* line 1293, main.scss */
+    /* line 1294, main.scss */
     #posts .col:before {
       background: #0098cd;
       background: -webkit-gradient(left top, left bottom, color-stop(0%, #0098cd), color-stop(100%, white));
@@ -2727,14 +2728,14 @@ News Landing
       width: 100%;
       z-index: -100;
       transition: opacity 0.25s; }
-    /* line 1314, main.scss */
+    /* line 1315, main.scss */
     #posts .col:hover:before {
       opacity: .5; }
-    /* line 1319, main.scss */
+    /* line 1320, main.scss */
     #posts .col .meta {
       font-size: 11px;
       letter-spacing: 0.05em; }
-    /* line 1324, main.scss */
+    /* line 1325, main.scss */
     #posts .col h2 {
       font: normal normal 300 15px/150% Titillium Web, sans-serif;
       font-size: 31px;
@@ -2744,7 +2745,7 @@ News Landing
       overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 3; }
-    /* line 1336, main.scss */
+    /* line 1337, main.scss */
     #posts .col .read-more {
       display: inline-block;
       border: 1px solid white;
@@ -2755,14 +2756,14 @@ News Landing
       color: white;
       text-decoration: none;
       transition: all 0.25s; }
-      /* line 1347, main.scss */
+      /* line 1348, main.scss */
       #posts .col .read-more:hover {
         background: white;
         color: #0094cb; }
-  /* line 1354, main.scss */
+  /* line 1355, main.scss */
   #posts .pagination {
     margin-top: 60px; }
-    /* line 1358, main.scss */
+    /* line 1359, main.scss */
     #posts .pagination a {
       display: inline-block;
       border-radius: 50px;
@@ -2778,7 +2779,7 @@ News Landing
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd559', endColorstr='#ffb500', GradientType=1 );
       position: relative;
       z-index: 100; }
-      /* line 1378, main.scss */
+      /* line 1379, main.scss */
       #posts .pagination a:before {
         border-radius: inherit;
         background: #ffd559;
@@ -2792,27 +2793,27 @@ News Landing
         width: 100%;
         z-index: -100;
         transition: opacity 0.25s; }
-      /* line 1393, main.scss */
+      /* line 1394, main.scss */
       #posts .pagination a:hover:before {
         opacity: 1; }
-    /* line 1399, main.scss */
+    /* line 1400, main.scss */
     #posts .pagination .prev {
       float: right; }
-    /* line 1403, main.scss */
+    /* line 1404, main.scss */
     #posts .pagination .next {
       float: left; }
 
-/* line 1411, main.scss */
+/* line 1412, main.scss */
 #post .left {
   float: left;
   width: 75%;
   padding: 0 75px 190px 0;
   box-sizing: border-box; }
-/* line 1418, main.scss */
+/* line 1419, main.scss */
 #post .right {
   float: right;
   width: 25%; }
-  /* line 1422, main.scss */
+  /* line 1423, main.scss */
   #post .right label, #post .right h2 {
     display: block;
     color: #808285;
@@ -2820,7 +2821,7 @@ News Landing
     font-size: 22px;
     line-height: 100%;
     margin-bottom: 10px; }
-  /* line 1431, main.scss */
+  /* line 1432, main.scss */
   #post .right input[type="text"] {
     display: block;
     border: 1px solid #ddd;
@@ -2831,85 +2832,85 @@ News Landing
     box-sizing: border-box;
     outline: 0;
     margin-bottom: 40px; }
-  /* line 1443, main.scss */
+  /* line 1444, main.scss */
   #post .right ul, #post .right li {
     display: block;
     list-style-type: none;
     padding: 0;
     margin: 0; }
-  /* line 1450, main.scss */
+  /* line 1451, main.scss */
   #post .right li {
     padding-bottom: 10px; }
-    /* line 1453, main.scss */
+    /* line 1454, main.scss */
     #post .right li a {
       text-decoration: none;
       color: #60CBF2;
       font: normal normal 300 15px/150% Titillium Web, sans-serif;
       font-size: 16px; }
-/* line 1462, main.scss */
+/* line 1463, main.scss */
 #post hr {
   margin: 40px 0 10px 0;
   background: #d8d8d8;
   border: none;
   height: 1px; }
 
-/* line 1472, main.scss */
+/* line 1473, main.scss */
 .single-post .img__post {
   display: block;
   height: auto;
   margin-bottom: 4%;
   width: 100%; }
-/* line 1479, main.scss */
+/* line 1480, main.scss */
 .single-post h1 {
   font: normal normal 300 15px/150% Titillium Web, sans-serif;
   font-size: 60px;
-  line-height: 68px;
+  line-height: 1;
   color: #0094cb; }
-/* line 1486, main.scss */
+/* line 1487, main.scss */
 .single-post h2 {
   font: normal normal 300 15px/150% Titillium Web, sans-serif;
   font-size: 30px;
   line-height: 38px; }
-  /* line 1491, main.scss */
+  /* line 1492, main.scss */
   .single-post h2 a {
     color: #0094cb;
     text-decoration: none; }
-/* line 1497, main.scss */
+/* line 1498, main.scss */
 .single-post .meta {
   font-size: 14px;
   color: #919191;
   margin-bottom: 50px; }
-  /* line 1502, main.scss */
+  /* line 1503, main.scss */
   .single-post .meta span {
     letter-spacing: 0.25em;
     display: inline-block;
     margin-left: 5px; }
-  /* line 1508, main.scss */
+  /* line 1509, main.scss */
   .single-post .meta.search-page {
     margin-bottom: 0; }
-/* line 1513, main.scss */
+/* line 1514, main.scss */
 .single-post .content {
   color: black; }
-/* line 1517, main.scss */
+/* line 1518, main.scss */
 .single-post .content p {
   font: normal normal 300 15px/150% Titillium Web, sans-serif;
   font-size: 22px;
   line-height: 150%;
   color: black; }
-/* line 1524, main.scss */
+/* line 1525, main.scss */
 .single-post .content p:first-of-type {
   font: normal normal 600 15px/150% Titillium Web, sans-serif;
   font-size: 22px; }
 
-/* line 1530, main.scss */
+/* line 1531, main.scss */
 .search-result {
   padding-top: 20px !important; }
 
-/* line 1534, main.scss */
+/* line 1535, main.scss */
 .search-page hr {
   margin-top: 15px !important; }
 
-/* line 1538, main.scss */
+/* line 1539, main.scss */
 .results-header {
   font: normal normal 300 15px/150% Titillium Web, sans-serif;
   font-size: 30px;
@@ -2924,7 +2925,7 @@ Vertical Landing
 
 --------------------------------------------------
 */
-/* line 1555, main.scss */
+/* line 1556, main.scss */
 #vertical .header {
   position: fixed;
   width: 100%;
@@ -2933,26 +2934,26 @@ Vertical Landing
   left: 0;
   background-size: cover;
   background-position: 50% 80%; }
-  /* line 1564, main.scss */
+  /* line 1565, main.scss */
   #vertical .header .wrap {
     height: 650px;
     width: 100%;
     position: relative; }
-    /* line 1569, main.scss */
+    /* line 1570, main.scss */
     #vertical .header .wrap .text {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       width: 100%; }
-  /* line 1577, main.scss */
+  /* line 1578, main.scss */
   #vertical .header h1 {
     color: white;
     font: normal normal bold 15px/150% Titillium Web, sans-serif;
     font-size: 200px;
     line-height: 100%;
     text-align: left; }
-  /* line 1585, main.scss */
+  /* line 1586, main.scss */
   #vertical .header h3 {
     color: white;
     font: normal normal bold 15px/150% Titillium Web, sans-serif;
@@ -2961,13 +2962,13 @@ Vertical Landing
     margin-top: 20px;
     text-align: left; }
 
-/* line 1595, main.scss */
+/* line 1596, main.scss */
 #vertical .content.main {
   position: relative;
   z-index: 2;
   margin-top: 650px;
   background: white; }
-  /* line 1601, main.scss */
+  /* line 1602, main.scss */
   #vertical .content.main::after {
     content: '';
     background-image: linear-gradient(to left top, white 0%, white 50%, transparent 50%);
@@ -2977,7 +2978,7 @@ Vertical Landing
     top: -131px;
     left: 0;
     z-index: 10; }
-  /* line 1612, main.scss */
+  /* line 1613, main.scss */
   #vertical .content.main a.button {
     display: inline-block;
     border-radius: 40px;
@@ -2988,32 +2989,32 @@ Vertical Landing
     background: #D1002A;
     padding: 20px 50px;
     transition: all 0.3s; }
-  /* line 1624, main.scss */
+  /* line 1625, main.scss */
   #vertical .content.main a.button.outline {
     background: transparent;
     border: 1px solid #D1002A;
     color: #D1002A; }
-  /* line 1630, main.scss */
+  /* line 1631, main.scss */
   #vertical .content.main a.button.outline:hover {
     background: #D1002A;
     color: white; }
-  /* line 1635, main.scss */
+  /* line 1636, main.scss */
   #vertical .content.main .arrow {
     cursor: pointer;
     transition: all 0.3s; }
-    /* line 1639, main.scss */
+    /* line 1640, main.scss */
     #vertical .content.main .arrow:hover {
       margin-bottom: -8px; }
-  /* line 1646, main.scss */
+  /* line 1647, main.scss */
   #vertical .content.main .intro p {
     font: normal normal 300 15px/150% Titillium Web, sans-serif;
     font-size: 30px;
     line-height: 150%; }
-  /* line 1652, main.scss */
+  /* line 1653, main.scss */
   #vertical .content.main .intro .wrap {
     position: relative;
     padding: 100px 20px; }
-    /* line 1656, main.scss */
+    /* line 1657, main.scss */
     #vertical .content.main .intro .wrap img.arrow {
       position: absolute;
       bottom: 0px;
@@ -3021,32 +3022,32 @@ Vertical Landing
       width: 60px;
       margin-left: -30px;
       height: auto; }
-  /* line 1667, main.scss */
+  /* line 1668, main.scss */
   #vertical .content.main .we-are {
     padding-top: 150px; }
-    /* line 1670, main.scss */
+    /* line 1671, main.scss */
     #vertical .content.main .we-are h2 {
       font: normal normal normal 15px/150% Titillium Web, sans-serif;
       font-size: 72px;
       line-height: 100%; }
-    /* line 1676, main.scss */
+    /* line 1677, main.scss */
     #vertical .content.main .we-are .shadow {
       text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6); }
-    /* line 1680, main.scss */
+    /* line 1681, main.scss */
     #vertical .content.main .we-are .wrap {
       background: #CC0027;
       padding: 20px; }
-      /* line 1684, main.scss */
+      /* line 1685, main.scss */
       #vertical .content.main .we-are .wrap:hover .img {
         -webkit-transform: scale(1.2);
                 transform: scale(1.2); }
-      /* line 1688, main.scss */
+      /* line 1689, main.scss */
       #vertical .content.main .we-are .wrap .inner {
         box-sizing: border-box;
         padding: 115px 0 20px 0;
         overflow: hidden;
         position: relative; }
-        /* line 1694, main.scss */
+        /* line 1695, main.scss */
         #vertical .content.main .we-are .wrap .inner .img {
           background-size: cover;
           position: absolute;
@@ -3056,31 +3057,31 @@ Vertical Landing
           width: 100%;
           height: 100%;
           transition: all 0.5s; }
-      /* line 1706, main.scss */
+      /* line 1707, main.scss */
       #vertical .content.main .we-are .wrap .left, #vertical .content.main .we-are .wrap .right {
         width: 48%;
         padding: 60px;
         box-sizing: border-box; }
-        /* line 1711, main.scss */
+        /* line 1712, main.scss */
         #vertical .content.main .we-are .wrap .left ul, #vertical .content.main .we-are .wrap .right ul {
           list-style-type: none; }
-        /* line 1715, main.scss */
+        /* line 1716, main.scss */
         #vertical .content.main .we-are .wrap .left li, #vertical .content.main .we-are .wrap .right li {
           font: normal normal bold 15px/150% Titillium Web, sans-serif;
           font-size: 24px;
           line-height: 120%;
           padding: 12px 0; }
-      /* line 1723, main.scss */
+      /* line 1724, main.scss */
       #vertical .content.main .we-are .wrap .clearfix {
         padding: 40px;
         position: relative;
         z-index: 2; }
-      /* line 1729, main.scss */
+      /* line 1730, main.scss */
       #vertical .content.main .we-are .wrap .left {
         float: left;
         text-align: right;
         color: white; }
-        /* line 1734, main.scss */
+        /* line 1735, main.scss */
         #vertical .content.main .we-are .wrap .left .inner {
           position: relative;
           z-index: 2;
@@ -3088,21 +3089,21 @@ Vertical Landing
           transform: skew(12deg);
           margin: 0 -20px 0 0;
           padding: 0 20px 0 0; }
-          /* line 1743, main.scss */
+          /* line 1744, main.scss */
           #vertical .content.main .we-are .wrap .left .inner ul {
             margin: 40px 0 0 0;
             padding: 0; }
-          /* line 1748, main.scss */
+          /* line 1749, main.scss */
           #vertical .content.main .we-are .wrap .left .inner h2, #vertical .content.main .we-are .wrap .left .inner li {
             -webkit-transform: skew(-12deg);
             transform: skew(-12deg); }
-      /* line 1756, main.scss */
+      /* line 1757, main.scss */
       #vertical .content.main .we-are .wrap .right {
         float: right;
         color: #CC0027;
         background: black;
         position: relative; }
-        /* line 1762, main.scss */
+        /* line 1763, main.scss */
         #vertical .content.main .we-are .wrap .right:after {
           content: " ";
           position: absolute;
@@ -3115,7 +3116,7 @@ Vertical Landing
           background: black;
           -webkit-transform: skew(10deg);
           transform: skew(10deg); }
-        /* line 1777, main.scss */
+        /* line 1778, main.scss */
         #vertical .content.main .we-are .wrap .right .inner {
           position: relative;
           z-index: 2;
@@ -3124,25 +3125,25 @@ Vertical Landing
           margin: 0;
           padding: 0 0 0 20px;
           margin-left: -58px; }
-          /* line 1787, main.scss */
+          /* line 1788, main.scss */
           #vertical .content.main .we-are .wrap .right .inner ul {
             margin: 40px 0 0 0;
             padding: 0; }
-          /* line 1792, main.scss */
+          /* line 1793, main.scss */
           #vertical .content.main .we-are .wrap .right .inner h2, #vertical .content.main .we-are .wrap .right .inner li {
             -webkit-transform: skew(-12deg);
             transform: skew(-12deg); }
-  /* line 1802, main.scss */
+  /* line 1803, main.scss */
   #vertical .content.main a.button {
     margin-top: 0px;
     position: relative;
     z-index: 0;
     overflow: hidden; }
-    /* line 1808, main.scss */
+    /* line 1809, main.scss */
     #vertical .content.main a.button span {
       position: relative;
       z-index: 2; }
-    /* line 1813, main.scss */
+    /* line 1814, main.scss */
     #vertical .content.main a.button:before {
       content: ' ';
       width: 200%;
@@ -3155,38 +3156,38 @@ Vertical Landing
       transition: all 0.7s;
       -webkit-transform: skew(-45deg);
               transform: skew(-45deg); }
-    /* line 1826, main.scss */
+    /* line 1827, main.scss */
     #vertical .content.main a.button:hover:before {
       left: -50%;
       top: 0px; }
-  /* line 1832, main.scss */
+  /* line 1833, main.scss */
   #vertical .content.main a.button.outline:before {
     width: 0px;
     height: 0px; }
-  /* line 1837, main.scss */
+  /* line 1838, main.scss */
   #vertical .content.main .logos {
     padding: 150px 0 200px 0; }
-    /* line 1840, main.scss */
+    /* line 1841, main.scss */
     #vertical .content.main .logos h2 {
       font: normal normal 100 15px/150% Titillium Web, sans-serif;
       font-size: 72px;
       line-height: 100%;
       text-align: center;
       margin-bottom: 120px; }
-    /* line 1848, main.scss */
+    /* line 1849, main.scss */
     #vertical .content.main .logos img {
       max-width: 100%;
       height: auto; }
-    /* line 1853, main.scss */
+    /* line 1854, main.scss */
     #vertical .content.main .logos .row {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       justify-content: left; }
-      /* line 1859, main.scss */
+      /* line 1860, main.scss */
       #vertical .content.main .logos .row + .row {
         margin-top: 60px; }
-      /* line 1863, main.scss */
+      /* line 1864, main.scss */
       #vertical .content.main .logos .row .col {
         align-self: center;
         flex: 0 1 21%;
@@ -3194,11 +3195,11 @@ Vertical Landing
         text-align: center;
         box-sizing: border-box;
         padding: 0 60px; }
-  /* line 1874, main.scss */
+  /* line 1875, main.scss */
   #vertical .content.main .cta {
     text-align: center;
     padding: 80px 20px; }
-    /* line 1878, main.scss */
+    /* line 1879, main.scss */
     #vertical .content.main .cta p {
       text-align: center;
       font: normal normal 100 15px/150% Titillium Web, sans-serif;
@@ -3206,46 +3207,46 @@ Vertical Landing
       line-height: 110%;
       margin: 0 0 25px 0;
       padding: 0; }
-    /* line 1887, main.scss */
+    /* line 1888, main.scss */
     #vertical .content.main .cta p.smaller {
       font-size: 52px; }
-  /* line 1892, main.scss */
+  /* line 1893, main.scss */
   #vertical .content.main .result {
     padding: 0 0 160px 0; }
-    /* line 1895, main.scss */
+    /* line 1896, main.scss */
     #vertical .content.main .result .slide {
       background-size: cover;
       min-height: 480px;
       position: relative; }
-      /* line 1900, main.scss */
+      /* line 1901, main.scss */
       #vertical .content.main .result .slide .main-content {
         color: white;
         padding: 40px;
         width: 40%;
         box-sizing: border-box; }
-        /* line 1906, main.scss */
+        /* line 1907, main.scss */
         #vertical .content.main .result .slide .main-content h2, #vertical .content.main .result .slide .main-content p {
           margin: 0;
           padding: 0; }
-        /* line 1911, main.scss */
+        /* line 1912, main.scss */
         #vertical .content.main .result .slide .main-content > h2 {
           font: normal normal 600 15px/150% Titillium Web, sans-serif;
           font-size: 30px;
           line-height: 34px;
           margin: 0;
           padding: 0; }
-        /* line 1919, main.scss */
+        /* line 1920, main.scss */
         #vertical .content.main .result .slide .main-content > h2 + p {
           font: normal normal 600 15px/150% Titillium Web, sans-serif;
           font-size: 90px;
           line-height: 100px;
           margin: 20px 0; }
-        /* line 1926, main.scss */
+        /* line 1927, main.scss */
         #vertical .content.main .result .slide .main-content > h2 + p + p {
           font: normal normal 300 15px/150% Titillium Web, sans-serif;
           font-size: 36px;
           line-height: 40px; }
-      /* line 1933, main.scss */
+      /* line 1934, main.scss */
       #vertical .content.main .result .slide .overlay {
         position: absolute;
         right: 80px;
@@ -3254,7 +3255,7 @@ Vertical Landing
         bottom: -80px;
         padding: 100px 20px 20px 100px;
         box-sizing: border-box; }
-        /* line 1942, main.scss */
+        /* line 1943, main.scss */
         #vertical .content.main .result .slide .overlay:before {
           content: '';
           position: absolute;
@@ -3267,37 +3268,37 @@ Vertical Landing
                   transform: skew(-10deg);
           background: #B7222F;
           mix-blend-mode: multiply; }
-        /* line 1955, main.scss */
+        /* line 1956, main.scss */
         #vertical .content.main .result .slide .overlay p {
           margin: 0;
           padding: 0;
           font-size: 36px;
           color: white;
           position: relative; }
-        /* line 1963, main.scss */
+        /* line 1964, main.scss */
         #vertical .content.main .result .slide .overlay p + p {
           font: normal normal bold 15px/150% Titillium Web, sans-serif;
           font-size: 72px;
           line-height: 80px;
           margin-top: 20px; }
-  /* line 1973, main.scss */
+  /* line 1974, main.scss */
   #vertical .content.main .segments {
     padding: 60px 0;
     background-size: cover; }
-    /* line 1977, main.scss */
+    /* line 1978, main.scss */
     #vertical .content.main .segments .row {
       display: flex; }
-    /* line 1981, main.scss */
+    /* line 1982, main.scss */
     #vertical .content.main .segments .col {
       width: 60%;
       align-self: center; }
-      /* line 1985, main.scss */
+      /* line 1986, main.scss */
       #vertical .content.main .segments .col + .col {
         width: 40%; }
-    /* line 1990, main.scss */
+    /* line 1991, main.scss */
     #vertical .content.main .segments p {
       font-size: 28px; }
-    /* line 1994, main.scss */
+    /* line 1995, main.scss */
     #vertical .content.main .segments p.skew-me {
       display: inline-block;
       color: white;
@@ -3305,36 +3306,36 @@ Vertical Landing
       padding: 15px 30px;
       -webkit-transform: skewX(-10deg);
               transform: skewX(-10deg); }
-      /* line 2001, main.scss */
+      /* line 2002, main.scss */
       #vertical .content.main .segments p.skew-me span {
         display: inline-block;
         -webkit-transform: skewX(10deg);
                 transform: skewX(10deg); }
-    /* line 2007, main.scss */
+    /* line 2008, main.scss */
     #vertical .content.main .segments ul {
       list-style-type: none; }
-      /* line 2010, main.scss */
+      /* line 2011, main.scss */
       #vertical .content.main .segments ul li {
         color: black;
         font: normal normal 600 15px/150% Titillium Web, sans-serif;
         font-size: 24px;
         font-style: italic;
         line-height: 32px; }
-  /* line 2020, main.scss */
+  /* line 2021, main.scss */
   #vertical .content.main .case-studies {
     color: white;
     overflow: hidden; }
-    /* line 2024, main.scss */
+    /* line 2025, main.scss */
     #vertical .content.main .case-studies a {
       color: white;
       text-decoration: none; }
-    /* line 2029, main.scss */
+    /* line 2030, main.scss */
     #vertical .content.main .case-studies .outer {
       max-width: 1500px;
       min-width: 1400px;
       margin: 0 auto;
       white-space: nowrap; }
-    /* line 2037, main.scss */
+    /* line 2038, main.scss */
     #vertical .content.main .case-studies .case-study {
       height: 1024px;
       width: 32%;
@@ -3345,11 +3346,11 @@ Vertical Landing
       -webkit-transform: skew(5deg);
               transform: skew(5deg);
       overflow: hidden; }
-      /* line 2047, main.scss */
+      /* line 2048, main.scss */
       #vertical .content.main .case-studies .case-study:hover .img {
         -webkit-transform: skew(-5deg) scale(1.3);
                 transform: skew(-5deg) scale(1.3); }
-      /* line 2051, main.scss */
+      /* line 2052, main.scss */
       #vertical .content.main .case-studies .case-study .img {
         height: 100%;
         width: 100%;
@@ -3360,7 +3361,7 @@ Vertical Landing
         top: 0;
         bottom: 0;
         transition: all 0.5s; }
-        /* line 2061, main.scss */
+        /* line 2062, main.scss */
         #vertical .content.main .case-studies .case-study .img .overlay {
           position: absolute;
           width: 100%;
@@ -3369,7 +3370,7 @@ Vertical Landing
           background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(54%, rgba(0, 148, 203, 0.54)), color-stop(100%, #0094cb));
           background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 148, 203, 0.54) 54%, #0094cb 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0094cb', GradientType=0 ); }
-      /* line 2076, main.scss */
+      /* line 2077, main.scss */
       #vertical .content.main .case-studies .case-study .content {
         white-space: normal;
         position: absolute;
@@ -3382,28 +3383,28 @@ Vertical Landing
         width: 100%;
         padding: 40px;
         height: 495px; }
-        /* line 2088, main.scss */
+        /* line 2089, main.scss */
         #vertical .content.main .case-studies .case-study .content .top {
           min-height: 210px; }
-        /* line 2094, main.scss */
+        /* line 2095, main.scss */
         #vertical .content.main .case-studies .case-study .content .bottom p {
           margin: 20px 0 20px 0;
           line-height: 150%; }
-        /* line 2100, main.scss */
+        /* line 2101, main.scss */
         #vertical .content.main .case-studies .case-study .content p {
           font-size: 22px;
           margin: 0;
           padding: 0; }
-        /* line 2106, main.scss */
+        /* line 2107, main.scss */
         #vertical .content.main .case-studies .case-study .content h3 {
           font: normal normal bold 15px/150% Titillium Web, sans-serif;
           font-size: 60px;
           line-height: 62px; }
-          /* line 2111, main.scss */
+          /* line 2112, main.scss */
           #vertical .content.main .case-studies .case-study .content h3 + p {
             margin: 60px 0 60px 0;
             line-height: 150%; }
-        /* line 2117, main.scss */
+        /* line 2118, main.scss */
         #vertical .content.main .case-studies .case-study .content a.more-button {
           padding: 10px 40px;
           border-radius: 40px;
@@ -3415,60 +3416,60 @@ Vertical Landing
           letter-spacing: 0.05em;
           position: absolute;
           bottom: 30px; }
-          /* line 2129, main.scss */
+          /* line 2130, main.scss */
           #vertical .content.main .case-studies .case-study .content a.more-button:hover {
             background: white;
             color: #0094cb; }
-  /* line 2141, main.scss */
+  /* line 2142, main.scss */
   #vertical .content.main .article .clearfix {
     display: flex; }
-  /* line 2145, main.scss */
+  /* line 2146, main.scss */
   #vertical .content.main .article .left, #vertical .content.main .article .right {
     padding-top: 150px;
     padding-bottom: 80px;
     box-sizing: border-box;
     width: 50%; }
-    /* line 2151, main.scss */
+    /* line 2152, main.scss */
     #vertical .content.main .article .left .inner, #vertical .content.main .article .right .inner {
       max-width: 700px; }
-  /* line 2156, main.scss */
+  /* line 2157, main.scss */
   #vertical .content.main .article .left {
     background: #CC0027;
     color: white;
     padding-right: 40px;
     padding-bottom: 150px; }
-    /* line 2162, main.scss */
+    /* line 2163, main.scss */
     #vertical .content.main .article .left h2 {
       font-size: 70px;
       line-height: 100%; }
-      /* line 2166, main.scss */
+      /* line 2167, main.scss */
       #vertical .content.main .article .left h2 a {
         text-decoration: none;
         color: white; }
-    /* line 2172, main.scss */
+    /* line 2173, main.scss */
     #vertical .content.main .article .left .inner {
       float: right;
       text-align: right; }
-  /* line 2178, main.scss */
+  /* line 2179, main.scss */
   #vertical .content.main .article .right {
     background: #E8E8E8;
     padding-left: 40px; }
-    /* line 2182, main.scss */
+    /* line 2183, main.scss */
     #vertical .content.main .article .right p {
       font-size: 24px;
       line-height: 150%; }
 
-/* line 2192, main.scss */
+/* line 2193, main.scss */
 #vertical.manufacturing .header h1, #vertical.manufacturing .header h3 {
   padding: 0;
   margin: 0; }
-/* line 2197, main.scss */
+/* line 2198, main.scss */
 #vertical.manufacturing .header h1 {
   font: normal normal 900 15px/150% Titillium Web, sans-serif;
   font-size: 140px;
   line-height: 140px;
   text-transform: uppercase; }
-/* line 2204, main.scss */
+/* line 2205, main.scss */
 #vertical.manufacturing .header h3 {
   font: normal normal 900 15px/150% Titillium Web, sans-serif;
   font-size: 72px;
@@ -3476,7 +3477,7 @@ Vertical Landing
   text-transform: uppercase;
   margin-top: -24px; }
 
-/* line 2215, main.scss */
+/* line 2216, main.scss */
 #vertical.manufacturing .content.main::after {
   content: '';
   background-image: none;
@@ -3487,46 +3488,46 @@ Vertical Landing
   top: -95px;
   left: auto;
   right: 0; }
-/* line 2227, main.scss */
+/* line 2228, main.scss */
 #vertical.manufacturing .content.main a.button {
   background: #B4C327; }
-  /* line 2230, main.scss */
+  /* line 2231, main.scss */
   #vertical.manufacturing .content.main a.button:before {
     background: #9EAD1A; }
-/* line 2235, main.scss */
+/* line 2236, main.scss */
 #vertical.manufacturing .content.main .intro {
   font: normal normal 600 15px/150% Titillium Web, sans-serif;
   line-height: 150%; }
-/* line 2241, main.scss */
+/* line 2242, main.scss */
 #vertical.manufacturing .content.main .we-are .wrap {
   background: #B4C327; }
-/* line 2245, main.scss */
+/* line 2246, main.scss */
 #vertical.manufacturing .content.main .we-are h2 {
   text-transform: uppercase;
   font: normal normal 900 15px/150% Titillium Web, sans-serif;
   font-size: 48px;
   line-height: 100%; }
-/* line 2252, main.scss */
+/* line 2253, main.scss */
 #vertical.manufacturing .content.main .we-are .clearfix {
   max-width: 1000px;
   margin: 0 auto; }
-/* line 2257, main.scss */
+/* line 2258, main.scss */
 #vertical.manufacturing .content.main .we-are .left {
   width: 55%;
   color: black;
   -webkit-transform: skew(0deg);
           transform: skew(0deg); }
-/* line 2263, main.scss */
+/* line 2264, main.scss */
 #vertical.manufacturing .content.main .we-are .left .inner, #vertical.manufacturing .content.main .we-are .right .inner, #vertical.manufacturing .content.main .we-are .left h2, #vertical.manufacturing .content.main .we-are .left li, #vertical.manufacturing .content.main .we-are .right h2, #vertical.manufacturing .content.main .we-are .right li {
   -webkit-transform: skew(0ddeg) !important;
   transform: skew(0deg) !important; }
-/* line 2269, main.scss */
+/* line 2270, main.scss */
 #vertical.manufacturing .content.main .we-are .left, #vertical.manufacturing .content.main .we-are .right {
   padding: 40px 90px; }
-  /* line 2272, main.scss */
+  /* line 2273, main.scss */
   #vertical.manufacturing .content.main .we-are .left li, #vertical.manufacturing .content.main .we-are .right li {
     font-size: 22px !important; }
-/* line 2277, main.scss */
+/* line 2278, main.scss */
 #vertical.manufacturing .content.main .we-are .right {
   width: 45%;
   background: rgba(0, 0, 0, 0.8);
@@ -3534,26 +3535,26 @@ Vertical Landing
   top: -60px;
   padding-top: 100px;
   padding-bottom: 60px; }
-  /* line 2285, main.scss */
+  /* line 2286, main.scss */
   #vertical.manufacturing .content.main .we-are .right:after {
     display: none !important; }
-/* line 2290, main.scss */
+/* line 2291, main.scss */
 #vertical.manufacturing .content.main .we-are .left {
   background: rgba(255, 255, 255, 0.7);
   padding-bottom: 120px;
   padding-right: 40px;
   padding-left: 40px; }
-/* line 2298, main.scss */
+/* line 2299, main.scss */
 #vertical.manufacturing .content.main .logos h2 {
   font: normal normal 900 15px/150% Titillium Web, sans-serif;
   font-size: 48px;
   line-height: 100%;
   text-transform: uppercase; }
-/* line 2305, main.scss */
+/* line 2306, main.scss */
 #vertical.manufacturing .content.main .segments {
   padding-top: 240px;
   padding-bottom: 180px; }
-  /* line 2309, main.scss */
+  /* line 2310, main.scss */
   #vertical.manufacturing .content.main .segments p {
     background: #B4C327;
     font: normal normal 900 15px/150% Titillium Web, sans-serif;
@@ -3562,69 +3563,69 @@ Vertical Landing
     color: white;
     text-transform: uppercase;
     padding: 20px; }
-  /* line 2319, main.scss */
+  /* line 2320, main.scss */
   #vertical.manufacturing .content.main .segments li {
     font-size: 22px;
     color: white; }
-/* line 2325, main.scss */
+/* line 2326, main.scss */
 #vertical.manufacturing .content.main .case-studies .case-study .content {
   height: 495px; }
-/* line 2327, main.scss */
+/* line 2328, main.scss */
 #vertical.manufacturing .content.main .cta p {
   font: normal normal bold 15px/150% Titillium Web, sans-serif;
   font-size: 48px;
   line-height: 100%; }
-  /* line 2332, main.scss */
+  /* line 2333, main.scss */
   #vertical.manufacturing .content.main .cta p.upper {
     text-transform: uppercase; }
-  /* line 2336, main.scss */
+  /* line 2337, main.scss */
   #vertical.manufacturing .content.main .cta p.big {
     font-size: 72px; }
-/* line 2341, main.scss */
+/* line 2342, main.scss */
 #vertical.manufacturing .content.main .article {
   background: #E8E8E8;
   padding: 80px 0; }
-  /* line 2345, main.scss */
+  /* line 2346, main.scss */
   #vertical.manufacturing .content.main .article .left {
     background: #B4C327;
     font-size: 20px;
     padding: 60px; }
-    /* line 2350, main.scss */
+    /* line 2351, main.scss */
     #vertical.manufacturing .content.main .article .left h2 {
       font: normal normal 900 15px/150% Titillium Web, sans-serif;
       font-size: 68px;
       line-height: 68px;
       margin: 0;
       padding: 0; }
-  /* line 2359, main.scss */
+  /* line 2360, main.scss */
   #vertical.manufacturing .content.main .article .right {
     padding: 80px 60px;
     background: transparent; }
-    /* line 2363, main.scss */
+    /* line 2364, main.scss */
     #vertical.manufacturing .content.main .article .right p {
       font-size: 20px;
       line-height: 150%; }
-  /* line 2369, main.scss */
+  /* line 2370, main.scss */
   #vertical.manufacturing .content.main .article .author {
     margin-top: 20px;
     font: normal normal 600 15px/150% Titillium Web, sans-serif;
     font-size: 24px;
     line-height: 24px; }
-  /* line 2376, main.scss */
+  /* line 2377, main.scss */
   #vertical.manufacturing .content.main .article .button {
     background: transparent;
     border-color: #B4C327;
     color: #B4C327;
     padding: 12px 40px;
     margin-top: 15px; }
-    /* line 2383, main.scss */
+    /* line 2384, main.scss */
     #vertical.manufacturing .content.main .article .button:hover {
       background: #9EAD1A; }
-/* line 2390, main.scss */
+/* line 2391, main.scss */
 #vertical.manufacturing .content.main .result .slide {
   position: relative;
   height: 900px; }
-/* line 2395, main.scss */
+/* line 2396, main.scss */
 #vertical.manufacturing .content.main .result .img {
   position: absolute;
   z-index: 2;
@@ -3632,12 +3633,12 @@ Vertical Landing
   width: 112%;
   height: auto;
   left: -170px; }
-/* line 2404, main.scss */
+/* line 2405, main.scss */
 #vertical.manufacturing .content.main .result .main-content {
   background: #808285;
   width: 60%;
   padding: 20px 20px 160px 20px; }
-  /* line 2409, main.scss */
+  /* line 2410, main.scss */
   #vertical.manufacturing .content.main .result .main-content > h2 {
     font: normal normal 900 15px/150% Titillium Web, sans-serif;
     text-transform: uppercase;
@@ -3646,19 +3647,19 @@ Vertical Landing
     letter-spacing: 0.05em;
     margin: 0;
     padding: 0; }
-  /* line 2419, main.scss */
+  /* line 2420, main.scss */
   #vertical.manufacturing .content.main .result .main-content > h2 + p {
     font: normal normal 900 15px/150% Titillium Web, sans-serif;
     font-size: 50px;
     line-height: 50px;
     text-transform: uppercase;
     margin: 10px 0; }
-  /* line 2427, main.scss */
+  /* line 2428, main.scss */
   #vertical.manufacturing .content.main .result .main-content > h2 + p + p {
     font: normal normal 300 15px/150% Titillium Web, sans-serif;
     font-size: 30px;
     line-height: 34px; }
-/* line 2434, main.scss */
+/* line 2435, main.scss */
 #vertical.manufacturing .content.main .result .overlay {
   background: #B4C327;
   top: auto;
@@ -3668,23 +3669,23 @@ Vertical Landing
   height: auto;
   padding: 200px 40px 20px 40px;
   width: 40%; }
-  /* line 2444, main.scss */
+  /* line 2445, main.scss */
   #vertical.manufacturing .content.main .result .overlay p {
     font: normal normal 900 15px/150% Titillium Web, sans-serif;
     font-size: 60px;
     line-height: 60px; }
-  /* line 2450, main.scss */
+  /* line 2451, main.scss */
   #vertical.manufacturing .content.main .result .overlay:before {
     display: none; }
 
-/* line 2457, main.scss */
+/* line 2458, main.scss */
 #vertical.premium .header {
   height: 540px; }
 
-/* line 2461, main.scss */
+/* line 2462, main.scss */
 #vertical.premium .main.content {
   margin-top: 540px; }
-  /* line 2464, main.scss */
+  /* line 2465, main.scss */
   #vertical.premium .main.content::before {
     content: '';
     background-image: linear-gradient(to left top, white 0%, white 50%, transparent 50%);
@@ -3694,7 +3695,7 @@ Vertical Landing
     top: -70px;
     left: 50%;
     z-index: 10; }
-  /* line 2475, main.scss */
+  /* line 2476, main.scss */
   #vertical.premium .main.content::after {
     content: '';
     background-image: linear-gradient(to right top, white 0%, white 50%, transparent 50%);
@@ -3704,17 +3705,17 @@ Vertical Landing
     top: -70px;
     right: 0;
     z-index: 10; }
-  /* line 2486, main.scss */
+  /* line 2487, main.scss */
   #vertical.premium .main.content .intro {
     text-align: center;
     padding-bottom: 100px; }
-    /* line 2490, main.scss */
+    /* line 2491, main.scss */
     #vertical.premium .main.content .intro h1 {
       color: #F5B313;
       font: normal normal 100 15px/150% Titillium Web, sans-serif;
       font-size: 75px;
       letter-spacing: 6px; }
-    /* line 2497, main.scss */
+    /* line 2498, main.scss */
     #vertical.premium .main.content .intro p {
       font: normal normal 100 15px/150% Titillium Web, sans-serif;
       font-size: 34px;
@@ -3722,13 +3723,13 @@ Vertical Landing
       margin: 0 auto;
       display: block;
       max-width: 800px; }
-  /* line 2507, main.scss */
+  /* line 2508, main.scss */
   #vertical.premium .main.content a.button {
     background: #FFB600; }
-    /* line 2510, main.scss */
+    /* line 2511, main.scss */
     #vertical.premium .main.content a.button:before {
       background: #DB9A13; }
-  /* line 2515, main.scss */
+  /* line 2516, main.scss */
   #vertical.premium .main.content .we-are {
     background-size: cover;
     background-position: 50% bottom;
@@ -3736,7 +3737,7 @@ Vertical Landing
     border: 3px solid #FFB600;
     max-width: 1140px;
     margin: 0 auto; }
-    /* line 2523, main.scss */
+    /* line 2524, main.scss */
     #vertical.premium .main.content .we-are h3 {
       font: normal normal 300 15px/150% Titillium Web, sans-serif;
       font-size: 64px;
@@ -3747,129 +3748,129 @@ Vertical Landing
       margin: 0;
       padding: 0;
       text-align: center; }
-    /* line 2535, main.scss */
+    /* line 2536, main.scss */
     #vertical.premium .main.content .we-are h2 {
       font: normal normal 300 15px/150% Titillium Web, sans-serif;
       font-size: 46px;
       line-height: 46px;
       line-height: 100%; }
-    /* line 2542, main.scss */
+    /* line 2543, main.scss */
     #vertical.premium .main.content .we-are li {
       font: normal normal 100 15px/150% Titillium Web, sans-serif !important;
       font-size: 30px !important;
       padding: 0 !important;
       margin: 0; }
-    /* line 2549, main.scss */
+    /* line 2550, main.scss */
     #vertical.premium .main.content .we-are .wrap {
       background: transparent; }
-      /* line 2553, main.scss */
+      /* line 2554, main.scss */
       #vertical.premium .main.content .we-are .wrap .inner {
         padding: 60px 20px; }
-      /* line 2557, main.scss */
+      /* line 2558, main.scss */
       #vertical.premium .main.content .we-are .wrap .clearfix {
         padding: 0; }
-      /* line 2561, main.scss */
+      /* line 2562, main.scss */
       #vertical.premium .main.content .we-are .wrap .left, #vertical.premium .main.content .we-are .wrap .right {
         padding: 0 !important;
         background: transparent;
         color: white;
         width: 44%; }
-      /* line 2569, main.scss */
+      /* line 2570, main.scss */
       #vertical.premium .main.content .we-are .wrap .right:after {
         display: none; }
-      /* line 2574, main.scss */
+      /* line 2575, main.scss */
       #vertical.premium .main.content .we-are .wrap .left .inner, #vertical.premium .main.content .we-are .wrap .right .inner, #vertical.premium .main.content .we-are .wrap .left h2, #vertical.premium .main.content .we-are .wrap .left li, #vertical.premium .main.content .we-are .wrap .right h2, #vertical.premium .main.content .we-are .wrap .right li {
         -webkit-transform: skew(0ddeg) !important;
         transform: skew(0deg) !important; }
-  /* line 2582, main.scss */
+  /* line 2583, main.scss */
   #vertical.premium .main.content .segments {
     padding-bottom: 0; }
-  /* line 2586, main.scss */
+  /* line 2587, main.scss */
   #vertical.premium .main.content .segments .wrap {
     padding: 60px;
     background-size: cover; }
-    /* line 2590, main.scss */
+    /* line 2591, main.scss */
     #vertical.premium .main.content .segments .wrap p {
       font: normal normal 100 15px/150% Titillium Web, sans-serif !important;
       font-size: 75px !important;
       line-height: 64px !important;
       max-width: 70%; }
-    /* line 2597, main.scss */
+    /* line 2598, main.scss */
     #vertical.premium .main.content .segments .wrap .row {
       background: rgba(255, 255, 255, 0.7);
       padding: 150px 0; }
-    /* line 2602, main.scss */
+    /* line 2603, main.scss */
     #vertical.premium .main.content .segments .wrap .col {
       width: 55%; }
-    /* line 2606, main.scss */
+    /* line 2607, main.scss */
     #vertical.premium .main.content .segments .wrap .col + .col {
       width: 45%; }
-    /* line 2610, main.scss */
+    /* line 2611, main.scss */
     #vertical.premium .main.content .segments .wrap li {
       color: black;
       font: normal normal 300 15px/150% Titillium Web, sans-serif;
       font-size: 24px;
       line-height: 110%;
       padding: 10px 0; }
-  /* line 2619, main.scss */
+  /* line 2620, main.scss */
   #vertical.premium .main.content .case-studies .case-study .content .top {
     min-height: 110px; }
-  /* line 2620, main.scss */
+  /* line 2621, main.scss */
   #vertical.premium .main.content .case-studies .case-study .content {
     height: 400px; }
-  /* line 2622, main.scss */
+  /* line 2623, main.scss */
   #vertical.premium .main.content .cta p {
     font-size: 50px; }
-  /* line 2626, main.scss */
+  /* line 2627, main.scss */
   #vertical.premium .main.content .article {
     background: #F5F5F5; }
-    /* line 2629, main.scss */
+    /* line 2630, main.scss */
     #vertical.premium .main.content .article a.button {
       border: none;
       color: white;
       margin-top: 80px;
       padding: 5px 30px; }
-      /* line 2635, main.scss */
+      /* line 2636, main.scss */
       #vertical.premium .main.content .article a.button:hover {
         background: #DB9A13; }
-    /* line 2640, main.scss */
+    /* line 2641, main.scss */
     #vertical.premium .main.content .article .left, #vertical.premium .main.content .article .right {
       background: transparent;
       color: black; }
-    /* line 2646, main.scss */
+    /* line 2647, main.scss */
     #vertical.premium .main.content .article .right .inner {
       max-width: 60%;
       font: normal normal 300 15px/150% Titillium Web, sans-serif;
       font-size: 30px;
       line-heiht: 150%; }
-    /* line 2654, main.scss */
+    /* line 2655, main.scss */
     #vertical.premium .main.content .article .left {
       font-size: 20px; }
-      /* line 2657, main.scss */
+      /* line 2658, main.scss */
       #vertical.premium .main.content .article .left h2 a {
         font: normal normal normal 15px/150% Titillium Web, sans-serif;
         font-size: 60px;
         line-height: 50px;
         color: black; }
-    /* line 2665, main.scss */
+    /* line 2666, main.scss */
     #vertical.premium .main.content .article .author {
       margin-top: 20px;
       font: normal normal normal 15px/150% Titillium Web, sans-serif;
       font-size: 24px;
       line-height: 24px; }
-  /* line 2675, main.scss */
+  /* line 2676, main.scss */
   #vertical.premium .main.content .result {
     text-align: center;
     position: relative;
     margin-bottom: -300px;
     margin-top: -100px; }
-    /* line 2681, main.scss */
+    /* line 2682, main.scss */
     #vertical.premium .main.content .result .slide {
       border: 2px solid #FFB400;
       color: black;
       margin-left: -60px;
       margin-right: -60px; }
-    /* line 2688, main.scss */
+    /* line 2689, main.scss */
     #vertical.premium .main.content .result .main-content {
       color: black;
       width: auto;
@@ -3877,14 +3878,14 @@ Vertical Landing
       box-sizing: border-box;
       max-width: 1000px;
       margin: 0 auto; }
-      /* line 2696, main.scss */
+      /* line 2697, main.scss */
       #vertical.premium .main.content .result .main-content > h2 {
         font: normal normal 100 15px/150% Titillium Web, sans-serif;
         font-size: 36px;
         line-height: 46px;
         margin: 0 0 80px 0;
         padding: 0; }
-      /* line 2704, main.scss */
+      /* line 2705, main.scss */
       #vertical.premium .main.content .result .main-content > h2 + p {
         font: normal normal 300 15px/150% Titillium Web, sans-serif;
         font-size: 36px;
@@ -3899,20 +3900,20 @@ Capabilities
 
 --------------------------------------------------
 */
-/* line 2723, main.scss */
+/* line 2724, main.scss */
 .page-header.capabilities {
   display: block;
   height: auto; }
-  /* line 2727, main.scss */
+  /* line 2728, main.scss */
   .page-header.capabilities .wrap {
     flex: none;
     padding: 200px 0;
     width: 100%; }
 
-/* line 2737, main.scss */
+/* line 2738, main.scss */
 #capabilities section {
   padding: 100px 0 140px; }
-  /* line 2740, main.scss */
+  /* line 2741, main.scss */
   #capabilities section h2 {
     font: normal normal 100 15px/150% Titillium Web, sans-serif;
     font-size: 64px;
@@ -3920,11 +3921,11 @@ Capabilities
     border-bottom: 2px solid white;
     margin-bottom: 50px;
     padding-bottom: 15px; }
-  /* line 2749, main.scss */
+  /* line 2750, main.scss */
   #capabilities section .row {
     display: flex;
     justify-content: space-between; }
-    /* line 2753, main.scss */
+    /* line 2754, main.scss */
     #capabilities section .row .col {
       width: 23.5%;
       box-sizing: border-box;
@@ -3935,40 +3936,40 @@ Capabilities
       line-height: 130%;
       display: flex;
       border: 1px solid white; }
-      /* line 2764, main.scss */
+      /* line 2765, main.scss */
       #capabilities section .row .col div {
         text-align: center;
         width: 100%;
         align-self: center; }
-    /* line 2770, main.scss */
+    /* line 2771, main.scss */
     #capabilities section .row + .row {
       margin-top: 25px; }
-  /* line 2775, main.scss */
+  /* line 2776, main.scss */
   #capabilities section.digital {
     background: #0094CB;
     color: white; }
-  /* line 2780, main.scss */
+  /* line 2781, main.scss */
   #capabilities section.traditional {
     background: #E8E8E8 url("../img/capabilities-bg.jpg") 50% 50% no-repeat;
     background-size: cover; }
-    /* line 2784, main.scss */
+    /* line 2785, main.scss */
     #capabilities section.traditional h2 {
       color: #0094CB;
       border-color: #0094CB; }
-    /* line 2789, main.scss */
+    /* line 2790, main.scss */
     #capabilities section.traditional .col {
       border-color: #0094CB;
       color: #0094cb;
       font: normal normal normal 15px/150% Titillium Web, sans-serif;
       font-size: 24px;
       line-height: 130%; }
-  /* line 2798, main.scss */
+  /* line 2799, main.scss */
   #capabilities section.training-events {
     background: #60CBF2; }
-    /* line 2801, main.scss */
+    /* line 2802, main.scss */
     #capabilities section.training-events h2 {
       color: white; }
-    /* line 2805, main.scss */
+    /* line 2806, main.scss */
     #capabilities section.training-events .col {
       width: 18.5%;
       color: white; }
@@ -3980,27 +3981,27 @@ Capabilities
 
 --------------------------------------------------
 */
-/* line 2822, main.scss */
+/* line 2823, main.scss */
 .missing-page {
   background: #ddd;
   padding: 400px 0;
   text-align: center; }
-  /* line 2827, main.scss */
+  /* line 2828, main.scss */
   .missing-page h1 {
     font: normal normal 300 15px/150% Titillium Web, sans-serif;
     font-size: 60px;
     color: #0094cb; }
-  /* line 2833, main.scss */
+  /* line 2834, main.scss */
   .missing-page hr {
     border: none;
     height: 2px;
     background: #ccc;
     margin: 40px 0; }
-  /* line 2840, main.scss */
+  /* line 2841, main.scss */
   .missing-page p {
     font-size: 22px;
     line-height: 150%; }
-  /* line 2845, main.scss */
+  /* line 2846, main.scss */
   .missing-page a {
     color: black; }
 
@@ -4011,84 +4012,84 @@ Case Study
 
 --------------------------------------------------
 */
-/* line 2858, main.scss */
+/* line 2859, main.scss */
 .page-header.case-study {
   color: white; }
-  /* line 2861, main.scss */
+  /* line 2862, main.scss */
   .page-header.case-study h1 {
     font: normal normal bold 15px/150% Titillium Web, sans-serif;
     font-size: 80px;
     line-height: 110%;
     color: white; }
-  /* line 2868, main.scss */
+  /* line 2869, main.scss */
   .page-header.case-study p {
     font-size: 34px; }
 
-/* line 2874, main.scss */
+/* line 2875, main.scss */
 #case-study .panel {
   padding: 170px 0; }
-  /* line 2877, main.scss */
+  /* line 2878, main.scss */
   #case-study .panel h2 {
     font: normal normal 100 15px/150% Titillium Web, sans-serif;
     color: #60CBF2;
     font-size: 56px;
     line-height: 110%; }
-  /* line 2884, main.scss */
+  /* line 2885, main.scss */
   #case-study .panel p {
     font: normal normal 100 15px/150% Titillium Web, sans-serif;
     font-size: 24px;
     line-height: 200%; }
-    /* line 2889, main.scss */
+    /* line 2890, main.scss */
     #case-study .panel p em, #case-study .panel p i {
       font: italic normal 100 15px/150% Titillium Web, sans-serif;
       font-size: 24px;
       line-height: 200%; }
-  /* line 2896, main.scss */
+  /* line 2897, main.scss */
   #case-study .panel .row {
     display: flex; }
-  /* line 2901, main.scss */
+  /* line 2902, main.scss */
   #case-study .panel .col.left {
     text-align: right;
     flex: 4;
     padding-right: 20px;
     padding-top: 18px; }
-  /* line 2908, main.scss */
+  /* line 2909, main.scss */
   #case-study .panel .col.right {
     flex: 6;
     padding-left: 20px; }
-  /* line 2914, main.scss */
+  /* line 2915, main.scss */
   #case-study .panel.the-finished-product {
     background: #e8e8e8; }
-  /* line 2918, main.scss */
+  /* line 2919, main.scss */
   #case-study .panel.the-strategy {
     padding: 0; }
-/* line 2923, main.scss */
+/* line 2924, main.scss */
 #case-study .the-strategy {
   background-size: cover;
   background-repeat: no-repeat; }
-  /* line 2927, main.scss */
+  /* line 2928, main.scss */
   #case-study .the-strategy .row {
     display: flex; }
-    /* line 2930, main.scss */
+    /* line 2931, main.scss */
     #case-study .the-strategy .row .col {
       flex: 1; }
-      /* line 2933, main.scss */
+      /* line 2934, main.scss */
       #case-study .the-strategy .row .col .content {
         max-width: 650px;
         color: black; }
-      /* line 2938, main.scss */
+      /* line 2939, main.scss */
       #case-study .the-strategy .row .col.left {
         position: relative;
         background-size: cover; }
-      /* line 2943, main.scss */
+      /* line 2944, main.scss */
       #case-study .the-strategy .row .col.right {
         background: #eee;
         text-align: left;
         padding: 120px 0px; }
-        /* line 2948, main.scss */
+        /* line 2949, main.scss */
         #case-study .the-strategy .row .col.right .content {
           padding: 0 20px 0 60px; }
-  /* line 2955, main.scss */
+  /* line 2956, main.scss */
   #case-study .the-strategy h2 {
     color: white;
     text-align: center;
@@ -4097,11 +4098,11 @@ Case Study
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 100%; }
-/* line 2965, main.scss */
+/* line 2966, main.scss */
 #case-study .talk-with-us {
   text-align: center;
   padding-bottom: 100px; }
-  /* line 2969, main.scss */
+  /* line 2970, main.scss */
   #case-study .talk-with-us a.button {
     display: inline-block;
     border-radius: 40px;
@@ -4114,11 +4115,11 @@ Case Study
     transition: all 0.3s;
     position: relative;
     overflow: hidden; }
-    /* line 2982, main.scss */
+    /* line 2983, main.scss */
     #case-study .talk-with-us a.button span {
       position: relative;
       z-index: 2; }
-    /* line 2987, main.scss */
+    /* line 2988, main.scss */
     #case-study .talk-with-us a.button:before {
       content: ' ';
       width: 200%;
@@ -4131,26 +4132,26 @@ Case Study
       transition: all 0.7s;
       -webkit-transform: skew(-45deg);
               transform: skew(-45deg); }
-    /* line 3000, main.scss */
+    /* line 3001, main.scss */
     #case-study .talk-with-us a.button:hover:before {
       left: -50%;
       top: 0px; }
-/* line 3007, main.scss */
+/* line 3008, main.scss */
 #case-study .the-gallery {
   text-align: center;
   display: flex; }
-  /* line 3010, main.scss */
+  /* line 3011, main.scss */
   #case-study .the-gallery .col {
     flex: 1; }
-    /* line 3013, main.scss */
+    /* line 3014, main.scss */
     #case-study .the-gallery .col img {
       max-width: 100%;
       height: auto; }
-/* line 3020, main.scss */
+/* line 3021, main.scss */
 #case-study .bottom-buttons {
   text-align: center;
   padding: 60px 0; }
-  /* line 3024, main.scss */
+  /* line 3025, main.scss */
   #case-study .bottom-buttons a.button {
     border-radius: 50px;
     background: #dfdfdf;
@@ -4165,10 +4166,10 @@ Case Study
     text-decoration: none;
     margin: 0 10px;
     transition: all 0.2s; }
-    /* line 3041, main.scss */
+    /* line 3042, main.scss */
     #case-study .bottom-buttons a.button:hover {
       opacity: 0.8; }
-    /* line 3045, main.scss */
+    /* line 3046, main.scss */
     #case-study .bottom-buttons a.button.contact {
       background: #ffd966;
       background: linear-gradient(to right, #D82B3A 0%, #B7222F 100%);
@@ -4182,39 +4183,39 @@ Responsive
 --------------------------------------------------
 */
 @media (max-height: 800px) {
-  /* line 3066, main.scss */
+  /* line 3067, main.scss */
   #hero-wrap {
     zoom: 80%; } }
 @media (max-width: 1300px) {
-  /* line 3072, main.scss */
+  /* line 3073, main.scss */
   .single-post {
     padding: 0 30px; } }
 @media (max-width: 1440px) {
-  /* line 3081, main.scss */
+  /* line 3082, main.scss */
   #vertical.premium .main.content .we-are h3 {
     font-size: 34px;
     line-height: 44px; }
 
-  /* line 3088, main.scss */
+  /* line 3089, main.scss */
   #vertical.premium .main.content .result .slide {
     margin: 0 30px; } }
 @media (max-width: 1080px) {
-  /* line 3095, main.scss */
+  /* line 3096, main.scss */
   #vertical .content.main .logos .row .col {
     flex: 0 1 31% !important;
     margin: 5% 1% !important;
     padding: 0 40px !important; } }
 @media (max-width: 1000px) {
-  /* line 3106, main.scss */
+  /* line 3107, main.scss */
   #vertical .content.main .case-studies {
     padding: 0; }
-    /* line 3109, main.scss */
+    /* line 3110, main.scss */
     #vertical .content.main .case-studies .outer {
       min-width: 0px;
       white-space: normal;
       max-width: 700px;
       margin: 0 auto; }
-      /* line 3115, main.scss */
+      /* line 3116, main.scss */
       #vertical .content.main .case-studies .outer .case-study {
         width: auto;
         height: 500px;
@@ -4225,179 +4226,179 @@ Responsive
                 transform: skew(0deg);
         -webkit-transform: skewY(2deg);
                 transform: skewY(2deg); }
-        /* line 3124, main.scss */
+        /* line 3125, main.scss */
         #vertical .content.main .case-studies .outer .case-study .img {
           position: relative; }
-        /* line 3128, main.scss */
+        /* line 3129, main.scss */
         #vertical .content.main .case-studies .outer .case-study .content {
           -webkit-transform: skew(0deg);
                   transform: skew(0deg);
           -webkit-transform: skewY(-2deg);
                   transform: skewY(-2deg); }
-  /* line 3137, main.scss */
+  /* line 3138, main.scss */
   #vertical .content.main .we-are .clearfix {
     padding: 0 !important; }
-  /* line 3141, main.scss */
+  /* line 3142, main.scss */
   #vertical .content.main .we-are .inner {
     margin: 0 auto !important; }
-    /* line 3144, main.scss */
+    /* line 3145, main.scss */
     #vertical .content.main .we-are .inner ul {
       padding: 0 60px !important; }
-  /* line 3150, main.scss */
+  /* line 3151, main.scss */
   #vertical .content.main .we-are .wrap .left, #vertical .content.main .we-are .wrap .right {
     width: auto;
     padding: 20px;
     text-align: center;
     margin: 0;
     float: none; }
-    /* line 3157, main.scss */
+    /* line 3158, main.scss */
     #vertical .content.main .we-are .wrap .left .inner, #vertical .content.main .we-are .wrap .right .inner {
       padding: 0; }
-      /* line 3160, main.scss */
+      /* line 3161, main.scss */
       #vertical .content.main .we-are .wrap .left .inner ul, #vertical .content.main .we-are .wrap .right .inner ul {
         padding: 0 !important; }
-    /* line 3165, main.scss */
+    /* line 3166, main.scss */
     #vertical .content.main .we-are .wrap .left:after, #vertical .content.main .we-are .wrap .right:after {
       display: none; }
-  /* line 3170, main.scss */
+  /* line 3171, main.scss */
   #vertical .content.main .we-are .wrap .right {
     margin-bottom: -102px;
     padding-bottom: 160px; }
-  /* line 3175, main.scss */
+  /* line 3176, main.scss */
   #vertical .content.main .we-are .wrap .left .inner, #vertical .content.main .we-are .wrap .right .inner, #vertical .content.main .we-are .wrap .left h2, #vertical .content.main .we-are .wrap .left li, #vertical .content.main .we-are .wrap .right h2, #vertical .content.main .we-are .wrap .right li {
     -webkit-transform: skew(0ddeg) !important;
     transform: skew(0deg) !important; }
 
-  /* line 3185, main.scss */
+  /* line 3186, main.scss */
   #vertical.premium .content.main .we-are {
     background-position: center right; }
-    /* line 3190, main.scss */
+    /* line 3191, main.scss */
     #vertical.premium .content.main .we-are .right {
       margin-bottom: 40px; }
-    /* line 3193, main.scss */
+    /* line 3194, main.scss */
     #vertical.premium .content.main .we-are .left, #vertical.premium .content.main .we-are .right {
       width: auto !important;
       float: none !important;
       margin-top: 40px; } }
 @media (max-width: 600px) {
-  /* line 3205, main.scss */
+  /* line 3206, main.scss */
   .single-post {
     padding: 0; }
 
-  /* line 3209, main.scss */
+  /* line 3210, main.scss */
   footer {
     padding: 40px 20px; }
-    /* line 3212, main.scss */
+    /* line 3213, main.scss */
     footer h2 {
       font-size: 36px; }
-    /* line 3216, main.scss */
+    /* line 3217, main.scss */
     footer .wrap {
       padding: 0; }
-    /* line 3220, main.scss */
+    /* line 3221, main.scss */
     footer .left, footer .right {
       width: auto;
       float: none; }
-    /* line 3225, main.scss */
+    /* line 3226, main.scss */
     footer .right {
       margin-top: 50px; }
-    /* line 3229, main.scss */
+    /* line 3230, main.scss */
     footer input[type="submit"] {
       float: none; }
-    /* line 3233, main.scss */
+    /* line 3234, main.scss */
     footer .logo, footer .addr {
       width: auto;
       float: none;
       margin: 0; }
-    /* line 3239, main.scss */
+    /* line 3240, main.scss */
     footer .addr {
       margin-top: 20px; }
-      /* line 3242, main.scss */
+      /* line 3243, main.scss */
       footer .addr br {
         display: none; }
-    /* line 3247, main.scss */
+    /* line 3248, main.scss */
     footer .copyright {
       text-align: left !important; }
-    /* line 3253, main.scss */
+    /* line 3254, main.scss */
     footer .more-labov li {
       display: block !important;
       margin: 0 0 20px 0; }
-    /* line 3258, main.scss */
+    /* line 3259, main.scss */
     footer .more-labov .social-icons {
       margin: 20px 0 0 !important;
       display: block !important; }
-      /* line 3262, main.scss */
+      /* line 3263, main.scss */
       footer .more-labov .social-icons a {
         margin: 0 10px 0 0 !important; }
 
-  /* line 3269, main.scss */
+  /* line 3270, main.scss */
   #hero-wrap {
     min-height: 150px;
     display: block;
     height: auto;
     position: relative; }
 
-  /* line 3276, main.scss */
+  /* line 3277, main.scss */
   #home-hero > div {
     display: block;
     padding: 20px; }
 
-  /* line 3281, main.scss */
+  /* line 3282, main.scss */
   #home-hero {
     display: block; }
-    /* line 3284, main.scss */
+    /* line 3285, main.scss */
     #home-hero .top {
       display: block; }
-      /* line 3288, main.scss */
+      /* line 3289, main.scss */
       #home-hero .top h2 {
         font-size: 24px;
         line-height: 110%;
         box-sizing: border-box; }
-        /* line 3293, main.scss */
+        /* line 3294, main.scss */
         #home-hero .top h2 .left, #home-hero .top h2 .right {
           display: none; }
-    /* line 3299, main.scss */
+    /* line 3300, main.scss */
     #home-hero .bottom {
       padding-top: 90px;
       padding-bottom: 0px; }
-      /* line 3303, main.scss */
+      /* line 3304, main.scss */
       #home-hero .bottom .intro {
         font-size: 30px; }
-        /* line 3306, main.scss */
+        /* line 3307, main.scss */
         #home-hero .bottom .intro i {
           font-size: 30px; }
-      /* line 3311, main.scss */
+      /* line 3312, main.scss */
       #home-hero .bottom a {
         box-sizing: border-box;
         margin: 30px 0;
         line-height: 120%; }
-    /* line 3314, main.scss */
+    /* line 3315, main.scss */
     #home-hero ul, #home-hero li {
       display: block;
       padding: 0; }
 
-  /* line 3321, main.scss */
+  /* line 3322, main.scss */
   p.copyright {
     text-align: center; }
 
-  /* line 3328, main.scss */
+  /* line 3329, main.scss */
   nav .content {
     padding: 80px 0; }
 
-  /* line 3333, main.scss */
+  /* line 3334, main.scss */
   nav > div {
     display: block;
     padding: 120px 20px 20px; }
-    /* line 3337, main.scss */
+    /* line 3338, main.scss */
     nav > div .left, nav > div .right {
       float: none !important;
       width: auto !important;
       margin: 0 !important;
       padding: 0 !important; }
-    /* line 3344, main.scss */
+    /* line 3345, main.scss */
     nav > div .right {
       margin-top: 0px !important;
       padding-top: 0px !important; }
-    /* line 3349, main.scss */
+    /* line 3350, main.scss */
     nav > div ul.main li a {
       font-size: 24px !important;
       line-height: 32px !important;
@@ -4405,50 +4406,50 @@ Responsive
       max-width: 75%;
       display: block; }
 
-  /* line 3358, main.scss */
+  /* line 3359, main.scss */
   #menu-toggle {
     top: 5px;
     right: 0px; }
 
-  /* line 3363, main.scss */
+  /* line 3364, main.scss */
   #logo {
     left: 20px;
     top: 20px; }
-    /* line 3367, main.scss */
+    /* line 3368, main.scss */
     #logo img {
       height: 30px;
       margin-top: -3px; }
 
-  /* line 3374, main.scss */
+  /* line 3375, main.scss */
   #nav-wrap .blue-bar {
     height: 70px; }
 
-  /* line 3379, main.scss */
+  /* line 3380, main.scss */
   .wrap {
     padding: 0 20px; }
 
-  /* line 3383, main.scss */
+  /* line 3384, main.scss */
   .page-header h1 {
     font-size: 80px;
     line-height: 100%; }
 
-  /* line 3387, main.scss */
+  /* line 3388, main.scss */
   .page-header h2 {
     font-size: 40px;
     line-height: 100%; }
 
-  /* line 3392, main.scss */
+  /* line 3393, main.scss */
   .page-header p {
     font-size: 20px; }
 
-  /* line 3397, main.scss */
+  /* line 3398, main.scss */
   .twelve-hours .left, .twelve-hours .right {
     width: auto;
     padding: 80px 0;
     box-sizing: border-box;
     height: auto;
     float: none; }
-  /* line 3407, main.scss */
+  /* line 3408, main.scss */
   .twelve-hours .right > div {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
@@ -4456,90 +4457,90 @@ Responsive
     padding-left: 20px;
     padding-right: 20px; }
 
-  /* line 3417, main.scss */
+  /* line 3418, main.scss */
   .leadership .row {
     display: block; }
-    /* line 3420, main.scss */
+    /* line 3421, main.scss */
     .leadership .row + .row {
       margin-top: 60px; }
-    /* line 3424, main.scss */
+    /* line 3425, main.scss */
     .leadership .row .col {
       width: auto; }
 
-  /* line 3432, main.scss */
+  /* line 3433, main.scss */
   #capabilities section {
     padding: 40px 0px; }
-    /* line 3435, main.scss */
+    /* line 3436, main.scss */
     #capabilities section .row {
       display: block; }
-      /* line 3438, main.scss */
+      /* line 3439, main.scss */
       #capabilities section .row .col {
         width: auto;
         padding: 20px;
         margin-bottom: 20px; }
 
-  /* line 3448, main.scss */
+  /* line 3449, main.scss */
   .news-header {
     height: auto;
     padding: 200px 0 0 0; }
-    /* line 3452, main.scss */
+    /* line 3453, main.scss */
     .news-header h1 {
       font-size: 40px;
       position: static;
       -webkit-transform: translateY(0%);
               transform: translateY(0%); }
 
-  /* line 3460, main.scss */
+  /* line 3461, main.scss */
   #posts .row {
     display: block; }
-    /* line 3463, main.scss */
+    /* line 3464, main.scss */
     #posts .row + .row {
       margin-top: 0px; }
-  /* line 3468, main.scss */
+  /* line 3469, main.scss */
   #posts .col {
     width: auto;
     margin: 0 0 20px 0; }
 
-  /* line 3476, main.scss */
+  /* line 3477, main.scss */
   #vertical .header .wrap {
     height: 350px; }
-  /* line 3480, main.scss */
+  /* line 3481, main.scss */
   #vertical .header h1 {
     font-size: 48px;
     line-height: 55px; }
-  /* line 3485, main.scss */
+  /* line 3486, main.scss */
   #vertical .header h3 {
     font-size: 36px;
     line-height: 42px;
     max-width: 60%; }
 
-  /* line 3492, main.scss */
+  /* line 3493, main.scss */
   #vertical .content.main {
     margin-top: 350px; }
-    /* line 3496, main.scss */
+    /* line 3497, main.scss */
     #vertical .content.main .logos .row .col {
       flex: 0 1 42% !important;
       margin: 5% 3% !important;
       padding: 0 20px !important; }
-    /* line 3502, main.scss */
+    /* line 3503, main.scss */
     #vertical .content.main .intro {
       padding: 0px; }
-      /* line 3505, main.scss */
+      /* line 3506, main.scss */
       #vertical .content.main .intro .wrap {
         padding-top: 20px;
         padding-bottom: 0px; }
-        /* line 3509, main.scss */
+        /* line 3510, main.scss */
         #vertical .content.main .intro .wrap img.arrow {
           display: none; }
-    /* line 3516, main.scss */
+    /* line 3517, main.scss */
     #vertical .content.main .result .slide {
       background-size: cover;
       padding-bottom: 60px; }
-      /* line 3520, main.scss */
+      /* line 3521, main.scss */
       #vertical .content.main .result .slide .main-content {
         width: auto;
         float: none; }
-      /* line 3525, main.scss */
+      /* line 3526, main.scss */
       #vertical .content.main .result .slide .overlay {
         position: relative;
         right: auto;
@@ -4547,70 +4548,70 @@ Responsive
         bottom: auto;
         height: auto;
         padding: 60px 20px; }
-        /* line 3533, main.scss */
+        /* line 3534, main.scss */
         #vertical .content.main .result .slide .overlay:before {
           -webkit-transform: skew(0deg);
                   transform: skew(0deg); }
-    /* line 3540, main.scss */
+    /* line 3541, main.scss */
     #vertical .content.main .we-are {
       padding-top: 0px; }
-    /* line 3544, main.scss */
+    /* line 3545, main.scss */
     #vertical .content.main .logos {
       padding: 30px 0; }
-      /* line 3547, main.scss */
+      /* line 3548, main.scss */
       #vertical .content.main .logos h2 {
         font-size: 48px;
         line-height: 52px;
         margin-bottom: 20px; }
-    /* line 3554, main.scss */
+    /* line 3555, main.scss */
     #vertical .content.main .result {
       padding-bottom: 0px; }
-      /* line 3557, main.scss */
+      /* line 3558, main.scss */
       #vertical .content.main .result .wrap {
         padding: 0px; }
-      /* line 3561, main.scss */
+      /* line 3562, main.scss */
       #vertical .content.main .result .slide {
         background-position: 50% 50%;
         padding-bottom: 0px; }
-      /* line 3566, main.scss */
+      /* line 3567, main.scss */
       #vertical .content.main .result .slide .main-content {
         padding: 20px; }
-      /* line 3570, main.scss */
+      /* line 3571, main.scss */
       #vertical .content.main .result .slide .main-content > h2 + p,
       #vertical .content.main .result .slide .overlay p + p {
         font-size: 48px;
         line-height: 52px; }
-    /* line 3577, main.scss */
+    /* line 3578, main.scss */
     #vertical .content.main .cta {
       padding: 30px 10px; }
-      /* line 3580, main.scss */
+      /* line 3581, main.scss */
       #vertical .content.main .cta p, #vertical .content.main .cta p.smaller {
         font-size: 36px;
         line-height: 40px; }
-    /* line 3587, main.scss */
+    /* line 3588, main.scss */
     #vertical .content.main .case-studies .case-study .content h3 {
       font-size: 48px;
       line-height: 52px; }
-    /* line 3593, main.scss */
+    /* line 3594, main.scss */
     #vertical .content.main .case-studies .outer .case-study .content {
       padding: 40px 20px; }
-      /* line 3595, main.scss */
+      /* line 3596, main.scss */
       #vertical .content.main .case-studies .outer .case-study .content .top {
         min-height: 150px; }
-    /* line 3602, main.scss */
+    /* line 3603, main.scss */
     #vertical .content.main .segments {
       padding: 20px 0px; }
-      /* line 3606, main.scss */
+      /* line 3607, main.scss */
       #vertical .content.main .segments .row {
         display: block; }
-      /* line 3610, main.scss */
+      /* line 3611, main.scss */
       #vertical .content.main .segments .col {
         display: block;
         width: auto !important; }
-        /* line 3614, main.scss */
+        /* line 3615, main.scss */
         #vertical .content.main .segments .col > div {
           text-align: left; }
-        /* line 3618, main.scss */
+        /* line 3619, main.scss */
         #vertical .content.main .segments .col p.skew-me {
           -webkit-transform: skew(0deg);
                   transform: skew(0deg);
@@ -4620,7 +4621,7 @@ Responsive
           display: inline-block;
           font-size: 30px;
           line-height: 35px; }
-          /* line 3627, main.scss */
+          /* line 3628, main.scss */
           #vertical .content.main .segments .col p.skew-me span {
             -webkit-transform: skew(0deg);
                     transform: skew(0deg);
@@ -4629,175 +4630,175 @@ Responsive
             line-height: 110%;
             display: block;
             max-width: 85%; }
-        /* line 3637, main.scss */
+        /* line 3638, main.scss */
         #vertical .content.main .segments .col ul {
           padding: 0; }
-          /* line 3640, main.scss */
+          /* line 3641, main.scss */
           #vertical .content.main .segments .col ul li {
             font-style: normal; }
-    /* line 3649, main.scss */
+    /* line 3650, main.scss */
     #vertical .content.main .article .clearfix {
       display: block; }
-    /* line 3653, main.scss */
+    /* line 3654, main.scss */
     #vertical .content.main .article .left .inner {
       text-align: left; }
-    /* line 3657, main.scss */
+    /* line 3658, main.scss */
     #vertical .content.main .article .left, #vertical .content.main .article .right {
       padding: 20px;
       box-sizing: border-box;
       width: auto; }
-      /* line 3662, main.scss */
+      /* line 3663, main.scss */
       #vertical .content.main .article .left .inner, #vertical .content.main .article .right .inner {
         max-width: 700px;
         float: none; }
 
-  /* line 3674, main.scss */
+  /* line 3675, main.scss */
   #vertical.manufacturing .header h1 {
     font-size: 32px;
     line-height: 40px; }
-  /* line 3678, main.scss */
+  /* line 3679, main.scss */
   #vertical.manufacturing .header h3 {
     font-size: 26px;
     line-height: 30px;
     margin-top: 10px; }
 
-  /* line 3690, main.scss */
+  /* line 3691, main.scss */
   #vertical.manufacturing .content.main .we-are .right {
     top: 0px !important; }
-  /* line 3691, main.scss */
+  /* line 3692, main.scss */
   #vertical.manufacturing .content.main .we-are .talk-with-us {
     margin-bottom: 20px !important; }
-  /* line 3693, main.scss */
+  /* line 3694, main.scss */
   #vertical.manufacturing .content.main .result {
     padding: 0; }
-    /* line 3696, main.scss */
+    /* line 3697, main.scss */
     #vertical.manufacturing .content.main .result .slide {
       height: auto; }
-      /* line 3699, main.scss */
+      /* line 3700, main.scss */
       #vertical.manufacturing .content.main .result .slide img {
         left: -20px;
         top: 320px; }
-      /* line 3701, main.scss */
+      /* line 3702, main.scss */
       #vertical.manufacturing .content.main .result .slide .main-content {
         padding-bottom: 260px; }
-  /* line 3707, main.scss */
+  /* line 3708, main.scss */
   #vertical.manufacturing .content.main .segments {
     padding: 20px 0px; }
-  /* line 3711, main.scss */
+  /* line 3712, main.scss */
   #vertical.manufacturing .content.main .result .overlay {
     min-height: 10px; }
-    /* line 3714, main.scss */
+    /* line 3715, main.scss */
     #vertical.manufacturing .content.main .result .overlay p {
       font-size: 40px;
       line-height: 50px; }
-  /* line 3720, main.scss */
+  /* line 3721, main.scss */
   #vertical.manufacturing .content.main .cta p.big {
     font-size: 48px;
     line-height: 52px; }
-  /* line 3725, main.scss */
+  /* line 3726, main.scss */
   #vertical.manufacturing .content.main .article {
     padding: 0; }
-  /* line 3729, main.scss */
+  /* line 3730, main.scss */
   #vertical.manufacturing .content.main .article .left, #vertical.manufacturing .content.main .article .right {
     padding: 20px; }
-  /* line 3733, main.scss */
+  /* line 3734, main.scss */
   #vertical.manufacturing .content.main .article .left h2 {
     font-size: 48px;
     line-height: 52px; }
 
-  /* line 3739, main.scss */
+  /* line 3740, main.scss */
   #vertical.premium .header {
     height: 350px; }
 
-  /* line 3743, main.scss */
+  /* line 3744, main.scss */
   #vertical.premium .content.main {
     margin-top: 350px; }
-    /* line 3747, main.scss */
+    /* line 3748, main.scss */
     #vertical.premium .content.main .intro h1 {
       font-size: 50px;
       line-height: 60px;
       margin-bottom: 20px; }
-    /* line 3754, main.scss */
+    /* line 3755, main.scss */
     #vertical.premium .content.main .we-are .wrap {
       margin: 20px; }
-      /* line 3757, main.scss */
+      /* line 3758, main.scss */
       #vertical.premium .content.main .we-are .wrap .inner {
         padding: 0px; }
-    /* line 3762, main.scss */
+    /* line 3763, main.scss */
     #vertical.premium .content.main .we-are .inner ul {
       padding: 0 !important; }
-    /* line 3772, main.scss */
+    /* line 3773, main.scss */
     #vertical.premium .content.main .result {
       margin: 0;
       padding: 0; }
-      /* line 3776, main.scss */
+      /* line 3777, main.scss */
       #vertical.premium .content.main .result .slide {
         margin: 0; }
-    /* line 3781, main.scss */
+    /* line 3782, main.scss */
     #vertical.premium .content.main .result .slide .main-content > h2 + p {
       font-size: 36px !important;
       line-height: 42px !important; }
-    /* line 3786, main.scss */
+    /* line 3787, main.scss */
     #vertical.premium .content.main .segments {
       padding: 0px; }
-      /* line 3789, main.scss */
+      /* line 3790, main.scss */
       #vertical.premium .content.main .segments .wrap {
         padding: 20px 50px; }
-      /* line 3793, main.scss */
+      /* line 3794, main.scss */
       #vertical.premium .content.main .segments .wrap p {
         font-size: 36px !important;
         line-height: 42px !important; }
-    /* line 3799, main.scss */
+    /* line 3800, main.scss */
     #vertical.premium .content.main .segments .row {
       padding: 60px 30px !important;
       margin: 0 -30px; }
-    /* line 3804, main.scss */
+    /* line 3805, main.scss */
     #vertical.premium .content.main .cta p {
       font-size: 36px !important; }
-    /* line 3808, main.scss */
+    /* line 3809, main.scss */
     #vertical.premium .content.main .article .left h2 {
       font-size: 48px; }
-    /* line 3812, main.scss */
+    /* line 3813, main.scss */
     #vertical.premium .content.main .article .right .inner {
       max-width: 100%; }
 
-  /* line 3818, main.scss */
+  /* line 3819, main.scss */
   #case-study .panel h2 {
     text-align: left;
     padding: 0 10px; }
-  /* line 3823, main.scss */
+  /* line 3824, main.scss */
   #case-study .row, #case-study .col {
     display: block !important;
     width: auto !important; }
-  /* line 3828, main.scss */
+  /* line 3829, main.scss */
   #case-study .the-strategy .row .col.left {
     min-height: 300px; }
-    /* line 3831, main.scss */
+    /* line 3832, main.scss */
     #case-study .the-strategy .row .col.left h2 {
       text-align: center;
       padding: 0; }
-  /* line 3837, main.scss */
+  /* line 3838, main.scss */
   #case-study .the-strategy .row .col.right {
     padding: 0 20px;
     margin: 0; }
-    /* line 3841, main.scss */
+    /* line 3842, main.scss */
     #case-study .the-strategy .row .col.right .content {
       padding: 20px; }
-  /* line 3846, main.scss */
+  /* line 3847, main.scss */
   #case-study .panel.the-finished-product, #case-study .panel.the-result, #case-study .panel.the-situation {
     padding: 40px 0px; }
-  /* line 3850, main.scss */
+  /* line 3851, main.scss */
   #case-study .the-gallery {
     display: block; }
-  /* line 3854, main.scss */
+  /* line 3855, main.scss */
   #case-study .bottom-buttons br {
     display: none; }
-  /* line 3855, main.scss */
+  /* line 3856, main.scss */
   #case-study .bottom-buttons a {
     display: block;
     margin: 10px 0 !important; }
 
-  /* line 3859, main.scss */
+  /* line 3860, main.scss */
   #post .left, #post .right {
     float: none;
     width: auto;

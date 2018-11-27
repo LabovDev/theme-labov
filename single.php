@@ -43,6 +43,7 @@
 
         </div>
         <!-- // End Post Content  -->
+        <?php the_tags( $before, $sep, $after ); ?>
 
       	<?php endwhile; ?>
         </div>
