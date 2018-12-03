@@ -1,9 +1,11 @@
 @import 'normalize.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
 @import 'titillium.scss';
-@import 'hamburgers/hamburgers.scss';
 @import 'typography.scss';
 @import 'colorbox.scss';
-@import 'mixins.scss';
+@import 'hamburgers/hamburgers.scss';
+
 
 /*
 --------------------------------------------------
@@ -20,27 +22,6 @@ Table of Contents:
 --------------------------------------------------
 */
 
-// Colors
-$lightBlue: #60CBF2;
-$medBlue: #0094cb;
-$menuBG: rgba(0,148,203,0.98);
-$heroBG: rgba(0,148,203, 1);
-$navBG: rgba(0,148,203, 1);
-$lightGray: #f1f1f1;
-
-// Fonts
-$tt-thin:  normal normal 100 15px/150% Titillium Web, sans-serif;
-$tt-thin-italic:  italic normal 100 15px/150% Titillium Web, sans-serif;
-$tt-light:  normal normal 300 15px/150% Titillium Web, sans-serif;
-$tt-light-italic:  italic normal 300 15px/150% Titillium Web, sans-serif;
-$tt: normal normal normal 15px/150% Titillium Web, sans-serif;
-$tt-italic: italic normal normal 15px/150% Titillium Web, sans-serif;
-$tt-semibold:  normal normal 600 15px/150% Titillium Web, sans-serif;
-$tt-semibold-italic:  normal normal 600 15px/150% Titillium Web, sans-serif;
-$tt-bold: normal normal bold 15px/150% Titillium Web, sans-serif;
-$tt-bold-italic: italic normal bold 15px/150% Titillium Web, sans-serif;
-$tt-black:  normal normal 900 15px/150% Titillium Web, sans-serif;
-$tt-black-italic:  italic normal 900 15px/150% Titillium Web, sans-serif;
 
 /*
 --------------------------------------------------
@@ -556,15 +537,15 @@ footer {
 }
 
 .page-header {
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     flex-direction: row;
-    height:100%;
-    text-align:center;
-
+    height: calc(100% - 70px);
+    text-align: center;
     display: -webkit-flex;
-    display:flex;
+    display: flex;
     align-items: center;
+    padding-top: 70px;
 
     .wrap {
         //flex:1;
@@ -572,49 +553,42 @@ footer {
 
     h1 {
         color: $medBlue;
-        font-size:220px;
-        line-height:200px;
-        margin-bottom:60px;
+        font-size: 18vw;
+        line-height: 1;
+        margin-bottom: 24px;
     }
 
     h2 {
-        font:$tt-semibold;
-        font-size:64px;
-        line-height:70px;
+        font: $tt-semibold;
+        font-size: 5vw;
+        line-height: 1;
     }
 
     p {
-        font-size:30px;
-        line-height:150%;
+        font-size: 24px;
+        line-height: 1.5;
+        margin: 48px auto 0 auto;
+        max-width: 800px;
     }
 
     & > div {
         flex:1;
         display:flex;
     }
+}
 
-    .scroll-arrow {
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-
-        img {
-            position:absolute;
-            width:48px;
-            height:auto;
-            left:50%;
-            margin-left:-24px;
-            bottom:50px;
-            transition:all 0.5s;
-            cursor:pointer;
-            fill:$medBlue;
-        }
-
-        img:hover {
-            bottom:42px;
-        }
-    }
+.scroll-arrow {
+  width: 100%;
+  img {
+    width: 48px;
+    height: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    fill: $medBlue;
+  }
+  img:hover {
+    bottom:42px;
+  }
 }
 
 .hamburger {
@@ -865,7 +839,7 @@ Homepage
         space-around,
         flex-start,
         flex-start
-      )
+      );
     }
 
     ul, li {
@@ -877,6 +851,9 @@ Homepage
     li { flex-basis: 30%; }
 }
 
+//* Buttons
+//*===========================================
+
 .btn {
   background-color: #EAAA00;
   background-image: linear-gradient(120deg, #FFC80A 0%, #FF9D00 75%);
@@ -884,9 +861,10 @@ Homepage
   line-height: 1;
   color: #fff;
   display: block;
-  padding: 20px 8px;
+  padding: 14px 8px;
   margin: 0;
   min-width: 100px;
+  text-align: center;
   text-decoration:none;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
   border-radius: 3px; 
@@ -894,7 +872,18 @@ Homepage
   transition:all 0.3s;
   &:hover {
     background-color: #EAAA00;
-    box-shadow: 0 2px 14px 0 rgba(255,214,10,0.40); 
+    box-shadow: 0 2px 14px 0 rgba(255,214,10,0.40);
+  }
+}
+
+.btn--about {
+  margin-top: 16px;
+  width: 0;
+}
+
+.btn--nps {
+  margin: 0 auto 3em auto;
+  padding: 14px;
 }
 
 #home-verticals {
@@ -907,31 +896,22 @@ Homepage
   width:100%;
   height:100%;
   flex-direction: column;
-
   .overlay {
     position:absolute;
     right:0;
-
     background: #60cbf2; /* Old browsers */
     background: -moz-linear-gradient(45deg, #60cbf2 0%, #99e7fa 80%); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, #60cbf2 0%,#99e7fa 80%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, #60cbf2 0%,#99e7fa 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60cbf2', endColorstr='#99e7fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
     height:100%;
     width:80%;
     max-width:1200px;
-
     -webkit-flex:1;
     flex:1;
-
     -webkit-clip-path: polygon(0% 100%, 20% 86%, 20% 20%, 0% 0%, 100% 0%, 100% 100%);
     clip-path: polygon(0% 100%, 20% 80%, 20% 20%, 0% 0%, 100% 0%, 100% 100%);
-
     text-align:center;
-
-
-    }
   }
 }
 
@@ -943,79 +923,186 @@ About
 --------------------------------------------------
 */
 
-.twelve-hours {
+.bloc {
+  @include flx-p(
+    row,
+    wrap,
+    flex-start,
+    flex-start,
+    flex-start
+  );
+  padding: 0;
+  margin: 0 auto;
+  max-width: 950px;
+  width: 100%;
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
 
-    & > div {
+.nps, .twelve-hour {
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:730px) {
+    @include flx-p(
+      row,
+      wrap,
+      flex-start,
+      stretch,
+      flex-start
+    );
+  }
+}
 
+.bloc--half {
+  width: 100%;
+  @include trans(all,0.3s,ease);
+  @media all and (min-width:730px) {
+    @include flx-p(
+      row,
+      wrap,
+      flex-start,
+      center,
+      center
+    );
+    width: 50%;
+  }
+}
+
+.bloc--third {
+  margin: 0 auto;
+  width: 100%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: calc(33.333333% - 3em);
+    padding: 0 1.5em;
+    &:first-child { 
+      order: 4;
+      width: 100%;
     }
+  }
+}
 
-    .left, .right {
-        width:50%;
-        padding:160px 0;
-        box-sizing:border-box;
-        height:824px;
+.bloc--qrtr {
+  margin: 0 auto;
+  width: 100%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: 50%;
+    &:first-child { 
+      order: 4;
+      width: 100%;
     }
+  }
+  @media all and (min-width:760px) {
+    width: 25%;
+  }
+}
 
-    .left {
-        float:left;
-        background-image:
-          radial-gradient(
-            #fff,
-            #DFDFDF
-          );
-        text-align:center;
+.bloc--space {
+  padding: 1.5em;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    padding: 3.5em;
+  }
+}
+
+.bloc__col {
+  @include flx-p(
+    row,
+    nowrap,
+    space-between,
+    flex-start,
+    flex-start
+  );
+  padding: 1.5em;
+  width: calc(100% - 3em);
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    padding: 3.5em;
+    width: calc(100% - 7em);
+  }
+  @media all and (min-width:1000px) {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+}
+
+.bloc--txt {
+  padding: 2em;
+  h2 {
+    color: #fff;
+    font-size: 12vw;
+    line-height: .85;
+    margin-bottom: 24px;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) {
+      font-size: 4.5vw;
     }
-
-    .right {
-        float:right;
-        background:url('../img/12-bg.jpg') 50% 50% no-repeat;
-        background-size:cover;
-        color:white;
-        position:relative;
-
-        & > div {
-          position:absolute;
-          width:100%;
-          top:50%;
-          transform:translateY(-50%);
-          box-sizing:border-box;
-          padding-left:95px;
-          padding-right:95px;
-        }
-
-        h2 {
-            font-size:54px;
-            line-height:60px;
-            margin-bottom:50px;
-        }
-
-        p {
-            font-size:24px;
-            line-height:150%;
-            max-width:800px;
-
-        }
-
-        a.btn {
-            border:1px solid white;
-            display:inline-block;
-            border-radius: 50px;
-            height:50px;
-            line-height:50px;
-            padding:0 50px;
-            color:white;
-            text-decoration:none;
-            letter-spacing:1px;
-            font-size:18px;
-            transition:all 0.25s;
-            margin-top:30px;
-
-            &:hover {
-              background:white;
-              color:$lightBlue;
-            }
-        }
+  }
+  p {
+    color: #fff;
+    font-size:18px;
+    line-height: 1.3;
+    max-width: 800px;
+    margin: 0;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) {
+      font-size: 2vw;
+      line-height: 1.2;
     }
+  }
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:730px) {
+    width: calc(50% - 4em);
+  }
+}
+
+.bloc--gbHead { 
+  padding: 1.5em 1.5em 0 1.5em;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: calc(50% - 3em);
+    margin: 0;
+  }
+}
+
+.bloc--gbTxt {
+  padding: 0 1.5em 1.5em 1.5em;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: calc(50% - 3em);
+    margin: 0;
+  }
+}
+
+.bloc--graphs {
+  margin: 0 auto;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    margin: 1.5em auto;
+  }
+}
+
+.nps {
+  .bloc--txt {
+    background: url('../img/about_bkgrnd_nps.jpg') 50% 50%/cover no-repeat;
+  }
+}
+
+.twelve-hour {
+  .bloc--txt {
+    background: url('../img/about_bkgrnd_12h.jpg') 50% 50%/cover no-repeat;
+    order: 1;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) { order: 2; }
+  }
+  .bloc--img {
+    order: 2;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) { order: 1; }
+  }
 }
 
 .leadership {
@@ -1261,20 +1348,96 @@ About
 }
 
 .lightbox-close {
-    max-width:40px;
-    height:auto;
-    cursor:pointer;
-    position:absolute;
-    top:20px;
-    right:20px;
-    z-index:10;
+    max-width: 40px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
 }
+
+//* NPS Page 
+//* ===========================================
+
+.pageHero {
+  @include flx-p(
+    column,
+    wrap,
+    center,
+    center,
+    center
+  );
+  padding: 70px 1em 1em 1em;
+  text-align: center;
+}
+
+.npsHero__img {
+  margin: 0 auto;
+  width: 90%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: 76%;
+  }
+  @media all and (min-width:760px) {
+    width: 60%;
+  }
+  @media all and (min-width:1000px) {
+    width: 50%;
+  }
+}
+
+.pageHero--nps {
+  background: url('../../assets/img/nps_backgrnd.jpg') top left/cover no-repeat;
+}
+
+.nps__intro {
+  flex-basis: 60%;
+  padding: 0 1.5em 0 0;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    flex-basis: 90%;
+  }
+}
+
+.nps__scores {
+  background: url(../img/score_line.png) 13px 0 repeat-y;
+  flex-basis: auto;
+  margin: 24vw 0 0 0;
+  padding: 0 0 0 1em;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    margin: 170px 0 0 0;
+  }
+}
+
+.npsHero__img {}
+
+.graphImg { 
+  margin: 0 auto 2.5em auto; 
+  max-width: 200px;
+
+}
+
+.nps__quote { 
+  background-color: #e8e8e8;
+  width: calc(100% - 3em);
+  margin: 2em auto;
+  max-width: 100%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    padding: 2em 3em;
+    width: calc(100% - 6em);
+  }
+  @media all and (min-width:760px) {
+    padding: 5em 3em;
+  }
+}
+
 
 /*
 --------------------------------------------------
-
 News Landing
-
 --------------------------------------------------
 */
 
@@ -3314,16 +3477,18 @@ Responsive
   }
 
   .page-header h1 {
-    font-size:80px;
-    line-height:100%;
+    font-size: 26vw;
+    line-height: .7;
+    margin-bottom: .3em;
   }
   .page-header h2 {
-    font-size:40px;
-    line-height:100%;
+    font-size: 9vw;
+    line-height: 1;
   }
 
   .page-header p {
-    font-size:20px;
+    font-size: 4.5vw;
+    margin: 24px 0 0 0;
   }
 
   .twelve-hours {

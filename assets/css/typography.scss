@@ -19,3 +19,174 @@ h4 {
 h5 {
     font-size:20px;
 }
+
+//* Headlines
+//*===========================================
+
+.hdln {
+	font: $tt-thin;
+	line-height: 1;
+}
+
+.hdln--hero {
+	color: #f4f4f4;
+	font-size: 9vw;
+	text-align: center;
+	margin: 1em auto;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:1000px) {
+		font-size: 80px;
+	}
+}
+
+.hdln--h1 {
+	color: $lightBlue;
+	font-size: 11vw;
+	line-height: .9;
+	margin-bottom: 16px;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:760px) {
+		font-size: 9vw;
+	}
+	@media all and (min-width:1000px) {
+		font-size: 70px;
+		max-width: 400px;
+	}
+}
+
+//* Text
+//*===========================================
+
+.txt {
+	color: #222;
+	font: $tt;
+}
+
+.txt--body {
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:760px) {
+		font-size: 17px;
+		line-height: 1.6;
+	}
+}
+
+.txt--hero {
+	color: #f4f4f4;
+	font-size: 6vw;
+	text-align: center;
+	margin: 1em auto 2em auto;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:600px) {
+		font-size: 5vw;
+	}
+	@media all and (min-width:760px) {
+		font-size: 3.5vw;
+	}
+	@media all and (min-width:1000px) {
+		font-size: 30px;
+	}
+}
+
+.txt--intro {
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:600px) {
+		font-size: 18px;
+		line-height: 1.6;
+	}
+	@media all and (min-width:760px) {
+		font-size: 20px;
+		line-height: 1.8;
+	}
+}
+
+.txt--quote {
+	font-style: italic;
+	font-size: 17px;
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 0;
+	text-align: center;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:760px) {
+		font-size: 20px;
+		max-width: 800px;
+	}
+}
+
+.txt--quotee {
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	font-size: 13px;
+	text-align: center;
+	width: 100%;
+}
+
+.txt--graphLbl {
+	font: $tt-semibold;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto .5em auto;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:600px) {
+		font-size: 80%;
+		line-height: 1; 
+	}
+}
+
+//* Lists
+//*===========================================
+
+.nps__scores ul { 
+	list-style: none;
+	padding: 1em 1em .5em 0;
+	margin: 0;
+	width: calc(100% - 1em);
+	&:first-child {
+		background: linear-gradient(
+			rgba(255,255,255,1.0), 
+			rgba(255,255,255,0.0) 20%);
+	}
+	&:last-child {
+		background: linear-gradient(
+			rgba(255,255,255,0.0) 20%, 
+			rgba(255,255,255,1.0));
+	}
+	ul { padding: .25em 0 0 0; }
+}
+
+.score__bull {
+	background: url('../img/arrow_marker.png') 0 6px/32px no-repeat;
+	padding-left: 22px;
+	overflow: auto;
+	display: block;
+}
+
+.score__bull--Lbv {
+	background: url('../img/arrow_marker_labov.png') 0 6px/32px no-repeat;
+}
+
+.score--marker {
+	background-color: #d8d8d8;
+	border-radius: 3px;
+	color: #fff;
+	display: block;
+	padding: 2px 8px;
+}
+
+.score--markerAlt {
+	background-color: $medBlue;
+	border-radius: 3px;
+	color: #fff;
+	display: block;
+	padding: 2px 8px;
+}
+
+.score--item {
+	color: $lightBlue;
+	padding-left: 8px;
+}
+
+//* NPS Quotes
+//*===========================================
+
