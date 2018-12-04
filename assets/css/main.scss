@@ -1375,6 +1375,7 @@ About
 .npsHero__img {
   margin: 0 auto;
   width: 90%;
+  max-width: 550px;
   @include trans(all, 0.3s, ease);
   @media all and (min-width:600px) {
     width: 76%;
