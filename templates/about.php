@@ -15,7 +15,7 @@
   <div class="bloc--half bloc--txt">
     <h2>The new headline for NPS</h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus sapien, aliquam eget odio et, vestibulum hendrerit turpis. In sit amet porta turpis, quis varius metus. Sed ac suscipit neque, sit amet tincidunt dolor.</p>
-    <a href="#" class="btn btn--about">READ MORE</a>
+    <a href="<?php bloginfo('url'); ?>/?page_id=489" class="btn btn--about">READ MORE</a>
   </div>
   <div class="bloc--half bloc--img">
     <img src="<?php echo get_template_directory_uri() ?>/assets/img/abt_nps.jpg" alt="LaBov Net Promotor Score" width="350">

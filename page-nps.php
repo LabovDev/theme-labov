@@ -19,7 +19,7 @@ get_header() ?>
 			<div class="bloc bloc--half bloc--space nps__intro">
 				<h1 class="hdln hdln--h1">Measuring Loyalty</h2>
 				<p class="txt txt--intro">Net Promoter Score (NPS) is a measurement of customer loyalty and a predictor of business growth. Ranging from -100 to 100, NPS measures customer willingness to recommend a company&rsquo;s products or services.</p>
-				<p class="txt txt--intro">How does LABOV&rsquo;s 73 NPS compare to other companies? Brands including Microsoft and Honda score between 0 and 49. Walt Disney and Tiffany &amp; Co. fall between 50 and 70. Starbucks and Bose have achieved a 70+ NPS.</p>
+				<p class="txt txt--intro">How does LABOV&rsquo;s 73 NPS compare to other companies? Brands including Microsoft&reg; and Honda&reg;  score between 0 and 49. Walt Disney&reg; and Tiffany &amp; Co.&reg; fall between 50 and 70. Starbucks&reg; and Bose&reg; have achieved a 70+ NPS.</p>
 			</div>
 
 			<div class="bloc bloc--half bloc--space nps__scores">
@@ -66,10 +66,10 @@ get_header() ?>
 	</section> <!-- END Survey Comment -->
 
 	<section class="bloc">
-		<div class="bloc bloc--half bloc--space bloc--gbHead">
+		<div class="bloc bloc--35 bloc--space bloc--gbHead">
 			<h1 class="hdln hdln--h1">Going Beyond</h1>
 		</div>
-		<div class="bloc--half bloc--space bloc--gbTxt">
+		<div class="bloc--65 bloc--space bloc--gbTxt">
 			<p class="txt txt--body">Always focused on going beyond for our clients, we achieved a nearly 60% increase in NPS between 2017 and 2018. We accomplished this by concentrating on three key areas identified in our 2017 survey as opportunities to enhance our service and creativity.</p>
 			<p class="txt txt--body">By focusing on these areas, we not only achieved a significant increase in our NPS, we elevated our clients&lsquo; experience and positively impacted their businesses.</p>
 		</div>
@@ -79,7 +79,7 @@ get_header() ?>
 			</div>
 			<div class="bloc--third">
 				<p class="txt txt--graphLbl">Service beyond expected</p>
-				<img class="graphImg" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-labov/assets/img/gb_chart_01.gif" alt="Score improved from 4.17 in 2017 to 4.50 in 2018.1.">
+				<img class="graphImg" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-labov/assets/img/gb_chart_01.gif" alt="Score improved from 4.17 in 2017 to 4.50 in 2018.">
 			</div>
 			<div class="bloc--third">
 				<p class="txt txt--graphLbl">Product Quality</p>
@@ -90,7 +90,13 @@ get_header() ?>
 				<img class="graphImg" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-labov/assets/img/gb_chart_03.gif" alt="Score improved from 4.03 in 2017 to 4.32 in 2018.">
 			</div>
 		</div>
-		<a href="###" class="btn btn--nps">Learn More About Us</a>
+		<div class="bloc bloc--space">
+			<h2 class="hdln hdln--h2">Learn more about how we work with companies in these sectors</h2>
+			<a href="<?php bloginfo('url'); ?>/automotive-powersports-rv" class="btn btn--nps">Automotive, Powersports &amp; RV</a>
+			<a href="<?php bloginfo('url'); ?>/manufacturing-b2b-industrial" class="btn btn--nps">Manufacturing, B2B &amp; Industrial</a>
+			<a href="<?php bloginfo('url'); ?>/premium-brands-services" class="btn btn--nps">Premium Brands &amp; Services</a>
+		</div>
+		
 	</section> <!-- END Going Beyond -->
 
 	<section class="bloc bloc--space nps__quote">
@@ -133,8 +139,11 @@ get_header() ?>
 		<p class="txt txt--quotee">&mdash;Client Survey Comment</p>
 	</section> <!-- END Survey Comment -->
 
-	<section class="bloc">
-		<a href="###" class="btn btn--nps">Learn More About Us</a>
+	<section class="bloc bloc--space">
+		<h2 class="hdln hdln--h2">Learn more about how we work with companies in these sectors</h2>
+		<a href="<?php bloginfo('url'); ?>/automotive-powersports-rv" class="btn btn--nps">Automotive, Powersports &amp; RV</a>
+		<a href="<?php bloginfo('url'); ?>/manufacturing-b2b-industrial" class="btn btn--nps">Manufacturing, B2B &amp; Industrial</a>
+		<a href="<?php bloginfo('url'); ?>/premium-brands-services" class="btn btn--nps">Premium Brands &amp; Services</a>
 	</section> <!-- END CTA Button -->
 
     <?php endwhile; ?>

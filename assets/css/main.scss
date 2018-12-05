@@ -259,6 +259,8 @@ footer {
   background:#000 url('../img/footer-bg-2.jpg') 50% 50%;
   background-size:cover;
   color:#b5b5b5;
+  position: relative;
+  z-index: 3;
 }
 
 .footerSite {
@@ -341,6 +343,7 @@ footer {
       flex-direction: row; 
       margin-top: 60px; 
     }
+    .bloc { width: 50%; }
   }
 
   .footerSite__legal {
@@ -363,14 +366,13 @@ footer {
   }
 
   address {
-    font-size:16px;
-    line-height:18px;
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 18px;
   }
   .map-marker {
     float:left;
-    img {
-      margin-right:22px;
-    }
   }
 
   .underline {
@@ -552,10 +554,14 @@ footer {
     }
 
     h1 {
-        color: $medBlue;
-        font-size: 18vw;
-        line-height: 1;
-        margin-bottom: 24px;
+      color: $medBlue;
+      font-size: 18vw;
+      line-height: 1;
+      margin-bottom: 24px;
+      @include trans(all, 0.3s, ease);
+      @media all and (min-width:1080px) {
+        font-size: 200px;
+      }
     }
 
     h2 {
@@ -882,8 +888,16 @@ Homepage
 }
 
 .btn--nps {
-  margin: 0 auto 3em auto;
+  font-size: 94%;
+  margin: 0 auto 1em auto;
   padding: 14px;
+  width: calc(100% - 3em);
+  max-width: 300px;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:875px) {
+    margin: 0 auto;
+    flex-basis: 25%;
+  }
 }
 
 #home-verticals {
@@ -933,7 +947,6 @@ About
   );
   padding: 0;
   margin: 0 auto;
-  max-width: 950px;
   width: 100%;
   img {
     display: block;
@@ -1002,9 +1015,11 @@ About
 
 .bloc--space {
   padding: 1.5em;
+  width: calc(100% - 3em);
   @include trans(all, 0.3s, ease);
   @media all and (min-width:760px) {
     padding: 3.5em;
+    width: calc(100% - 7em);
   }
 }
 
@@ -1074,6 +1089,24 @@ About
   @media all and (min-width:600px) {
     width: calc(50% - 3em);
     margin: 0;
+  }
+}
+
+.bloc--35 {
+  margin: 0 auto;
+  width: 100%;
+   @media all and (min-width:600px) {
+    width: calc(35% - 3em);
+    padding: 0 1.5em;
+  }
+}
+
+.bloc--65 {
+  margin: 0 auto;
+  width: 100%;
+   @media all and (min-width:600px) {
+    width: calc(65% - 3em);
+    padding: 0 1.5em;
   }
 }
 
@@ -1360,6 +1393,10 @@ About
 //* NPS Page 
 //* ===========================================
 
+body.page-template-page-nps {
+  .bloc { max-width: 950px; }
+}
+
 .pageHero {
   @include flx-p(
     column,
@@ -1388,7 +1425,25 @@ About
   }
 }
 
+@keyframes grow {
+  0% { 
+    transform: scale(1.2);
+  }
+  100% { 
+    transform: scale(1.0);
+  }
+}
+
 .pageHero--nps {
+    animation: 
+    grow,
+    2s,
+    ease-out,
+    0s,
+    normal,
+    1,
+    none,
+    running;
   background: url('../../assets/img/nps_backgrnd.jpg') top left/cover no-repeat;
 }
 
@@ -2072,29 +2127,33 @@ Vertical Landing
     }
 
     img {
-      max-width:100%;
-      height:auto;
+      max-width: 130px;
+      height: auto;
+      width: 100%;
     }
 
     .row {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap:wrap;
-      justify-content:left;
+      @include flx-p(
+        row,
+        wrap,
+        flex-start,
+        flex-start,
+        flex-start
+      );
 
       & + .row {
         margin-top:60px;
       }
 
       .col {
-          align-self:center;
-          flex:0 1 21%;
-          margin:5% 2%;
-          text-align:center;
-          box-sizing:border-box;
-          padding:0 60px;
-        }
+        align-self: center;
+        flex-basis: 30%;
+        margin: 5% auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0;
       }
+    }
   }
 
   .cta {
