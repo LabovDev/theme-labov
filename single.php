@@ -43,6 +43,17 @@
 
         </div> <!-- // End Post Content  -->
 
+        <div class="postCTAs">
+          <div class="postCTAs__links">
+            <a href="#" class="btn btn--cta">talk with us</a>
+            <a href="#" class="btn btn--cta"></a>
+          </div>
+          <div class="postCTAs__tags">
+            <h6 class="hdln">More articles about:</h6>
+            <?php the_tags( $before, $sep, $after ); ?>
+          </div>
+        </div>
+
       	<?php endwhile; ?>
         </div>
       <?php endif; ?>
