@@ -268,7 +268,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding:90px 20px 50px 20px;
+  padding:90px 0 50px 0;
   margin: 0 auto;
   max-width: 1280px;
   position:relative;
@@ -343,7 +343,20 @@ footer {
       flex-direction: row; 
       margin-top: 60px; 
     }
-    .bloc { width: 50%; }
+    .bloc { 
+      @include flx-p(
+        column,
+        nowrap,
+        flex-start,
+        flex-start,
+        flex-start
+      );
+      width: 100%; 
+      @include trans(all, 0.3s, ease);
+      @media all and (min-width:1040px) {
+        width: 50%;
+      }
+    }
   }
 
   .footerSite__legal {
@@ -1399,52 +1412,103 @@ body.page-template-page-nps {
 
 .pageHero {
   @include flx-p(
-    column,
+    row,
     wrap,
+    flex-start,
     center,
-    center,
-    center
+    flex-start
   );
   padding: 70px 1em 1em 1em;
   text-align: center;
 }
 
-.npsHero__img {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 550px;
-  @include trans(all, 0.3s, ease);
-  @media all and (min-width:600px) {
-    width: 76%;
+@keyframes shrink {
+  0% { 
+    transform: scale(1.2);
+    opacity: 0;
   }
-  @media all and (min-width:760px) {
-    width: 60%;
-  }
-  @media all and (min-width:1000px) {
-    width: 50%;
+  100% { 
+    transform: scale(1.0);
+    opacity: 1;
   }
 }
 
 @keyframes grow {
   0% { 
-    transform: scale(1.2);
+    transform: scale(.8);
+    opacity: 0;
   }
   100% { 
     transform: scale(1.0);
+    opacity: 1;
   }
 }
 
-.pageHero--nps {
-    animation: 
-    grow,
-    2s,
-    ease-out,
-    0s,
-    normal,
-    1,
-    none,
+.npsHero { 
+  background-color: #000;
+  height: 76vh;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+.npsHero__bckgrnd {
+  animation: 
+    shrink
+    2s
+    ease-out
+    0s
+    normal
+    1
+    none
     running;
-  background: url('../../assets/img/nps_backgrnd.jpg') top left/cover no-repeat;
+  background: #000 url('../../assets/img/nps_backgrnd.jpg') no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  height: 76vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.npsHero__cntnt {
+  animation: 
+   grow
+    1s
+    ease-out
+    0s
+    normal
+    1
+    none
+    running;
+  height: calc(76vh - 70px);
+  padding-top: 70px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  @include flx-p(
+    column,
+    nowrap,
+    space-evenly,
+    center,
+    space-evenly
+  );
+}
+
+.npsHero__img {
+  margin: 0 auto;
+  width: 76%;
+  max-width: 550px;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: 66%;
+  }
+  @media all and (min-width:760px) {
+    width: 56%;
+  }
+  @media all and (min-width:1000px) {
+    width: 46%;
+  }
 }
 
 .nps__intro {
@@ -1457,7 +1521,7 @@ body.page-template-page-nps {
 }
 
 .nps__scores {
-  background: url(../img/score_line.png) 13px 0 repeat-y;
+  background: url('../img/score_line.png') 13px 0 repeat-y;
   flex-basis: auto;
   margin: 24vw 0 0 0;
   padding: 0 0 0 1em;
@@ -1466,8 +1530,6 @@ body.page-template-page-nps {
     margin: 170px 0 0 0;
   }
 }
-
-.npsHero__img {}
 
 .graphImg { 
   margin: 0 auto 2.5em auto; 

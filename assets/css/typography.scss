@@ -32,7 +32,7 @@ h5 {
 	color: #f4f4f4;
 	font-size: 9vw;
 	text-align: center;
-	margin: 1em auto;
+	margin: 2% auto .5em auto;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:1000px) {
 		font-size: 80px;
@@ -79,7 +79,7 @@ h5 {
 
 .txt--hero {
 	color: #f4f4f4;
-	font-size: 6vw;
+	font-size: 5vw;
 	text-align: center;
 	margin: 1em auto 2em auto;
 	@include trans(all, 0.3s, ease);

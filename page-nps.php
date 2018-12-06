@@ -8,11 +8,13 @@ get_header() ?>
   <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <div class="pageHero pageHero--nps">
-        <h1 class="hdln hdln--hero" >Net Promoter Score: 73</h1>
-        <img class="npsHero__img" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-labov/assets/img/nps_hero_dial.png" alt="Net Promotor Score Dial">
-      	<p class="txt txt--hero">In other words: Our clients speak, we listen.</p>
-      </div>
+    <div class="pageHero npsHero">
+  		<div class="npsHero__bckgrnd"></div>
+  		<div class="npsHero__cntnt">
+  			<h1 class="hdln hdln--hero" >Net Promoter Score: 73</h1>
+      	<img class="npsHero__img" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-labov/assets/img/nps_hero_dial.png" alt="Net Promotor Score Dial">
+    		<p class="txt txt--hero">In other words: Our clients speak, we listen.</p>
+  		</div>
 		</div>
 
 		<section class="bloc bloc__col">
