@@ -41,9 +41,7 @@
 
           <?php the_content() ?>
 
-        </div>
-        <!-- // End Post Content  -->
-        <?php the_tags( $before, $sep, $after ); ?>
+        </div> <!-- // End Post Content  -->
 
       	<?php endwhile; ?>
         </div>
