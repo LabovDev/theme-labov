@@ -19,3 +19,32 @@ h4 {
 h5 {
     font-size:20px;
 }
+
+//* HEADLINES
+//*===========================================
+
+.hdln { 
+	font-family: 'Titillium Web', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.hdln--h1 {}
+
+.hdln--h2 {}
+
+.hdln--h3 {}
+
+.hdln--h4 {}
+
+.hdln--h5 {}
+
+.hdln--h6 {
+	color: #999;
+	font-size: 150%;
+	font-weight: 100;
+	margin: 1em 0 .25em 0;
+}
+
+//* TEXT
+//*===========================================

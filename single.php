@@ -46,11 +46,11 @@
         <div class="postCTAs">
           <div class="postCTAs__links">
             <a href="#" class="btn btn--cta">talk with us</a>
-            <a href="#" class="btn btn--cta"></a>
+            <a href="#" class="btn btn--cta btn--ctaAlt">More on Automotive, Powersports &amp; RV</a>
           </div>
           <div class="postCTAs__tags">
-            <h6 class="hdln">More articles about:</h6>
-            <?php the_tags( $before, $sep, $after ); ?>
+            <h6 class="hdln hdln--h6">More articles about:</h6>
+            <?php the_tags( $before = '', $sep, $after ); ?>
           </div>
         </div>
 
