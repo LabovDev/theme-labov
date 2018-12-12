@@ -14,7 +14,7 @@
 <div class="bloc nps clearfix">
   <div class="bloc--half bloc--txt">
     <h2>Our clients speak, we listen</h2>
-    <p>We believe the best way to continually go beyond for our clients is to regularly seek out their feedback. Every year, LABOV surveys clients on the level of service they’ve received from our team. We identify the needs most important to them, determine at what level we’re meeting those needs and determine the areas where we can make an even greater impact.</p>
+    <p>We believe the best way to continually go beyond for our clients is to regularly seek out their feedback. Every year, LABOV surveys clients on the level of service they’ve received from our team. We identify the needs most important to them, determine at what level we’re meeting those needs and discover the areas where we can make an even greater impact.</p>
     <a href="<?php bloginfo('url'); ?>/?page_id=489" class="btn btn--about">READ MORE</a>
   </div>
   <div class="bloc--half bloc--img">
