@@ -3,65 +3,9 @@
   <div class="footerSite">
     <div class="footerSite__left">
       <h2>Talk With Us</h2>
-      <?php
-        $spam = false;
-        $errors = array();
-        $sent = false;
+      
+      <?php echo do_shortcode( '[contact-form-7 id="492" title="Footer Contact Form"]' ); ?>
 
-        if (isset($_POST['address'])) {
-        if ($_POST['address'] != '') { // "address" is our honeypot field
-          $spam = true;
-        }
-
-        if (!$spam) {
-          $to = 'blabov@labov.com';
-          $to = 'tmekianov@labov.com';
-          $subject = 'New LABOV.com Contact';
-          $msg = 'Name: ' . $_POST['full_name'];
-          $msg = 'Email: ' . $_POST['email_address'];
-          $msg = 'Phone Number: ' . $_POST['phone_number'];
-          $msg = 'Message: ' . "\r\n" . $_POST['message'];
-          $headers = 'From: LABOV <no-reply@labov.com>' . "\r\n" . 'Reply-To: ' . $email;
-          if($_POST['full_name'] == '') {
-            $errors[] = 'Please enter your name';
-          }
-          if($_POST['email_address'] == '') {
-            $errors[] = 'Please enter a valid email address';
-          }
-        }
-
-        if (count($errors) == 0) {
-          if(!$spam) {
-            mail($to, $subject, $msg, $headers);
-          }
-          $sent = true; // set to sent even if it was spam, so they think it went through
-          $_POST = array();
-          }
-        }
-      ?>
-        
-      <?php if (count($errors) > 0): ?>
-        <div class="form-errors">
-          <?php foreach ($errors as $key => $value): ?>
-          <p><?=$value?></p>
-          <?php endforeach; ?>
-        </div>
-        <?php endif; ?>
-        <?php if ($sent == true): ?>
-        <div class="form-sent">
-          Thank you for contacting us!
-        </div>
-        <?php endif; ?>
-
-      <form id="contact-form" method="post" action="./#contact-form">
-        <input type="text" name="address" value="" placeholder="Address" id="address">
-        <div class="underline"><input type="text" name="full_name" value="<?php echo htmlspecialchars($_POST['full_name']) ?>" placeholder="Name"></div>
-        <div class="underline"><input type="text" name="email_address" value="<?php echo htmlspecialchars($_POST['email_address']) ?>" placeholder="Email"></div>
-        <div class="underline"><input type="text" name="phone_number" value="<?php echo htmlspecialchars($_POST['phone_number']) ?>" placeholder="Phone"></div>
-        <div class="underline"><textarea name="message" placeholder="Message"><?php echo htmlspecialchars($_POST['message']) ?></textarea></div>
-        <div class="g-recaptcha" data-sitekey="6LdavB0UAAAAAPtS6r2hIuXcuYVu1uPK2EQgYjnv"></div>
-        <input class="btn" type="submit" name="dosubmit" value="Send">
-      </form>
     </div> <!-- END footerSite__left -->
 
     <div class="footerSite__right">
