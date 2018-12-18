@@ -8,7 +8,6 @@
     <title><?php wp_title() ?></title>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/themes/theme-labov/assets/css/main.css">
 
     <!--[if lt IE 9]>
