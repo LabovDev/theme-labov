@@ -4,7 +4,7 @@
     <div class="footerSite__left">
       <h2>Talk With Us</h2>
       
-      <?php echo do_shortcode( '[contact-form-7 id="492" title="Footer Contact Form"]' ); ?>
+      <?php echo do_shortcode( '[contact-form-7 id="534" title="Footer Contact Form"]' ); ?>
 
     </div> <!-- END footerSite__left -->
 
