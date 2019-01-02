@@ -43,7 +43,23 @@
 
         </div>
         <!-- // End Post Content  -->
-        <?php the_tags( $before, $sep, $after ); ?>
+        
+        <div class="postCTA">
+          <a href="#mainFtr" class="btn">Talk With Us</a>
+
+          <?php
+            // vars
+            $field = get_field_object('vert_link');
+            $value = $field['value'];
+            $label = $field['choices'][ $value ];
+          ?>
+          <a href="<?php echo $value; ?>" class="btn btn--alt" data-attr="<?php echo $label; ?>"><?php echo $label; ?></a>
+
+        </div> <!-- END .postCTA -->
+        
+        <div class="postTags">
+          <?php the_tags( '<h6 class="hdln hdln--tag">More articles about:</h6>', $sep, $after ); ?>
+        </div> <!-- END .postTags -->
 
       	<?php endwhile; ?>
         </div>
