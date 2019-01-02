@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer>
+<footer id="mainFtr">
   <div class="footerSite">
     <div class="footerSite__left">
       <h2>Talk With Us</h2>
@@ -62,6 +62,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.colorbox-min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/scrollreveal.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/main.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/smooth-scroll.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

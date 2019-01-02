@@ -1478,7 +1478,7 @@ News Landing
   .left {
     float:left;
     width:75%;
-    padding:0 75px 190px 0;
+    padding:0 75px 100px 0;
     box-sizing:border-box;
   }
 
@@ -1609,6 +1609,60 @@ News Landing
   line-height:100%;
   margin-bottom:40px;
   color:$medBlue;
+}
+
+//* POST LINKS & TAGS
+//*===========================================
+
+.postCTA {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 2em 0;
+  margin-top: 5em;
+  .btn {
+    background-image: linear-gradient(120deg, #60CBF2 0%, #0094CB 75%);
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 1em;
+    padding: 12px;
+    text-align: center;
+    width: 130px;
+    &:hover {
+      box-shadow: 0 2px 14px 0 #60CBF2;
+    }
+  }
+  .btn--alt {
+    background-image: none;
+    background-color: #fff;
+    color: #52B5DA;
+    border: 2px solid #60CBF2;
+    text-shadow: none;
+    &:hover {
+      box-shadow: 0 2px 14px 0 #91E2FF;
+    }
+  }
+  a[data-attr="None"],
+  a[data-attr=""] {
+    display: none !important;
+  }
+}
+
+.postTags {
+  a {
+    font-size: 18px;
+    margin-right: 1.5em;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.hdln--tag {
+  color: #919191;
+  font: $tt-thin;
+  font-size: 28px;
+  line-height: 1;
+  padding: 0;
+  margin: 1em 0 .5em 0;
 }
 
 /*
