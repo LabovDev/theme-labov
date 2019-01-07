@@ -3322,7 +3322,8 @@ Responsive
     //position:absolute;
 
     .content {
-        padding:80px 0;
+      padding:80px 0;
+      width: calc(100% - 40px);
     }
   }
 

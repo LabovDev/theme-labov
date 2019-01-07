@@ -4546,150 +4546,151 @@ Responsive
     text-align: center; }
   /* line 3324, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   nav .content {
-    padding: 80px 0; }
-  /* line 3329, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    padding: 80px 0;
+    width: calc(100% - 40px); }
+  /* line 3330, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   nav > div {
     display: block;
     padding: 120px 20px 20px; }
-    /* line 3333, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3334, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     nav > div .left, nav > div .right {
       float: none !important;
       width: auto !important;
       margin: 0 !important;
       padding: 0 !important; }
-    /* line 3340, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3341, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     nav > div .right {
       margin-top: 0px !important;
       padding-top: 0px !important; }
-    /* line 3345, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3346, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     nav > div ul.main li a {
       font-size: 24px !important;
       line-height: 32px !important;
       padding: 15px 0 !important;
       max-width: 75%;
       display: block; }
-  /* line 3354, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3355, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #menu-toggle {
     top: 5px;
     right: 0px; }
-  /* line 3359, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3360, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #logo {
     left: 20px;
     top: 20px; }
-    /* line 3363, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3364, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #logo img {
       height: 30px;
       margin-top: -3px; }
-  /* line 3370, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3371, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #nav-wrap .blue-bar {
     height: 70px; }
-  /* line 3375, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3376, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .wrap {
     padding: 0 20px; }
-  /* line 3379, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3380, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .page-header h1 {
     font-size: 80px;
     line-height: 100%; }
-  /* line 3383, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3384, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .page-header h2 {
     font-size: 40px;
     line-height: 100%; }
-  /* line 3388, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3389, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .page-header p {
     font-size: 20px; }
-  /* line 3393, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3394, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .twelve-hours .left, .twelve-hours .right {
     width: auto;
     padding: 80px 0;
     box-sizing: border-box;
     height: auto;
     float: none; }
-  /* line 3403, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3404, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .twelve-hours .right > div {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     position: static;
     padding-left: 20px;
     padding-right: 20px; }
-  /* line 3413, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3414, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .leadership .row {
     display: block; }
-    /* line 3416, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3417, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     .leadership .row + .row {
       margin-top: 60px; }
-    /* line 3420, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3421, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     .leadership .row .col {
       width: auto; }
-  /* line 3428, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3429, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #capabilities section {
     padding: 40px 0px; }
-    /* line 3431, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3432, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #capabilities section .row {
       display: block; }
-      /* line 3434, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3435, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #capabilities section .row .col {
         width: auto;
         padding: 20px;
         margin-bottom: 20px; }
-  /* line 3444, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3445, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .news-header {
     height: auto;
     padding: 200px 0 0 0; }
-    /* line 3448, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3449, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     .news-header h1 {
       font-size: 40px;
       position: static;
       -webkit-transform: translateY(0%);
               transform: translateY(0%); }
-  /* line 3456, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3457, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #posts .row {
     display: block; }
-    /* line 3459, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3460, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #posts .row + .row {
       margin-top: 0px; }
-  /* line 3464, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3465, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #posts .col {
     width: auto;
     margin: 0 0 20px 0; }
-  /* line 3472, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3473, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .header .wrap {
     height: 350px; }
-  /* line 3476, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3477, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .header h1 {
     font-size: 48px;
     line-height: 55px; }
-  /* line 3481, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3482, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .header h3 {
     font-size: 36px;
     line-height: 42px;
     max-width: 60%; }
-  /* line 3488, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3489, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main {
     margin-top: 350px; }
-    /* line 3492, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3493, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .logos .row .col {
       flex: 0 1 42% !important;
       margin: 5% 3% !important;
       padding: 0 20px !important; }
-    /* line 3498, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3499, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .intro {
       padding: 0px; }
-      /* line 3501, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3502, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .intro .wrap {
         padding-top: 20px;
         padding-bottom: 0px; }
-        /* line 3505, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+        /* line 3506, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
         #vertical .content.main .intro .wrap img.arrow {
           display: none; }
-    /* line 3512, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3513, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .result .slide {
       background-size: cover;
       padding-bottom: 60px; }
-      /* line 3516, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3517, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .result .slide .main-content {
         width: auto;
         float: none; }
-      /* line 3521, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3522, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .result .slide .overlay {
         position: relative;
         right: auto;
@@ -4697,70 +4698,70 @@ Responsive
         bottom: auto;
         height: auto;
         padding: 60px 20px; }
-        /* line 3529, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+        /* line 3530, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
         #vertical .content.main .result .slide .overlay:before {
           -webkit-transform: skew(0deg);
                   transform: skew(0deg); }
-    /* line 3536, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3537, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .we-are {
       padding-top: 0px; }
-    /* line 3540, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3541, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .logos {
       padding: 30px 0; }
-      /* line 3543, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3544, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .logos h2 {
         font-size: 48px;
         line-height: 52px;
         margin-bottom: 20px; }
-    /* line 3550, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3551, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .result {
       padding-bottom: 0px; }
-      /* line 3553, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3554, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .result .wrap {
         padding: 0px; }
-      /* line 3557, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3558, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .result .slide {
         background-position: 50% 50%;
         padding-bottom: 0px; }
-      /* line 3562, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3563, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .result .slide .main-content {
         padding: 20px; }
-      /* line 3566, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3567, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .result .slide .main-content > h2 + p,
       #vertical .content.main .result .slide .overlay p + p {
         font-size: 48px;
         line-height: 52px; }
-    /* line 3573, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3574, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .cta {
       padding: 30px 10px; }
-      /* line 3576, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3577, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .cta p, #vertical .content.main .cta p.smaller {
         font-size: 36px;
         line-height: 40px; }
-    /* line 3583, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3584, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .case-studies .case-study .content h3 {
       font-size: 48px;
       line-height: 52px; }
-    /* line 3589, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3590, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .case-studies .outer .case-study .content {
       padding: 40px 20px; }
-      /* line 3591, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3592, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .case-studies .outer .case-study .content .top {
         min-height: 150px; }
-    /* line 3598, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3599, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .segments {
       padding: 20px 0px; }
-      /* line 3602, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3603, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .segments .row {
         display: block; }
-      /* line 3606, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3607, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .segments .col {
         display: block;
         width: auto !important; }
-        /* line 3610, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+        /* line 3611, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
         #vertical .content.main .segments .col > div {
           text-align: left; }
-        /* line 3614, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+        /* line 3615, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
         #vertical .content.main .segments .col p.skew-me {
           -webkit-transform: skew(0deg);
                   transform: skew(0deg);
@@ -4770,7 +4771,7 @@ Responsive
           display: inline-block;
           font-size: 30px;
           line-height: 35px; }
-          /* line 3623, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+          /* line 3624, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
           #vertical .content.main .segments .col p.skew-me span {
             -webkit-transform: skew(0deg);
                     transform: skew(0deg);
@@ -4779,191 +4780,191 @@ Responsive
             line-height: 110%;
             display: block;
             max-width: 85%; }
-        /* line 3633, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+        /* line 3634, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
         #vertical .content.main .segments .col ul {
           padding: 0; }
-          /* line 3636, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+          /* line 3637, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
           #vertical .content.main .segments .col ul li {
             font-style: normal; }
-    /* line 3645, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3646, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .article .clearfix {
       display: block; }
-    /* line 3649, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3650, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .article .left .inner {
       text-align: left; }
-    /* line 3653, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3654, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .article .left, #vertical .content.main .article .right {
       padding: 20px;
       box-sizing: border-box;
       width: auto; }
-      /* line 3658, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3659, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .article .left .inner, #vertical .content.main .article .right .inner {
         max-width: 700px;
         float: none; }
-  /* line 3670, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3671, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .header h1 {
     font-size: 32px;
     line-height: 40px; }
-  /* line 3674, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3675, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .header h3 {
     font-size: 26px;
     line-height: 30px;
     margin-top: 10px; }
-  /* line 3686, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3687, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .we-are .right {
     top: 0px !important; }
-  /* line 3687, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3688, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .we-are .talk-with-us {
     margin-bottom: 20px !important; }
-  /* line 3689, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3690, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .result {
     padding: 0; }
-    /* line 3692, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3693, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.manufacturing .content.main .result .slide {
       height: auto; }
-      /* line 3695, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3696, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical.manufacturing .content.main .result .slide img {
         left: -20px;
         top: 320px; }
-      /* line 3697, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3698, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical.manufacturing .content.main .result .slide .main-content {
         padding-bottom: 260px; }
-  /* line 3703, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3704, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .segments {
     padding: 20px 0px; }
-  /* line 3707, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3708, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .result .overlay {
     min-height: 10px; }
-    /* line 3710, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3711, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.manufacturing .content.main .result .overlay p {
       font-size: 40px;
       line-height: 50px; }
-  /* line 3716, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3717, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .cta p.big {
     font-size: 48px;
     line-height: 52px; }
-  /* line 3721, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3722, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .article {
     padding: 0; }
-  /* line 3725, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3726, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .article .left, #vertical.manufacturing .content.main .article .right {
     padding: 20px; }
-  /* line 3729, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3730, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.manufacturing .content.main .article .left h2 {
     font-size: 48px;
     line-height: 52px; }
-  /* line 3735, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3736, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.premium .header {
     height: 350px; }
-  /* line 3739, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3740, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.premium .content.main {
     margin-top: 350px; }
-    /* line 3743, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3744, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .intro h1 {
       font-size: 50px;
       line-height: 60px;
       margin-bottom: 20px; }
-    /* line 3750, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3751, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .we-are .wrap {
       margin: 20px; }
-      /* line 3753, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3754, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical.premium .content.main .we-are .wrap .inner {
         padding: 0px; }
-    /* line 3758, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3759, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .we-are .inner ul {
       padding: 0 !important; }
-    /* line 3768, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3769, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .result {
       margin: 0;
       padding: 0; }
-      /* line 3772, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3773, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical.premium .content.main .result .slide {
         margin: 0; }
-    /* line 3777, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3778, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .result .slide .main-content > h2 + p {
       font-size: 36px !important;
       line-height: 42px !important; }
-    /* line 3782, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3783, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .segments {
       padding: 0px; }
-      /* line 3785, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3786, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical.premium .content.main .segments .wrap {
         padding: 20px 50px; }
-      /* line 3789, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3790, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical.premium .content.main .segments .wrap p {
         font-size: 36px !important;
         line-height: 42px !important; }
-    /* line 3795, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3796, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .segments .row {
       padding: 60px 30px !important;
       margin: 0 -30px; }
-    /* line 3800, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3801, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .cta p {
       font-size: 36px !important; }
-    /* line 3804, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3805, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .article .left h2 {
       font-size: 48px; }
-    /* line 3808, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3809, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .article .right .inner {
       max-width: 100%; }
-  /* line 3814, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3815, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .panel h2 {
     text-align: left;
     padding: 0 10px; }
-  /* line 3819, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3820, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .row, #case-study .col {
     display: block !important;
     width: auto !important; }
-  /* line 3824, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3825, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .the-strategy .row .col.left {
     min-height: 300px; }
-    /* line 3827, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3828, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #case-study .the-strategy .row .col.left h2 {
       text-align: center;
       padding: 0; }
-  /* line 3833, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3834, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .the-strategy .row .col.right {
     padding: 0 20px;
     margin: 0; }
-    /* line 3837, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3838, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #case-study .the-strategy .row .col.right .content {
       padding: 20px; }
-  /* line 3842, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3843, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .panel.the-finished-product, #case-study .panel.the-result, #case-study .panel.the-situation {
     padding: 40px 0px; }
-  /* line 3846, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3847, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .the-gallery {
     display: block; }
-  /* line 3850, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3851, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .bottom-buttons br {
     display: none; }
-  /* line 3851, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3852, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #case-study .bottom-buttons a {
     display: block;
     margin: 10px 0 !important; }
-  /* line 3855, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3856, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #post .left, #post .right {
     float: none;
     width: auto;
     padding: 0; } }
 
 @media all and (max-width: 400px) {
-  /* line 3865, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3866, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #home-hero .bottom a {
     font-size: 14px; } }
 
 @media (max-width: 800px) {
-  /* line 3870, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3871, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #home-hero .top h2 {
     height: 170px;
     top: 40px; }
-  /* line 3874, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3875, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #home-hero .bottom {
     top: -40px; }
-    /* line 3876, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3877, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #home-hero .bottom .intro {
       font-size: 5vw; }
-  /* line 3883, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3884, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #home-hero ul {
     top: 40px;
     display: flex;
@@ -4972,39 +4973,39 @@ Responsive
     justify-content: flex-start;
     align-items: center;
     align-content: flex-start; }
-  /* line 3893, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3894, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #home-hero li {
     width: 45%;
     margin-bottom: 18px; }
-    /* line 3896, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3897, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #home-hero li a {
       box-sizing: border-box;
       display: block;
       font-size: 2.25vw; }
-  /* line 3904, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3905, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .single-post .content p,
   .single-post .content p:first-of-type {
     font-size: 18px; } }
 
 @media all and (max-width: 980px) {
-  /* line 3917, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3918, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #home-hero .top h2 {
     font-size: 5vw; } }
 
 @media (max-width: 1000px) {
-  /* line 3924, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3925, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #home-hero a {
     font-size: 1.76vw; }
-  /* line 3929, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3930, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main .case-studies {
     padding: 0; }
-    /* line 3932, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3933, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .case-studies .outer {
       min-width: 0px;
       white-space: normal;
       max-width: 700px;
       margin: 0 auto; }
-      /* line 3938, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3939, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .case-studies .outer .case-study {
         width: auto;
         height: 500px;
@@ -5015,78 +5016,78 @@ Responsive
                 transform: skew(0deg);
         -webkit-transform: skewY(2deg);
                 transform: skewY(2deg); }
-        /* line 3947, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+        /* line 3948, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
         #vertical .content.main .case-studies .outer .case-study .img {
           position: relative; }
-        /* line 3951, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+        /* line 3952, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
         #vertical .content.main .case-studies .outer .case-study .content {
           -webkit-transform: skew(0deg);
                   transform: skew(0deg);
           -webkit-transform: skewY(-2deg);
                   transform: skewY(-2deg); }
-  /* line 3960, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3961, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main .we-are .clearfix {
     padding: 0 !important; }
-  /* line 3964, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3965, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main .we-are .inner {
     margin: 0 auto !important; }
-    /* line 3967, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3968, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .we-are .inner ul {
       padding: 0 60px !important; }
-  /* line 3973, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3974, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main .we-are .wrap .left, #vertical .content.main .we-are .wrap .right {
     width: auto;
     padding: 20px;
     text-align: center;
     margin: 0;
     float: none; }
-    /* line 3980, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3981, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .we-are .wrap .left .inner, #vertical .content.main .we-are .wrap .right .inner {
       padding: 0; }
-      /* line 3983, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+      /* line 3984, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
       #vertical .content.main .we-are .wrap .left .inner ul, #vertical .content.main .we-are .wrap .right .inner ul {
         padding: 0 !important; }
-    /* line 3988, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 3989, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical .content.main .we-are .wrap .left:after, #vertical .content.main .we-are .wrap .right:after {
       display: none; }
-  /* line 3993, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3994, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main .we-are .wrap .right {
     margin-bottom: -102px;
     padding-bottom: 160px; }
-  /* line 3998, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 3999, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main .we-are .wrap .left .inner, #vertical .content.main .we-are .wrap .right .inner, #vertical .content.main .we-are .wrap .left h2, #vertical .content.main .we-are .wrap .left li, #vertical .content.main .we-are .wrap .right h2, #vertical .content.main .we-are .wrap .right li {
     -webkit-transform: skew(0ddeg) !important;
     transform: skew(0deg) !important; }
-  /* line 4008, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 4009, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.premium .content.main .we-are {
     background-position: center right; }
-    /* line 4013, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 4014, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .we-are .right {
       margin-bottom: 40px; }
-    /* line 4016, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    /* line 4017, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
     #vertical.premium .content.main .we-are .left, #vertical.premium .content.main .we-are .right {
       width: auto !important;
       float: none !important;
       margin-top: 40px; } }
 
 @media (max-width: 1080px) {
-  /* line 4029, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 4030, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical .content.main .logos .row .col {
     flex: 0 1 31% !important;
     margin: 5% 1% !important;
     padding: 0 40px !important; } }
 
 @media (max-width: 1300px) {
-  /* line 4038, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 4039, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   .single-post {
     padding: 0; } }
 
 @media (max-width: 1440px) {
-  /* line 4047, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 4048, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.premium .main.content .we-are h3 {
     font-size: 34px;
     line-height: 44px; }
-  /* line 4054, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+  /* line 4055, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
   #vertical.premium .main.content .result .slide {
     margin: 0 30px; } }
 /*# sourceMappingURL=main.css.map */
