@@ -1981,21 +1981,22 @@ Vertical Landing
 
     .row {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       flex-wrap:wrap;
-      justify-content:left;
+      justify-content: center;
 
       & + .row {
         margin-top:60px;
       }
 
       .col {
-          align-self:center;
-          flex:0 1 21%;
-          margin:5% 2%;
-          text-align:center;
-          box-sizing:border-box;
-          padding:0 60px;
+          align-self: center;
+          // flex:0 1 21%;
+          margin: 5% 7%;
+          text-align: center;
+          box-sizing: border-box;
+          // padding: 0 60px;
+          width: 10%;
         }
       }
   }
@@ -3505,9 +3506,10 @@ Responsive
       margin-top:350px;
 
     .logos .row .col {
-      flex:0 1 42% !important;
-      margin:5% 3% !important;
-      padding:0 20px !important;
+      // flex:0 1 42% !important;
+      margin: 5% 3% !important;
+      padding: 0 !important;
+      width: 30% !important;
     }
 
     .intro {
@@ -4042,9 +4044,10 @@ Responsive
 @media (max-width: 1080px) {
   #vertical .content.main {
     .logos .row .col {
-      flex:0 1 31% !important;
-      margin:5% 1% !important;
-      padding:0 40px !important;
+      // flex:0 1 31% !important;
+      margin:5% 7% !important;
+      // padding:0 40px !important;
+      width: 12%;
     }
   }
 }
