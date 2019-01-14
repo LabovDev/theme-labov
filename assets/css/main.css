@@ -1832,8 +1832,7 @@ nav {
     height: 100%;
     width: calc(100% - 40px);
     top: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
     box-sizing: border-box;
     padding: 100px 0 0 0; }
     /* line 182, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */

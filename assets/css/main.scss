@@ -171,8 +171,8 @@ nav {
       width: calc(100% - 40px);
       //left:0;
       top:0;
-      overflow-x:hidden;
-      overflow-y:scroll;
+      overflow: hidden;
+      // overflow-y:scroll;
       //padding-right:16px;
       //right:-16px;
       //overflow: -moz-scrollbars-none;
