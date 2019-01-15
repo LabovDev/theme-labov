@@ -953,6 +953,215 @@ About
 --------------------------------------------------
 */
 
+/*
+--------------------------------------------------
+
+About
+
+--------------------------------------------------
+*/
+
+.bloc {
+  @include flx-p(
+    row,
+    wrap,
+    flex-start,
+    flex-start,
+    flex-start
+  );
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.nps, .twelve-hour {
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:730px) {
+    @include flx-p(
+      row,
+      wrap,
+      flex-start,
+      stretch,
+      flex-start
+    );
+  }
+}
+
+.bloc--half {
+  width: 100%;
+  @include trans(all,0.3s,ease);
+  @media all and (min-width:730px) {
+    @include flx-p(
+      row,
+      wrap,
+      flex-start,
+      center,
+      center
+    );
+    width: 50%;
+  }
+}
+
+.bloc--third {
+  margin: 0 auto;
+  width: 100%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: calc(33.333333% - 3em);
+    padding: 0 1.5em;
+    &:first-child { 
+      order: 4;
+      width: 100%;
+    }
+  }
+}
+
+.bloc--qrtr {
+  margin: 0 auto;
+  width: 100%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: 50%;
+    &:first-child { 
+      order: 4;
+      width: 100%;
+    }
+  }
+  @media all and (min-width:760px) {
+    width: 25%;
+  }
+}
+
+.bloc--space {
+  padding: 1.5em;
+  width: calc(100% - 3em);
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    padding: 3.5em;
+    width: calc(100% - 7em);
+  }
+}
+
+.bloc__col {
+  @include flx-p(
+    row,
+    nowrap,
+    space-between,
+    flex-start,
+    flex-start
+  );
+  padding: 1.5em;
+  width: calc(100% - 3em);
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    padding: 3.5em;
+    width: calc(100% - 7em);
+  }
+  @media all and (min-width:1000px) {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+}
+
+.bloc--txt {
+  padding: 2em;
+  h2 {
+    color: #fff;
+    font-size: 12vw;
+    line-height: .85;
+    margin-bottom: 24px;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) {
+      font-size: 4.5vw;
+    }
+  }
+  p {
+    color: #fff;
+    font-size:18px;
+    line-height: 1.3;
+    max-width: 800px;
+    margin: 0;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) {
+      font-size: 2vw;
+      line-height: 1.2;
+    }
+  }
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:730px) {
+    width: calc(50% - 4em);
+  }
+}
+
+.bloc--gbHead { 
+  padding: 1.5em 1.5em 0 1.5em;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: calc(50% - 3em);
+    margin: 0;
+  }
+}
+
+.bloc--gbTxt {
+  padding: 0 1.5em 1.5em 1.5em;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: calc(50% - 3em);
+    margin: 0;
+  }
+}
+
+.bloc--35 {
+  margin: 0 auto;
+  width: 100%;
+   @media all and (min-width:600px) {
+    width: calc(35% - 3em);
+    padding: 0 1.5em;
+  }
+}
+
+.bloc--65 {
+  margin: 0 auto;
+  width: 100%;
+   @media all and (min-width:600px) {
+    width: calc(65% - 3em);
+    padding: 0 1.5em;
+  }
+}
+
+.bloc--graphs {
+  margin: 0 auto;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    margin: 1.5em auto;
+  }
+}
+
+.nps {
+  .bloc--txt {
+    background: url('../img/about_bkgrnd_nps.jpg') 50% 50%/cover no-repeat;
+  }
+}
+
+.twelve-hour {
+  .bloc--txt {
+    background: url('../img/about_bkgrnd_12h.jpg') 50% 50%/cover no-repeat;
+    order: 1;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) { order: 2; }
+  }
+  .bloc--img {
+    order: 2;
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:730px) { order: 1; }
+  }
+}
+
 .twelve-hours {
 
     & > div {
