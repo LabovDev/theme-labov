@@ -10,7 +10,7 @@
 
     <div class="footerSite__right">
 
-      <div class="bloc bloc--50">
+      <div class="bloc bloc--half">
         <h2>More LABOV</h2>
         <div class="more-labov">
           <ul>
@@ -33,7 +33,7 @@
           </div>
       </div> <!-- END Left Half -->
 
-      <div class="bloc bloc--50">
+      <div class="bloc bloc--half">
         <div class="clearfix contact-info">
           <h2>Contact Us</h2>
           <h5>Business Development</h5>

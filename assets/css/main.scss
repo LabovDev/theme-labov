@@ -80,18 +80,18 @@ a {
     max-width:1024px;
 }
 
-.bloc {
-  width: 100%;
-}
+// .bloc {
+//   width: 100%;
+// }
 
-.bloc--50 {
-  width: 46%;
-  @include trans(all,0.3s,ease);
-  @media all and (max-width:1040px) {
-    width: 100%;
-    &:nth-child(2) { margin-top: 40px; }
-  }
-}
+// .bloc--50 {
+//   width: 46%;
+//   @include trans(all,0.3s,ease);
+//   @media all and (max-width:1040px) {
+//     // width: 100%;
+//     &:nth-child(2) { margin-top: 40px; }
+//   }
+// }
 
 #nav-wrap {
     position:relative;
