@@ -890,9 +890,10 @@ Homepage
   line-height: 1;
   color: #fff;
   display: block;
-  padding: 20px 8px;
+  padding: 14px 8px;
   margin: 0;
   min-width: 100px;
+  text-align: center;
   text-decoration:none;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
   border-radius: 3px; 
@@ -900,7 +901,26 @@ Homepage
   transition:all 0.3s;
   &:hover {
     background-color: #EAAA00;
-    box-shadow: 0 2px 14px 0 rgba(255,214,10,0.40); 
+    box-shadow: 0 2px 14px 0 rgba(255,214,10,0.40);
+  }
+}
+
+.btn--about {
+  margin-top: 16px;
+  width: 0;
+}
+
+.btn--nps {
+  font-size: 94%;
+  margin: 0 auto 1em auto;
+  padding: 14px;
+  width: calc(100% - 3em);
+  max-width: 300px;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:875px) {
+    margin: 0 auto;
+    flex-basis: 25%;
+  }
 }
 
 #home-verticals {
@@ -935,9 +955,6 @@ Homepage
     clip-path: polygon(0% 100%, 20% 80%, 20% 20%, 0% 0%, 100% 0%, 100% 100%);
 
     text-align:center;
-
-
-    }
   }
 }
 
