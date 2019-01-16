@@ -1763,12 +1763,9 @@ a {
   width: 46%;
   transition: all, 0.3s, ease; }
   @media all and (max-width: 1040px) {
-    /* line 87, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
-    .bloc--50 {
-      width: 100%; }
-      /* line 92, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
-      .bloc--50:nth-child(2) {
-        margin-top: 40px; } }
+    /* line 92, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
+    .bloc--50:nth-child(2) {
+      margin-top: 40px; } }
 
 /* line 96, Users/jtuck/Sites/labov/wp-content/themes/theme-labov/assets/css/main.scss */
 #nav-wrap {

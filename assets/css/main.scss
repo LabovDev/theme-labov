@@ -88,7 +88,7 @@ a {
   width: 46%;
   @include trans(all,0.3s,ease);
   @media all and (max-width:1040px) {
-    width: 100%;
+    // width: 100%;
     &:nth-child(2) { margin-top: 40px; }
   }
 }
