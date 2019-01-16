@@ -1499,6 +1499,155 @@ About
     z-index:10;
 }
 
+//* NPS Page 
+//* ===========================================
+
+body.page-template-page-nps {
+  .bloc { max-width: 950px; }
+}
+
+.pageHero {
+  @include flx-p(
+    row,
+    wrap,
+    flex-start,
+    center,
+    flex-start
+  );
+  padding: 70px 1em 1em 1em;
+  text-align: center;
+}
+
+@keyframes shrink {
+  0% { 
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% { 
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% { 
+    transform: scale(.8);
+    opacity: 0;
+  }
+  100% { 
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+.npsHero { 
+  background-color: #000;
+  height: 76vh;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+.npsHero__bckgrnd {
+  animation: 
+    shrink
+    2s
+    ease-out
+    0s
+    normal
+    1
+    none
+    running;
+  background: #000 url('../../assets/img/nps_backgrnd.jpg') no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  height: 76vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.npsHero__cntnt {
+  animation: 
+   grow
+    1s
+    ease-out
+    0s
+    normal
+    1
+    none
+    running;
+  height: calc(76vh - 70px);
+  padding-top: 70px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  @include flx-p(
+    column,
+    nowrap,
+    space-evenly,
+    center,
+    space-evenly
+  );
+}
+
+.npsHero__img {
+  margin: 0 auto;
+  width: 76%;
+  max-width: 550px;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    width: 66%;
+  }
+  @media all and (min-width:760px) {
+    width: 56%;
+  }
+  @media all and (min-width:1000px) {
+    width: 46%;
+  }
+}
+
+.nps__intro {
+  flex-basis: 60%;
+  padding: 0 1.5em 0 0;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    flex-basis: 90%;
+  }
+}
+
+.nps__scores {
+  background: url('../img/score_line.png') 13px 0 repeat-y;
+  flex-basis: auto;
+  margin: 24vw 0 0 0;
+  padding: 0 0 0 1em;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    margin: 170px 0 0 0;
+  }
+}
+
+.graphImg { 
+  margin: 0 auto 2.5em auto; 
+  max-width: 200px;
+
+}
+
+.nps__quote { 
+  background-color: #e8e8e8;
+  width: calc(100% - 3em);
+  margin: 2em auto;
+  max-width: 100%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) {
+    padding: 2em 3em;
+    width: calc(100% - 6em);
+  }
+  @media all and (min-width:760px) {
+    padding: 5em 3em;
+  }
+}
+
 /*
 --------------------------------------------------
 
