@@ -1,3 +1,25 @@
+// Fonts
+$tt-thin:  normal normal 100 15px/150% Titillium Web, sans-serif;
+$tt-thin-italic:  italic normal 100 15px/150% Titillium Web, sans-serif;
+$tt-light:  normal normal 300 15px/150% Titillium Web, sans-serif;
+$tt-light-italic:  italic normal 300 15px/150% Titillium Web, sans-serif;
+$tt: normal normal normal 15px/150% Titillium Web, sans-serif;
+$tt-italic: italic normal normal 15px/150% Titillium Web, sans-serif;
+$tt-semibold:  normal normal 600 15px/150% Titillium Web, sans-serif;
+$tt-semibold-italic:  normal normal 600 15px/150% Titillium Web, sans-serif;
+$tt-bold: normal normal bold 15px/150% Titillium Web, sans-serif;
+$tt-bold-italic: italic normal bold 15px/150% Titillium Web, sans-serif;
+$tt-black:  normal normal 900 15px/150% Titillium Web, sans-serif;
+$tt-black-italic:  italic normal 900 15px/150% Titillium Web, sans-serif;
+
+// Colors
+$lightBlue: #60CBF2;
+$medBlue: #0094cb;
+$menuBG: rgba(0,148,203,0.98);
+$heroBG: rgba(0,148,203, 1);
+$navBG: rgba(0,148,203, 1);
+$lightGray: #f1f1f1;
+
 h1, h2, h3, h4, h5 {padding:0; margin:0;}
 
 h1 {
@@ -17,7 +39,7 @@ h4 {
 }
 
 h5 {
-    font-size:20px;
+    font-size: 20px;
 }
 
 //* Headlines
