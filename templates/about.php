@@ -6,32 +6,33 @@
         <div class="wrap small">
             <h1>Go Beyond</h1>
             <h2>Do the best work of your life.</h2>
-            <p>
-                Every day at LABOV is an opportunity to do the best work of your life. Surrounded by inspiring clients and creative, fun-loving co-workers, the greatest reward is working together to strategize winning solutions that help our clients and our employees succeed.
-            </p>
-            <div class="scroll-arrow">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/blue-arrow.svg" alt="Scroll" class="about-scroll">
-            </div>
+            <p>Every day at LABOV is an opportunity to do the best work of your life. Surrounded by inspiring clients and creative, fun-loving co-workers, the greatest reward is working together to strategize winning solutions that help our clients and our employees succeed.</p>
         </div>
     </div>
 </div>
 
-<div class="twelve-hours clearfix">
-    <div>
-        <div class="left">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/12-hours.png" alt="12 Hours of Labov" width="350">
-        </div>
-        <div class="right">
-            <div>
-                <h2>Making a difference in our community.</h2>
-                <p>
-                    Giving back is one of the cornerstones of LABOV. Throughout the year, we collect food, toys, clothing, money and more for those in need. Just as we Go Beyond in all that we do for our clients, we also want to Go Beyond in our charitable activities. That’s why we created the 12 Hours of LABOV.
-                </p>
-                <a href="#video" class="btn about-video-btn">WATCH VIDEO</a>
-            </div>
-        </div>
-    </div>
+<div class="bloc nps clearfix">
+  <div class="bloc--half bloc--txt">
+    <h2>Our clients speak, we listen</h2>
+    <p>We believe the best way to continually go beyond for our clients is to regularly seek out their feedback. Every year, LABOV surveys clients on the level of service they’ve received from our team. We identify the needs most important to them, determine at what level we’re meeting those needs and discover the areas where we can make an even greater impact.</p>
+    <a href="<?php bloginfo('url'); ?>/?page_id=531" class="btn btn--about">READ MORE</a>
+  </div>
+  <div class="bloc--half bloc--img">
+    <img src="<?php echo get_template_directory_uri() ?>/assets/img/abt_nps.jpg" alt="LaBov Net Promotor Score" width="350">
+  </div>
 </div>
+
+<div class="bloc twelve-hour clearfix">
+  <div class="bloc--half bloc--img">
+    <img src="<?php echo get_template_directory_uri() ?>/assets/img/abt_12h.jpg" alt="12 Hours of Labov" width="350">
+  </div>
+  <div class="bloc--half bloc--txt">
+    <h2>Making a difference in our community.</h2>
+    <p> Giving back is one of the cornerstones of LABOV. Just as we Go Beyond in all that we do for our clients, we also want to Go Beyond in our charitable activities. That’s why we created the 12 Hours of LABOV.</p>
+    <a href="#video" class="btn btn--about">WATCH VIDEO</a>
+  </div>
+</div>
+
 <div style="display:none;">
     <div class="video-lightbox" id="video">
         <div class="close-btn">
@@ -60,7 +61,7 @@
         ?>
         <?php if ( $the_query->have_posts() ) : ?>
         <div class="row">
-        	<?php
+            <?php
             $i = 0;
             while ( $the_query->have_posts() ) : $the_query->the_post();
             if (($i % 3 == 0) || $i == 0) {
@@ -83,7 +84,7 @@
             $rowCount++;
             if($rowCount % $cols == 0) echo '</div><div class="row">';
             ?>
-        	<?php
+            <?php
             $i++;
             endwhile; ?>
         </div>
