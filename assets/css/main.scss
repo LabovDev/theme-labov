@@ -578,20 +578,21 @@ footer {
 
     h1 {
         color: $medBlue;
-        font-size:220px;
-        line-height:200px;
-        margin-bottom:60px;
+        font-size: 14vw;
+        line-height: 1;
+        margin-bottom: 30px;
     }
 
     h2 {
-        font:$tt-semibold;
-        font-size:64px;
-        line-height:70px;
+        font: $tt-semibold;
+        font-size: 4vw;
+        line-height: 1;
+        margin-bottom: 60px;
     }
 
     p {
-        font-size:30px;
-        line-height:150%;
+        font-size: 2.5vw;
+        line-height: 1.6;
     }
 
     & > div {
@@ -3758,12 +3759,14 @@ Responsive
   }
 
   .page-header h1 {
-    font-size:80px;
-    line-height:100%;
+    font-size: 16vw;
+    line-height: 1;
+    margin-bottom: 16px;
   }
   .page-header h2 {
-    font-size:40px;
-    line-height:100%;
+    font-size: 6vw;
+    line-height: 1;
+    margin-bottom: 30px;
   }
 
   .page-header p {
