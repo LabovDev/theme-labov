@@ -3,7 +3,7 @@
 
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<div id="vertical">
+<div id="vertical" class="automotive">
   <div class="header" style="background-image:url('<?php the_field("hero_background") ?>');">
     <div class="wrap">
       <div class="text">
@@ -12,11 +12,11 @@
       </div>
     </div>
   </div>
+  <div class="hdrShape hdrShape--auto"></div>
   <div class="content main">
     <div class="intro">
       <div class="wrap">
         <?php the_field("intro_paragraph") ?>
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/red-arrow.svg" alt="Scroll" class="arrow">
       </div>
     </div>
     <div class="we-are">
