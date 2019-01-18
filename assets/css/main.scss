@@ -80,44 +80,45 @@ a {
 // }
 
 #nav-wrap {
-    position:relative;
-    z-index:200;
-
-    .blue-bar {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 90px;
-        transition:all 0.2s;
-
-        &.scrolled {
-            background:$navBG;
-            transition:all 0.2s;
-        }
+  position:relative;
+  z-index:200;
+  .blue-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    transition:all 0.2s;
+    &.scrolled {
+      background:$navBG;
+      transition:all 0.2s;
     }
+  }
 }
 
 #logo {
-    position:fixed;
-    left:25px;
-    top:24px;
-    z-index:10;
-
-    img {
-        height:40px;
-        width:auto;
-    }
-    transition:all 0.2s;
-
+  position:fixed;
+  left: 24px;
+  top: 24px;
+  z-index: 10;
+  img {
+    height: 24px;
+    width: auto;
+    transition: all 0.2s;
     &.scrolled {
-        top:24px;
+      height: 24px;
     }
+  }
+  transition: all 0.2s;
+  &.scrolled {
+      top: 18px;
+      left: 18px;
+  }
 }
 
 #menu-toggle {
     position:fixed;
-    top:19px;
+    top: 3px;
     right:10px;
     z-index:10;
 
@@ -3739,18 +3740,21 @@ Responsive
   }
 
   #logo {
-    left:20px;
-    top:20px;
+    left: 20px;
+    top: 20px;
+    &.scrolled {
+      left: 18px;
+      top: 18px;
+    }
 
     img {
-        height:30px;
-        margin-top:-3px;
+        height: 24px;
     }
   }
 
   #nav-wrap {
       .blue-bar {
-          height:70px;
+          height:60px;
       }
   }
 
