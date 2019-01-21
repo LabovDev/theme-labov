@@ -3377,153 +3377,171 @@ Case Study
 */
 
 .page-header.case-study {
-    color:white;
-
-    h1 {
-        font:$tt-bold;
-        font-size:80px;
-        line-height:110%;
-        color:white;
-    }
-
-    p {
-        font-size:34px;
-    }
+  color:white;
+  h1 {
+      font: $tt-bold;
+      font-size: 80px;
+      line-height: 110%;
+      color: white;
+  }
+  p { font-size: 34px; }
 }
 
 #case-study {
-    .panel {
-        padding:170px 0;
-
-        h2 {
-            font:$tt-thin;
-            color:$lightBlue;
-            font-size:56px;
-            line-height:110%;
-        }
-
-        p {
-            font:$tt-thin;
-            font-size:24px;
-            line-height:200%;
-
-            em, i {
-              font:$tt-thin-italic;
-              font-size:24px;
-              line-height:200%;
-            }
-        }
-
-        .row {
-            display:flex;
-        }
-        .col {
-
-            &.left {
-                text-align:right;
-                flex:4;
-                padding-right:20px;
-                padding-top:18px;
-            }
-
-            &.right {
-                flex:6;
-                padding-left:20px;
-            }
-        }
-
-        &.the-finished-product {
-            background:#e8e8e8;
-        }
-
-        &.the-strategy {
-          padding:0;
-        }
+  .csFlexWrap {
+    @include flx-p(
+      row,
+      nowrap,
+      space-between,
+      center,
+      center,
+    );
+    height: calc(100vh - 60px);
+    min-height: 680px;
+  }
+  .panel {
+    height: calc(100vh - 60px);
+    padding: 0;
+    @include flx-p(
+      row,
+      nowrap,
+      flex-start,
+      flex-start,
+      flex-start
+    );
+    h2 {
+      font:$tt-thin;
+      color:$lightBlue;
+      font-size:56px;
+      line-height:110%;
     }
-
-    .the-strategy {
-        background-size:cover;
-        background-repeat:no-repeat;
-
-        .row {
-          display:flex;
-
-          .col {
-            flex:1;
-
-            .content {
-              max-width:650px;
-              color:black;
-            }
-
-            &.left {
-              position:relative;
-              background-size:cover;
-            }
-
-            &.right {
-              background:#eee;
-              text-align:left;
-              padding:120px 0px;
-
-              .content {
-                padding:0 20px 0 60px;
-              }
-            }
-          }
-        }
-
-        h2 {
-            color:white;
-            text-align:center;
-            position:absolute;
-            top:50%;
-            transform:translateY(-50%);
-            width:100%;
-        }
+    p {
+      font:$tt-thin;
+      font-size:24px;
+      line-height:200%;
+      em, i {
+        font:$tt-thin-italic;
+        font-size:24px;
+        line-height:200%;
+      }
     }
+    // .row { display:flex; }
+    .col {
+      &.left, &.right {
+        @include flx-p(
+          column,
+          nowrap,
+          center,
+          center,
+          center
+        );
+        height: 100%;
+        width: 48%;
+      }
+      &.right {
+        text-align: left;
+      }
+    }
+    &.the-finished-product { background:#e8e8e8; }
+    &.the-strategy { padding:0; }
+  }
 
-    .talk-with-us {
-        text-align:center;
-        padding-bottom:100px;
+  .the-situation {
+    background-color: #f4f4f4;
+  }
 
-        a.button {
-          display:inline-block;
-          border-radius:40px;
-          color:white;
-          text-transform:uppercase;
-          text-decoration:none;
-          font-size:20px;
-          background:#D1002A;
-          padding:20px 50px;
-          transition:all 0.3s;
+  .the-strategy {
+    background-size:cover;
+    background-repeat:no-repeat;
+    .row {
+      display:flex;
+      .col {
+        flex:1;
+        .content {
+          max-width:650px;
+          color:black;
+        }
+        &.left {
           position:relative;
-          overflow:hidden;
-
-          span {
-            position:relative;
-            z-index:2;
-          }
-
-          &:before {
-            content:' ';
-            width:200%;
-            height:200%;
-            z-index:1;
-            position:absolute;
-            left:-200%;
-            top:-100%;
-            background:#F3BC41;
-            transition:all 0.7s;
-            transform: skew(-45deg);
-          }
-
-          &:hover:before {
-            left:-50%;
-            top:0px;
+          background-size:cover;
+        }
+        &.right {
+          background:#eee;
+          text-align:left;
+          padding:120px 0px;
+          .content {
+            padding:0 20px 0 60px;
           }
         }
+      }
     }
+    h2 { color:white; }
+  }
+
+  .the-finished-product {
+    height: calc(69vh - 60px);
+    .csFlexWrap { 
+      height: calc(69vh - 60px);
+      min-height: 340px;
+    }
+  }
+
+  .the-gallery {
+    height: calc(31vh - 60px);
+    min-height: 307px;
+    .col { 
+      height: calc(31vh - 60px);
+      min-height: 307px;
+    }
+  }
+
+  .csFlexWrap--trTxt {
+    height: calc(50vh - 60px);
+    min-height: 340px;
+  }
+
+  .csFlexWrap--trCta {
+    height: calc(50vh - 60px);
+    min-height: 340px;
+  }
+  
+  .talk-with-us {
+    text-align:center;
+    padding-bottom:100px;
+    a.button {
+      display:inline-block;
+      border-radius:40px;
+      color:white;
+      text-transform:uppercase;
+      text-decoration:none;
+      font-size:20px;
+      background:#D1002A;
+      padding:20px 50px;
+      transition:all 0.3s;
+      position:relative;
+      overflow:hidden;
+      span {
+        position:relative;
+        z-index:2;
+      }
+      &:before {
+        content:' ';
+        width:200%;
+        height:200%;
+        z-index:1;
+        position:absolute;
+        left:-200%;
+        top:-100%;
+        background:#F3BC41;
+        transition:all 0.7s;
+        transform: skew(-45deg);
+      }
+      &:hover:before {
+        left:-50%;
+        top:0px;
+      }
+    }
+  }
 
     .the-gallery {
         text-align:center;
@@ -3540,8 +3558,8 @@ Case Study
 
     .bottom-buttons {
       text-align:center;
-      padding:60px 0;
-
+      padding: 0;
+      width: 100%;
       a.button {
         border-radius:50px;
         background: #dfdfdf;

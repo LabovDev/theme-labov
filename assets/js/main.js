@@ -1,4 +1,4 @@
-var header_height = 90;
+var header_height = 60;
 
 $(document).ready(function() {
 
