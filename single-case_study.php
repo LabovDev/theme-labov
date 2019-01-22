@@ -77,8 +77,7 @@
             $i++;
         endwhile;
       endif;
-      ?>
-    </div>
+      ?></div>
 
     <div class="panel the-result">
       <div class="wrap">

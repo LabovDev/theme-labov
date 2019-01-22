@@ -3417,12 +3417,14 @@ Case Study
     }
     p {
       font:$tt-thin;
-      font-size:24px;
-      line-height:200%;
+      font-size: 22px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2em;
       em, i {
         font:$tt-thin-italic;
-        font-size:24px;
-        line-height:200%;
+        font-size: 22px;
+        line-height: 1.6;
       }
     }
     // .row { display:flex; }
@@ -3436,7 +3438,7 @@ Case Study
           center
         );
         height: 100%;
-        width: 48%;
+        width: 450%;
       }
       &.right {
         text-align: left;
@@ -3487,22 +3489,30 @@ Case Study
   }
 
   .the-gallery {
+    display:flex;
     height: calc(31vh - 60px);
-    min-height: 307px;
+    min-height: 350px;
+    text-align:center;
     .col { 
+      flex:1;
       height: calc(31vh - 60px);
-      min-height: 307px;
+      min-height: 350px;
+      img {
+        max-width:100%;
+        height:auto;
+      }
     }
+    &:empty { display: none; }
   }
 
   .csFlexWrap--trTxt {
-    height: calc(50vh - 60px);
+    height: calc(75vh - 60px);
     min-height: 340px;
   }
 
   .csFlexWrap--trCta {
-    height: calc(50vh - 60px);
-    min-height: 340px;
+    height: calc(25vh - 60px);
+    min-height: 0;
   }
   
   .talk-with-us {
@@ -3542,19 +3552,6 @@ Case Study
       }
     }
   }
-
-    .the-gallery {
-        text-align:center;
-        display:flex;
-        .col {
-            flex:1;
-
-            img {
-                max-width:100%;
-                height:auto;
-            }
-        }
-    }
 
     .bottom-buttons {
       text-align:center;
