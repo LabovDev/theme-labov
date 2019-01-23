@@ -18,7 +18,7 @@
     <?php wp_head() ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div id="nav-wrap">
         <div class="blue-bar"></div>
         <a href="<?php echo site_url("") ?>" id="logo">

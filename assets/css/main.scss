@@ -3502,7 +3502,6 @@ Case Study
         height:auto;
       }
     }
-    &:empty { display: none; }
   }
 
   .csFlexWrap--trTxt {
@@ -3589,7 +3588,7 @@ Case Study
     }
 }
 
-
+body.postid-123 #case-study .the-gallery { display: none; }
 /*
 --------------------------------------------------
 
