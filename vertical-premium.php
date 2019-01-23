@@ -9,9 +9,7 @@
     <div class="intro">
       <div class="wrap">
         <h1><?php the_field("hero_main_title") ?></h1>
-        <!-- <h3><?php the_field("sub-title") ?></h3> -->
         <?php the_field("intro_paragraph") ?>
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/arrow-orange.svg" alt="Scroll" class="arrow">
       </div>
     </div>
     <div class="we-are" style="background-image:url('<?php the_field("are_not_background_image") ?>')">

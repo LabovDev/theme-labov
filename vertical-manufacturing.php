@@ -16,7 +16,6 @@
     <div class="intro">
       <div class="wrap">
         <?php the_field("intro_paragraph") ?>
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/arrow-green.svg" alt="Scroll" class="arrow">
       </div>
     </div>
     <div class="we-are">
