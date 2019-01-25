@@ -4,11 +4,17 @@
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div id="vertical" class="premium">
-  <div class="header" style="background-image:url('<?php the_field("hero_background") ?>');"></div>
+  <div class="header" style="background-image:url('<?php the_field("hero_background") ?>');">
+    <div class="wrap">
+      <div class="text">
+        <h1>Premium Brands & Services</h1>
+      </div>
+    </div>
+  </div>
+  <div class="hdrShape hdrShape--prem"></div>
   <div class="content main">
     <div class="intro">
       <div class="wrap">
-        <h1><?php the_field("hero_main_title") ?></h1>
         <?php the_field("intro_paragraph") ?>
       </div>
     </div>

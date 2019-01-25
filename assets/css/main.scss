@@ -2058,7 +2058,7 @@ Vertical Landing
 
 #vertical .header {
   position:fixed;
-  width:100%;
+  width: 100%;
   z-index: -1;
   top:0;
   left:0;
@@ -2067,32 +2067,37 @@ Vertical Landing
 
   .wrap {
     height:650px;
-    width:100%;
+    width: calc(100% - 40px);
     position:relative;
 
     .text {
       position:absolute;
       top:50%;
       transform:translateY(-50%);
-      width:100%;
+      width: calc(100% - 40px);
     }
   }
 
   h1 {
     color:white;
     font:$tt-bold;
-    font-size:200px;
-    line-height:100%;
+    font-size: 17vw;
+    line-height: .8;
     text-align:left;
+    @media all and (min-width:1500px) {
+      font-size: 255px;
+    }
   }
 
   h3 {
     color:white;
     font:$tt-bold;
-    font-size:80px;
-    line-height:100%;
-    margin-top:20px;
+    font-size: 7vw;
+    line-height: 1;
     text-align:left;
+    @media all and (min-width:1500px) {
+      font-size: 120px;
+    }
   }
 }
 
@@ -2110,6 +2115,20 @@ Vertical Landing
   shape-outside: polygon(100% 0%, 0% 100%, 100% 100%);
   height: 200px;
 }
+
+.hdrShape--prem {
+  clip-path: polygon(50% 100%, 100% 85%, 100% 100%, 0 100%, 0 85%);
+  shape-outside: polygon(50% 100%, 100% 85%, 100% 100%, 0 100%, 0 85%);
+  height: 600px;
+  margin-top: -60px;
+  margin-bottom: -540px;
+  @media all and (max-width:600px) {
+    height: 200px;
+    margin-top: 150px;
+    margin-bottom: -300px;
+  }
+}
+
 
 #vertical .content.main {
   position:relative;
@@ -2709,25 +2728,27 @@ Vertical Landing
 }
 
 #vertical.manufacturing .header {
-
   h1, h3 {
     padding:0;
     margin:0;
   }
-
   h1 {
     font:$tt-black;
-    font-size:140px;
-    line-height:140px;
+    font-size: 11vw;
+    line-height: .7;
     text-transform:uppercase;
+    @media all and (min-width:1500px) {
+      font-size: 165px;
+    }
   }
-
   h3 {
     font:$tt-black;
-    font-size:72px;
-    line-height:72px;
+    font-size: 6vw;
+    line-height: 1;
     text-transform:uppercase;
-    margin-top:-24px;
+    @media all and (min-width:1500px) {
+      font-size: 90px;
+    }
   }
 }
 
@@ -2739,10 +2760,14 @@ Vertical Landing
     background:white;
     position: absolute;
     width: 50%;
-    height: 95px;
-    top: -95px;
+    height: 45px;
+    top: -45px;
     left: auto;
     right:0;
+    @media all and (min-width:600px) {
+      height: 95px;
+      top: -95px;
+    }
   }
 
   a.button {
@@ -2977,43 +3002,31 @@ Vertical Landing
 
 #vertical.premium .header {
   height:540px;
+  h1 {
+    color: #FFB600;
+    font:$tt-thin;
+    font-size: 7vw;
+    line-height: 1;
+    padding:0;
+    margin:0;
+    text-align: center;
+    text-shadow: 0 0 30px #ff3600;
+    @media all and (min-width:1500px) {
+      font-size: 105px;
+    }
+    @media all and (max-width:600px) {
+      font-size: 10vw;
+      text-shadow: 0 0 30px #000;
+    }
+  }
 }
 
 #vertical.premium .main.content {
   margin-top:540px;
 
-  &::before {
-    content:'';
-    background-image: linear-gradient(to left top, white 0%, white 50%, transparent 50%);
-    position: absolute;
-    width: 50%;
-    height: 70px;
-    top: -70px;
-    left: 50%;
-    z-index:10;
-  }
-
-  &::after {
-    content:'';
-    background-image: linear-gradient(to right top, white 0%, white 50%, transparent 50%);
-    position: absolute;
-    width: 50%;
-    height: 70px;
-    top: -70px;
-    right:0;
-    z-index:10;
-  }
-
   .intro {
     text-align:center;
     padding-bottom:100px;
-
-    h1 {
-      color:#F5B313;
-      font:$tt-thin;
-      font-size:75px;
-      letter-spacing:6px;
-    }
 
     p {
       font:$tt-thin;
@@ -3173,13 +3186,15 @@ Vertical Landing
     }
 
     .left {
+      background-color: #F5B313;
+      color: #fff;
       font-size:20px;
 
       h2 a {
         font:$tt;
         font-size:60px;
         line-height:50px;
-        color:black;
+        color: #fff;
       }
     }
 
@@ -3898,17 +3913,6 @@ Responsive
     .wrap {
         height:350px;
     }
-
-    h1 {
-      font-size:48px;
-      line-height:55px;
-    }
-
-    h3 {
-      font-size:36px;
-      line-height:42px;
-      max-width:60%;
-    }
   }
 
   #vertical .content.main {
@@ -4090,20 +4094,6 @@ Responsive
 
     }
 
-  }
-
-  #vertical.manufacturing {
-    .header {
-      h1 {
-        font-size:32px;
-        line-height:40px;
-      }
-      h3 {
-        font-size:26px;
-        line-height:30px;
-        margin-top:10px;
-      }
-    }
   }
 
   #vertical.manufacturing .content.main {
