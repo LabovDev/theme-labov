@@ -3394,12 +3394,23 @@ Case Study
 .page-header.case-study {
   color:white;
   h1 {
-      font: $tt-bold;
-      font-size: 80px;
-      line-height: 110%;
-      color: white;
+    font: $tt-bold;
+    font-size: 9vw;
+    line-height: 1;
+    color: white;
+    @media all and (min-width:1400px) {
+      font-size: 126px;
+    }
   }
-  p { font-size: 34px; }
+  p { 
+    font-size: 5vw;
+    @media all and (min-width:700px) {
+      font-size: 3.5vw;
+    }
+    @media all and (min-width:1000px) {
+      font-size: 35px;
+    }
+  }
 }
 
 #case-study {
