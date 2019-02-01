@@ -25,9 +25,9 @@
 }
 
 @mixin trans($t-prop, $t-time, $t-meth) {
-	-webkit-transition: $t-prop, $t-time, $t-meth;
-	-moz-transition: $t-prop, $t-time, $t-meth;
-	-ms-transition: $t-prop, $t-time, $t-meth;
-	-o-transition: $t-prop, $t-time, $t-meth;
-	transition: $t-prop, $t-time, $t-meth;
+	-webkit-transition: $t-prop $t-time $t-meth;
+	-moz-transition: $t-prop $t-time $t-meth;
+	-ms-transition: $t-prop $t-time $t-meth;
+	-o-transition: $t-prop $t-time $t-meth;
+	transition: $t-prop $t-time $t-meth;
 }

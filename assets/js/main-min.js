@@ -26,7 +26,7 @@ $(".page-header.case-study").on("click",function(){
 //alert('test');
 $("html, body").animate({scrollTop:$("#case-study").offset().top-header_height},1e3)}),
 // Rotate Words on Homepage
-$(".words").rotateWords({fadeSpeed:500,pauseSpeed:3e3}),
+$(".words").rotateWords({fadeSpeed:500,pauseSpeed:6e3}),
 // Generic, reusable lightbox close event
 $(".lightbox-close").on("click",function(){$.colorbox.close()}),
 // Team Member lightbox

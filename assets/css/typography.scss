@@ -83,6 +83,41 @@ h5 {
 	width: calc(100% - 3em);
 }
 
+.hdln--weAre {
+	font: $tt;
+	font-size: 10vw;
+	text-shadow: 0 0 14px rgba(0,0,0,1);
+	@media all and (min-width:768px) {
+		font-size: 77px;
+	}
+}
+
+.hdln--results {
+	color: #fff;
+	font: $tt;
+	font-size: 5vw;
+	line-height: 1.2;
+	@include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) { font-size: 2.5vw; }
+  @media all and (min-width:760px) { font-size: 2vw; }
+  @media all and (min-width:1024px) { font-size: 20px; }
+}
+
+.hdln--resultsBig {
+	color: #fff;
+	font: $tt-light;
+	font-size: 16vw;
+	line-height: 1.2;
+	margin-top: 16px;
+	mix-blend-mode: unset;
+  display: block;
+  position: relative;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) { font-size: 8vw; }
+  @media all and (min-width:760px) { font-size: 7.5vw; }
+  @media all and (min-width:1024px) { font-size: 77px; }
+}
+
 //* Text
 //*===========================================
 
@@ -163,8 +198,47 @@ h5 {
 	}
 }
 
+.txt--results {
+	color: #fff;
+	font: $tt-thin;
+	font-size: 7vw;
+	line-height: 1.1;
+  mix-blend-mode: unset;
+  margin: 0;
+  display: block;
+  position: relative;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:600px) { font-size: 3.5vw; }
+  @media all and (min-width:760px) { font-size: 3vw; }
+  @media all and (min-width:1024px) { font-size: 31px; }
+}
+
 //* Lists
 //*===========================================
+
+.list { 
+	padding: 0;
+	margin: 0;
+}
+
+.listItem {
+	line-height: 1;
+	list-style-type: none;
+}
+
+.listItem--weAre {
+	font-size: 4vw;
+	margin-bottom: 1em;
+	text-align: center;
+	text-shadow: 0 0 14px rgba(0,0,0,1);
+	@media all and (min-width:768px) {
+		font-size: 31px; 
+	}
+}
+
+.flxBloc--weAreBtm .listItem--weAre:last-child {
+	margin-bottom: 1.5em;
+}
 
 .nps__scores ul { 
 	list-style: none;

@@ -2103,9 +2103,7 @@ Vertical Landing
 
 .hdrShape {
   background-color: #fff;
-  margin-top: 450px;
-  margin-bottom: -650px;
-  min-height: 40px;
+  min-height: 50px;
   position: relative;
   width: 100%;
 }
@@ -2113,7 +2111,17 @@ Vertical Landing
 .hdrShape--auto {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
   shape-outside: polygon(100% 0%, 0% 100%, 100% 100%);
-  height: 200px;
+  height: 50px;
+  margin-top: 300px;
+  margin-bottom: -350px;
+  @media all and (min-width:600px) {
+    height: 100px;
+    margin-top: 450px;
+    margin-bottom: -650px;
+  }
+  @media all and (min-width:1000px) {
+    margin-top: 550px;
+  }
 }
 
 .hdrShape--prem {
@@ -2136,27 +2144,19 @@ Vertical Landing
   margin-top:650px;
   background:white;
 
-  &::after {
-    content:'';
-    // background-image: linear-gradient(to left top, white 0%, white 50%, transparent 50%);
-    position: absolute;
-    width: 100%;
-    height: 131px;
-    top: -131px;
-    left: 0;
-    z-index:10;
-  }
-
   a.button {
     display:inline-block;
     border-radius:40px;
-    color:white;
+    color: white;
     text-transform:uppercase;
     text-decoration:none;
-    font-size:20px;
-    background:#D1002A;
-    padding:20px 50px;
-    transition:all 0.3s;
+    background-color: #CC0027;
+    padding: 10px 25px;
+    margin-bottom: 2.5em;
+    @include trans(all, 0.3s, ease);
+    &:hover {
+      background-color: #A10020;
+    }
   }
 
   a.button.outline {
@@ -2178,26 +2178,26 @@ Vertical Landing
       margin-bottom:-8px;
     }
   }
-
   .intro {
-
-    p {
-      font:$tt-light;
-      font-size:30px;
-      line-height:150%;
-    }
-
     .wrap {
-      position:relative;
-      padding:100px 20px;
-
-      img.arrow {
-        position:absolute;
-        bottom:0px;
-        left:50%;
-        width:60px;
-        margin-left:-30px;
-        height:auto;
+      position: relative;
+      padding: 20px 20px 60px 20px;
+      p {
+        font:$tt-light;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+        @media all and (min-width:600px) {
+          font-size: 24px;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+      }
+      @media all and (min-width:600px) {
+        padding: 40px 40px 80px 40px;
+      }
+      @media all and (min-width:1000px) {
+        padding: 100px 0;
       }
     }
   }
@@ -2346,24 +2346,6 @@ Vertical Landing
     span {
       position:relative;
       z-index:2;
-    }
-
-    &:before {
-      content:' ';
-      width:200%;
-      height:200%;
-      z-index:1;
-      position:absolute;
-      left:-200%;
-      top:-100%;
-      background:#A10020;
-      transition:all 0.7s;
-      transform: skew(-45deg);
-    }
-
-    &:hover:before {
-      left:-50%;
-      top:0px;
     }
   }
 
@@ -2721,9 +2703,117 @@ Vertical Landing
   }
 }
 
-#vertical.automotive {
-  .content.main .intro .wrap {
-    padding: 20px 0;
+.flxWrap {
+  @include flx-p(
+    column,
+    nowrap,
+    flex-start,
+    flex-start,
+    flex-start
+  );
+  height: 100vh;
+}
+
+.flxWrap--weAre {
+  border: 20px solid #cc0027;
+  height: calc(100vh - 100px);
+  @media all and (min-width:660px) {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.flxWrap--results {
+  background-size: cover;
+  background-position: bottom center;
+  height: calc(100vh - 60px);
+  .overlay {
+    position:relative;
+    right:auto;
+    width:auto;
+    bottom:auto;
+    height:auto;
+    padding:60px 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: #B7222F;
+      mix-blend-mode: multiply;
+      @media all and (min-width:940px) {
+        transform: skew(-10deg);
+        top: 60px;
+        width: 90%;
+      }
+    }
+  }
+  @media all and (min-width:600px) {
+    flex-direction: row;
+    min-height: 400px;
+  }
+  @media all and (min-width:760px) {
+    height: 45vh;
+  }
+  @media all and (min-width:1024px) {
+    max-width: 1024px;
+    margin: 0 auto 180px auto;
+  }
+}
+
+.flxBloc {
+  @include flx-p(
+    column,
+    nowrap,
+    center,
+    center,
+    center
+  );
+  flex-basis: 50%;
+  width: 100%;
+}
+
+.automotive {
+  .flxBloc--weAreTop { 
+    background-size: cover;
+    color: #fff;
+  }
+  .flxBloc--weAreBtm { 
+    background-color: black;
+    color: #cc0027;
+  }
+  .flxBloc--resTop,
+  .flxBloc--resBtm {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 20px;
+    height: calc(50vh - 40px);
+    width: calc(100% - 40px);
+    @media all and (min-width:600px) {
+      align-self: stretch;
+      height: auto;
+      padding: 10% 2% 2% 2%;
+    }
+    @media all and (min-width:760px) {
+      padding: 10% 4% 4% 4%;
+    }
+  }
+  .flxBloc--resTop {
+    @include trans(all, 0.3s, ease);
+    @media all and (min-width:940px) {
+    }
+  }
+  .flxBloc--resBtm {
+    @media all and (min-width:760px) {
+      padding: 14.8% 4% 4% 4%;
+    }
+    @media all and (min-width:940px) {
+      width: calc(100% - 120px);
+    }
   }
 }
 
@@ -3941,12 +4031,9 @@ Responsive
       padding:0px;
 
       .wrap {
-          padding-top:20px;
-          padding-bottom:0px;
-
-          img.arrow {
-              display:none;
-          }
+        img.arrow {
+          display:none;
+        }
       }
     }
 

@@ -75,7 +75,7 @@ $(document).ready(function() {
     // Rotate Words on Homepage
     $('.words').rotateWords({
         fadeSpeed:500,
-        pauseSpeed:3000}
+        pauseSpeed:6000}
     );
 
     // Generic, reusable lightbox close event
