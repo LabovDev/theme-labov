@@ -92,6 +92,45 @@ h5 {
 	}
 }
 
+.hdln--weAre_M {
+	color: #000;
+	font: $tt-black;
+	font-size: 10vw;
+	text-shadow: none;
+	@media all and (min-width:768px) {
+		font-size: 60px;
+	}
+	@media all and (min-width:940px) {
+		width: 100%;
+	}
+}
+
+.hdln--weAre_P {
+	color: #fff;
+	font: $tt-thin;
+	font-size: 14vw;
+	text-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.flxBloc--weAreBtm_M .hdln--weAre_M {
+	color: #B4C327;
+}
+
+@media all and (min-width:940px) {
+	.flxBloc--weAreTop_M {
+		padding: 20px 40px 20px 20px !important; 
+		text-align: right;
+		.list {width: 100%; }
+		.listItem--weAre { text-align: right; }
+	}
+	.flxBloc--weAreBtm_M {
+		padding: 20px 20px 20px 40px !important; 
+		text-align: left;
+		.list {width: 100%; }
+		.listItem--weAre { text-align: left; }
+	}
+}
+
 .hdln--results {
 	color: #fff;
 	font: $tt;
@@ -228,12 +267,40 @@ h5 {
 
 .listItem--weAre {
 	font-size: 4vw;
+	line-height: 1.2;
 	margin-bottom: 1em;
 	text-align: center;
 	text-shadow: 0 0 14px rgba(0,0,0,1);
 	@media all and (min-width:768px) {
 		font-size: 31px; 
 	}
+}
+
+.listItem--weAre_M {
+	color: #000;
+	font: $tt-bold;
+	font-size: 4vw;
+	line-height: 1.2;
+	text-shadow: none;
+	@media all and (min-width:768px) {
+		font-size: 28px; 
+	}
+	@media all and (min-width:1024px) {
+		width: 100%;
+		text-align: right;
+	}
+}
+
+.listItem--weAre_P {
+  color: #fff;
+  font: $tt-thin;
+  font-size: 5vw;
+  line-height: 1.2;
+	text-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.flxBloc--weAreBtm_M .listItem--weAre_M {
+	color: #B4C327;
 }
 
 .flxBloc--weAreBtm .listItem--weAre:last-child {

@@ -2714,12 +2714,41 @@ Vertical Landing
   height: 100vh;
 }
 
+.flxBloc {
+  @include flx-p(
+    column,
+    nowrap,
+    center,
+    center,
+    center
+  );
+  flex-basis: 50%;
+  width: 100%;
+}
+
 .flxWrap--weAre {
   border: 20px solid #cc0027;
   height: calc(100vh - 100px);
   @media all and (min-width:660px) {
     height: auto;
     overflow: visible;
+  }
+  @media all and (min-width:940px) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.flxWrap--weAre_M { 
+  background-size: cover;
+  border-color: #B4C327;
+  color: #fff;
+  @media all and (min-width:1024px) {
+    align-items: flex-start;
+    padding: 5%;
+  }
+  @media all and (min-width:1280px) {
+    padding: 5% 10%;
   }
 }
 
@@ -2764,56 +2793,75 @@ Vertical Landing
   }
 }
 
-.flxBloc {
-  @include flx-p(
-    column,
-    nowrap,
-    center,
-    center,
-    center
-  );
-  flex-basis: 50%;
-  width: 100%;
+.flxBloc--weAreTop,
+.flxBloc--weAreBtm {
+  @media all and (min-width:940px) {
+    justify-content: flex-start;
+    padding: 20px;
+  }
 }
 
-.automotive {
-  .flxBloc--weAreTop { 
-    background-size: cover;
-    color: #fff;
+.flxBloc--weAreTop { 
+  background-size: cover;
+  color: #fff;
+}
+
+.flxBloc--weAreTop_M {
+  background-color: rgba(255,255,255,0.7);
+}
+
+.flxBloc--weAreBtm { 
+  background-color: black;
+  color: #cc0027;
+}
+
+.flxBloc--weAreBtm_M { 
+  color: #B4C327;
+  @media all and (min-width:1024px) {
+    margin-top: 60px;
   }
-  .flxBloc--weAreBtm { 
-    background-color: black;
-    color: #cc0027;
+}
+
+.flxWrap--weAre_P {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  border: 3px solid #FFB600;
+  height: calc(100vh - 66px);
+}
+
+.flxBloc--weAre_P {}
+
+.flxBloc--resTop,
+.flxBloc--resBtm {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 20px;
+  height: calc(50vh - 40px);
+  width: calc(100% - 40px);
+  @media all and (min-width:600px) {
+    align-self: stretch;
+    height: auto;
+    padding: 10% 2% 2% 2%;
   }
-  .flxBloc--resTop,
-  .flxBloc--resBtm {
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    padding: 20px;
-    height: calc(50vh - 40px);
-    width: calc(100% - 40px);
-    @media all and (min-width:600px) {
-      align-self: stretch;
-      height: auto;
-      padding: 10% 2% 2% 2%;
-    }
-    @media all and (min-width:760px) {
-      padding: 10% 4% 4% 4%;
-    }
+  @media all and (min-width:760px) {
+    padding: 10% 4% 4% 4%;
   }
-  .flxBloc--resTop {
-    @include trans(all, 0.3s, ease);
-    @media all and (min-width:940px) {
-    }
+}
+
+.flxBloc--resTop {
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:940px) {
   }
-  .flxBloc--resBtm {
-    @media all and (min-width:760px) {
-      padding: 14.8% 4% 4% 4%;
-    }
-    @media all and (min-width:940px) {
-      width: calc(100% - 120px);
-    }
+}
+
+.flxBloc--resBtm {
+  @media all and (min-width:760px) {
+    padding: 14.8% 4% 4% 4%;
+  }
+  @media all and (min-width:940px) {
+    width: calc(100% - 120px);
   }
 }
 
@@ -2844,91 +2892,11 @@ Vertical Landing
 
 #vertical.manufacturing .content.main {
 
-  &::after {
-    content:'';
-    background-image:none;
-    background:white;
-    position: absolute;
-    width: 50%;
-    height: 45px;
-    top: -45px;
-    left: auto;
-    right:0;
-    @media all and (min-width:600px) {
-      height: 95px;
-      top: -95px;
-    }
-  }
-
-  a.button {
-    background:#B4C327;
-
-    &:before {
-      background:#9EAD1A;
-    }
-  }
+ a.button { background:#B4C327; }
 
   .intro {
     font:$tt-semibold;
     line-height:150%;
-  }
-
-  .we-are {
-    .wrap {
-      background:#B4C327;
-    }
-
-    h2 {
-      text-transform:uppercase;
-      font:$tt-black;
-      font-size:48px;
-      line-height:100%;
-    }
-
-    .clearfix {
-      max-width:1000px;
-      margin:0 auto;
-    }
-
-    .left {
-      width:55%;
-      color:black;
-      transform:skew(0deg);
-    }
-
-    .left .inner, .right .inner, .left h2, .left li, .right h2, .right li {
-      -ms-transform: skew(0deg) !important;
-      -webkit-transform: skew(-0ddeg) !important;
-      transform:skew(0deg) !important;
-    }
-
-    .left, .right {
-      padding:40px 90px;
-
-      li {
-        font-size:22px !important;
-      }
-    }
-
-    .right {
-      width:45%;
-      background:rgba(0,0,0,0.8);
-      color:#B4C327;
-      top:-60px;
-      padding-top:100px;
-      padding-bottom:60px;
-
-      &:after {
-        display:none !important;
-      }
-    }
-
-    .left {
-      background:rgba(255,255,255,0.7);
-      padding-bottom:120px;
-      padding-right:40px;
-      padding-left:40px;
-    }
   }
 
   .logos h2 {

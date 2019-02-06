@@ -18,50 +18,39 @@
         <?php the_field("intro_paragraph") ?>
       </div>
     </div>
-    <div class="we-are">
-      <div class="wrap">
-        <div class="inner">
-          <div class="img" style="background-image:url('<?php the_field("are_not_background_image") ?>')"></div>
-          <div class="clearfix">
-            <div class="left">
-              <div class="inner">
-                <h2>We Are</h2>
-                <ul>
-                  <?php
-                  if( have_rows('we_ares') ):
-                    while ( have_rows('we_ares') ) : the_row();
-                  ?>
-                  <li><?php the_sub_field('item'); ?></li>
-                  <?php
-                    endwhile;
-                  endif;
-                  ?>
-                </ul>
-              </div>
-            </div>
-            <div class="right">
-              <div class="inner">
-                <h2>We Are Not</h2>
-                <ul>
-                  <?php
-                  if( have_rows('we_are_nots') ):
-                    while ( have_rows('we_are_nots') ) : the_row();
-                  ?>
-                  <li><?php the_sub_field('item'); ?></li>
-                  <?php
-                    endwhile;
-                  endif;
-                  ?>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix" align="center">
-            <a href="#contact-form" class="button talk-with-us"><span>Talk with Us</span></a>
-          </div>
-        </div>
+
+    <div class="flxWrap flxWrap--weAre flxWrap--weAre_M" style="background-image:url('<?php the_field("are_not_background_image") ?>')">
+      <div class="flxBloc flxBloc--weAreTop flxBloc--weAreTop_M">
+        <h2 class="hdln hdln--weAre hdln--weAre_M">We Are</h2>
+        <ul class="list shadow">
+          <?php
+          if( have_rows('we_ares') ):
+            while ( have_rows('we_ares') ) : the_row();
+          ?>
+          <li class="listItem listItem--weAre listItem--weAre_M"><?php the_sub_field('item'); ?></li>
+          <?php
+            endwhile;
+          endif;
+          ?>
+        </ul>
       </div>
-    </div>
+      <div class="flxBloc flxBloc--weAreBtm flxBloc--weAreBtm_M">
+        <h2 class="hdln hdln--weAre hdln--weAreBtm hdln--weAre_M">We Are Not</h2>
+        <ul class="list">
+          <?php
+          if( have_rows('we_are_nots') ):
+            while ( have_rows('we_are_nots') ) : the_row();
+          ?>
+          <li class="listItem listItem--weAre listItem--weAre_M"><?php the_sub_field('item'); ?></li>
+          <?php
+            endwhile;
+          endif;
+          ?>
+        </ul>
+        <a href="#contact-form" class="button talk-with-us"><span>Talk with Us</span></a>
+      </div>
+    </div> <!-- END We Are (new) -->
+
     <div class="logos">
       <div class="wrap">
         <h2>Clients we have been proud to work with.</h2>

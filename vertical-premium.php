@@ -18,6 +18,39 @@
         <?php the_field("intro_paragraph") ?>
       </div>
     </div>
+
+    <div class="flxWrap flxWrap--weAre flxWrap--weAre_P" style="background-image:url('<?php the_field("are_not_background_image") ?>')">
+      <div class="flxBloc flxBloc--weAre_P">
+        <h2 class="hdln hdln--weAre hdln--weAre_P">We Are</h2>
+        <ul class="list shadow">
+          <?php
+          if( have_rows('we_ares') ):
+            while ( have_rows('we_ares') ) : the_row();
+          ?>
+          <li class="listItem listItem--weAre listItem--weAre_P"><?php the_sub_field('item'); ?></li>
+          <?php
+            endwhile;
+          endif;
+          ?>
+        </ul>
+      </div>
+      <div class="flxBloc flxBloc--weAre_P">
+        <h2 class="hdln hdln--weAre hdln--weAreBtm hdln--weAre_P">We Are Not</h2>
+        <ul class="list">
+          <?php
+          if( have_rows('we_are_nots') ):
+            while ( have_rows('we_are_nots') ) : the_row();
+          ?>
+          <li class="listItem listItem--weAre listItem--weAre_P"><?php the_sub_field('item'); ?></li>
+          <?php
+            endwhile;
+          endif;
+          ?>
+        </ul>
+        <a href="#contact-form" class="button talk-with-us"><span>Talk with Us</span></a>
+      </div>
+    </div> <!-- END We Are (new) -->
+
     <div class="we-are" style="background-image:url('<?php the_field("are_not_background_image") ?>')">
       <div class="wrap">
         <div class="inner">
@@ -62,7 +95,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- END We Are (Old) -->
+
+
     <div class="logos">
       <div class="wrap">
         <h2>Clients we have been proud to work with.</h2>

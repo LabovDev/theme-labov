@@ -22,7 +22,7 @@
 
     <div class="flxWrap flxWrap--weAre">
       <div class="flxBloc flxBloc--weAreTop" style="background-image:url('<?php the_field("are_not_background_image") ?>')">
-        <h2 class="hdln hdln--weAre hdln--weAreTop">We Are</h2>
+        <h2 class="hdln hdln--weAre">We Are</h2>
         <ul class="list shadow">
           <?php
           if( have_rows('we_ares') ):
