@@ -51,53 +51,6 @@
       </div>
     </div> <!-- END We Are (new) -->
 
-    <div class="we-are" style="background-image:url('<?php the_field("are_not_background_image") ?>')">
-      <div class="wrap">
-        <div class="inner">
-          <div class="img"></div>
-          <div class="clearfix">
-            <h3>Do you belong here?</h3>
-            <div class="left">
-              <div class="inner">
-                <h2>We Are</h2>
-                <ul>
-                  <?php
-                  if( have_rows('we_ares') ):
-                    while ( have_rows('we_ares') ) : the_row();
-                  ?>
-                  <li><?php the_sub_field('item'); ?></li>
-                  <?php
-                    endwhile;
-                  endif;
-                  ?>
-                </ul>
-              </div>
-            </div>
-            <div class="right">
-              <div class="inner">
-                <h2>We Are Not</h2>
-                <ul>
-                  <?php
-                  if( have_rows('we_are_nots') ):
-                    while ( have_rows('we_are_nots') ) : the_row();
-                  ?>
-                  <li><?php the_sub_field('item'); ?></li>
-                  <?php
-                    endwhile;
-                  endif;
-                  ?>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix" align="center">
-            <a href="#contact-form" class="button talk-with-us"><span>Talk with Us</span></a>
-          </div>
-        </div>
-      </div>
-    </div> <!-- END We Are (Old) -->
-
-
     <div class="logos">
       <div class="wrap">
         <h2>Clients we have been proud to work with.</h2>
@@ -135,14 +88,14 @@
             <div class="main-content">
               <h2>From scotch whisky to jet cards to wealth management to church insurance to healthcare logistics we have:</h2>
               <p class="words">
-                <span>Utilized a service firm’s annual report to being their top business generation tool</span>
-                <span>Discovered, named and marketed a jet card’s customer experience</span>
-                <span>Created a Specialist program to train and engage the channel in recommending and representing our client’s product</span>
-                <span>Developed mobile technology to train thousands of corporate employees as well as the channel on product differentiation</span>
-                <span>Developed social media campaigns to test and refine new product offerings</span>
-                <span>Created a nationwide campaign to engage everyone from the boardroom to the channel to provide the customer a unique brand value and experience</span>
-                <span>Conducted internal marketing and training to assist a financial services firm in providing superior customer service and improving retention</span>
-                <span>Created a brand story book to preserve the culture as founders retire</span>
+                <span>Utilized a service firm’s annual report to being their top business generation tool.</span>
+                <span>Discovered, named and marketed a jet card’s customer experience.</span>
+                <span>Created a Specialist program to train and engage the channel in recommending and representing our client’s product.</span>
+                <span>Developed mobile technology to train thousands of corporate employees as well as the channel on product differentiation.</span>
+                <span>Developed social media campaigns to test and refine new product offerings.</span>
+                <span>Created a nationwide campaign to engage everyone from the boardroom to the channel to provide the customer a unique brand value and experience.</span>
+                <span>Conducted internal marketing and training to assist a financial services firm in providing superior customer service and improving retention.</span>
+                <span>Created a brand story book to preserve the culture as founders retire.</span>
               </p>
             </div>
           </div>

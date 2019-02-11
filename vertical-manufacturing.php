@@ -192,7 +192,7 @@
       <p class="big">Let's talk about your success.</p>
       <a href="#contact-form" class="button talk-with-us"><span>Talk with us</span></a>
     </div>
-    <div class="article">
+    <div class="article post_m">
       <div class="clearfix">
         <?php
         $posts = get_field('article');

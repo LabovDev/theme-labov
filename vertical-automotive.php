@@ -73,7 +73,7 @@
       </div>
     </div>
 
-    <div class="flxWrap flxWrap--results" style="background-image:url('<?php echo get_template_directory_uri() ?>/assets/img/result-placeholder.jpg');">
+    <div class="flxWrap flxWrap--results autoResults" style="background-image:url('<?php echo get_template_directory_uri() ?>/assets/img/result-placeholder.jpg');">
       <div class="flxBloc flxBloc--resTop">
         <h2 class="hdln hdln--results">From Suzuki to Ferrari, Mini to Winnebago, Evinrude to Harley&nbsp;-&nbsp;Davidson&hellip;</h2>
         <h3 class="hdln hdln--resultsBig">We have:</h3>

@@ -87,7 +87,7 @@ h5 {
 	font: $tt;
 	font-size: 10vw;
 	text-shadow: 0 0 14px rgba(0,0,0,1);
-	@media all and (min-width:768px) {
+	@media all and (min-width:760px) {
 		font-size: 77px;
 	}
 }
@@ -97,7 +97,7 @@ h5 {
 	font: $tt-black;
 	font-size: 10vw;
 	text-shadow: none;
-	@media all and (min-width:768px) {
+	@media all and (min-width:760px) {
 		font-size: 60px;
 	}
 	@media all and (min-width:940px) {
@@ -110,6 +110,15 @@ h5 {
 	font: $tt-thin;
 	font-size: 14vw;
 	text-shadow: 0 0 6px rgba(0,0,0,0.5);
+	@media all and (min-width:760px) {
+		font-size: 7vw;
+		margin-bottom: 18px;
+		width: 100%;
+		text-align: left;
+	}
+	@media all and (min-width:1024px) {
+		font-size: 72px;
+	}
 }
 
 .flxBloc--weAreBtm_M .hdln--weAre_M {
@@ -258,6 +267,7 @@ h5 {
 .list { 
 	padding: 0;
 	margin: 0;
+	width: 100%;
 }
 
 .listItem {
@@ -271,7 +281,7 @@ h5 {
 	margin-bottom: 1em;
 	text-align: center;
 	text-shadow: 0 0 14px rgba(0,0,0,1);
-	@media all and (min-width:768px) {
+	@media all and (min-width:760px) {
 		font-size: 31px; 
 	}
 }
@@ -282,7 +292,7 @@ h5 {
 	font-size: 4vw;
 	line-height: 1.2;
 	text-shadow: none;
-	@media all and (min-width:768px) {
+	@media all and (min-width:760px) {
 		font-size: 28px; 
 	}
 	@media all and (min-width:1024px) {
@@ -297,6 +307,14 @@ h5 {
   font-size: 5vw;
   line-height: 1.2;
 	text-shadow: 0 0 6px rgba(0,0,0,0.5);
+	@media all and (min-width:760px) {
+		font-size: 3vw;
+		width: 100%;
+		text-align: left;
+	}
+	@media all and (min-width:1024px) {
+		font-size: 31px;
+	}
 }
 
 .flxBloc--weAreBtm_M .listItem--weAre_M {
