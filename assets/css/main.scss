@@ -2125,6 +2125,24 @@ Vertical Landing
   }
 }
 
+.hdrShape--mfcr {
+  clip-path: polygon(50% 70%, 100% 70%, 100% 100%, 0 100%, 0 85%, 50% 85%);
+  shape-outside: polygon(50% 70%, 100% 70%, 100% 100%, 0 100%, 0 85%, 50% 85%);
+  height: 200px;
+  margin-top: 150px;
+  margin-bottom: -350px;
+  @media all and (min-width:600px) {
+    height: 300px;
+    margin-top: 250px;
+    margin-bottom: -650px;
+  }
+  @media all and (min-width:1000px) {
+    height: 300px;
+    margin-top: 350px;
+    margin-bottom: -650px;
+  }
+}
+
 .hdrShape--prem {
   clip-path: polygon(50% 100%, 100% 85%, 100% 100%, 0 100%, 0 85%);
   shape-outside: polygon(50% 100%, 100% 85%, 100% 100%, 0 100%, 0 85%);
@@ -2356,7 +2374,7 @@ Vertical Landing
   }
 
   .logos {
-    padding:150px 0 200px 0;
+    padding:150px 0 100px 0;
 
     h2 {
       font:$tt-thin;
@@ -2748,8 +2766,10 @@ Vertical Landing
   background-size: cover;
   border-color: #B4C327;
   color: #fff;
-  @media all and (min-width:1024px) {
+  @media all and (min-width:1000px) {
     align-items: flex-start;
+    max-width: 1024px;
+    margin: 0 auto;
     padding: 5%;
   }
   @media all and (min-width:1280px) {
@@ -2767,7 +2787,7 @@ Vertical Landing
     flex-direction: row;
     height: auto;
   }
-  @media all and (min-width:1024px) {
+  @media all and (min-width:1000px) {
     margin: 0 auto;
     max-width: 1024px;
     min-height: 700px;
@@ -2809,7 +2829,7 @@ Vertical Landing
   @media all and (min-width:760px) {
     height: 45vh;
   }
-  @media all and (min-width:1024px) {
+  @media all and (min-width:1000px) {
     max-width: 1024px;
     margin: 0 auto 180px auto;
   }
@@ -2857,7 +2877,7 @@ Vertical Landing
     align-items: start;
     justify-content: flex-start;
   }
-  @media all and (min-width:1024px) {
+  @media all and (min-width:1000px) {
     padding: 5%;
   }
 }
@@ -2892,6 +2912,94 @@ Vertical Landing
   }
   @media all and (min-width:940px) {
     width: calc(100% - 120px);
+  }
+}
+
+.resultsManu {
+  height: calc(100vh - 60px);
+  position: relative;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:760px) {
+    height: 80vh;
+    margin-bottom: 100px;
+  }
+  @media all and (min-width:1000px) {
+    max-width: 1024px;
+    margin: 0 auto 200px auto;
+  }
+}
+
+.flxWrap--resultsMan {
+  @include flx-p(
+    column,
+    nowrap,
+    flex-start,
+    flex-start,
+    flex-start
+  );
+  height: calc(50vh - 30px);
+  @media all and (min-width:660px) {
+    flex-direction: row;
+  }
+  @media all and (min-width:760px) {
+    height: 50%;
+  }
+}
+
+.resultsManuImg {
+  position: absolute;
+  top: 40%;
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:660px) {
+    top: 18%;
+    right: 0;
+    img { width: 450px; }
+  }
+  @media all and (min-width:760px) {
+    top: 33%;
+    right: 0;
+    img { width: 100%; }
+  }
+}
+
+.flxBloc--resManCont  {
+  align-items: flex-start;
+  flex-basis: 90%;
+  justify-content: flex-start;
+  padding: 5%;
+  width: 90%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:660px) {
+    align-self: stretch;
+    flex-basis: 60%;
+    padding: 18px;
+  }
+}
+
+.flxBloc--resManBlank {
+  flex-basis: 0%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:660px) {
+    flex-basis: 40%;
+  }
+}
+
+.resManCont--top { background-color: #808285; }
+.resManCont--btm { 
+  background-color: #B4C327;
+  padding-top: 25%;
+  @include trans(all, 0.3s, ease);
+  @media all and (min-width:660px) {
+    padding-top: 6%;
+    align-items: flex-end;
+  }
+  @media all and (min-width:760px) {
+    padding: 18% 5% 0 0;
   }
 }
 

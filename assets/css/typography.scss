@@ -121,6 +121,40 @@ h5 {
 	}
 }
 
+.hdln--ResM {
+	color: #fff;
+	font: $tt-black;
+	font-size: 5.5vw;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:660px) {
+		font-size: 2.25vw;
+		max-width: 40vw;
+	}
+	@media all and (min-width:760px) {
+		font-size: 2.8vw;
+		max-width: 60vw;
+	}
+	@media all and (min-width:1024px) {
+		font-size: 24px;
+		max-width: 50vw;
+	}
+}
+
+.hdln--resMbtm {
+	font-size: 9vw;
+	line-height: 1;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:660px) {
+		font-size: 4.5vw;
+	}
+	@media all and (min-width:1024px) {
+		font-size: 36px;
+	}
+}
+
 .flxBloc--weAreBtm_M .hdln--weAre_M {
 	color: #B4C327;
 }
@@ -259,6 +293,26 @@ h5 {
   @media all and (min-width:600px) { font-size: 3.5vw; }
   @media all and (min-width:760px) { font-size: 3vw; }
   @media all and (min-width:1024px) { font-size: 31px; }
+}
+
+.txt--ResMwords {
+	color: #fff;
+	font: $tt-semibold;
+	font-size: 5.5vw;
+	line-height: 1.1;
+	margin: 8px 0 0 0;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:660px) {
+		font-size: 2.25vw;
+		max-width: 40vw;
+	}
+	@media all and (min-width:760px) {
+		font-size: 2.5vw;
+		max-width: 50vw;
+	}
+	@media all and (min-width:1024px) {
+		font-size: 23px;
+	}
 }
 
 //* Lists
