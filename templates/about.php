@@ -46,6 +46,11 @@
     </div>
 </div>
 
+<div class="flexWrap ldr">
+    <div class="flxBloc ldr__flxBloc"></div>
+    <div class="flxBloc ldr__flxBloc"></div>
+</div> <!-- END Leaders (New) -->
+
 <div class="leadership">
     <div class="wrap small">
         <h2>Leadership</h2>

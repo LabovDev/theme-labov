@@ -364,6 +364,7 @@ footer {
     @media all and (min-width:1080px) {
       .bloc--half { width: 46%; }
     }
+    .addr { width: 100%; }
   }
 
   .footerSite__legal {
@@ -580,9 +581,13 @@ footer {
 
     h1 {
         color: $medBlue;
-        font-size: 14vw;
+        font-size: 13vw;
         line-height: 1;
         margin-bottom: 30px;
+        margin-top: 100px;
+        @media all and (min-width:1400px) {
+          font-size: 182px;
+        }
     }
 
     h2 {
@@ -590,11 +595,17 @@ footer {
         font-size: 4vw;
         line-height: 1;
         margin-bottom: 60px;
+        @media all and (min-width:1400px) {
+          font-size: 56px;
+        }
     }
 
     p {
-        font-size: 2.5vw;
+        font-size: 1.8vw;
         line-height: 1.6;
+        @media all and (min-width:1400px) {
+          font-size: 25px;
+        }
     }
 
     & > div {
@@ -1093,7 +1104,7 @@ About
     margin-bottom: 24px;
     @include trans(all, 0.3s, ease);
     @media all and (min-width:730px) {
-      font-size: 4.5vw;
+      font-size: 3.5vw;
     }
   }
   p {
@@ -1104,7 +1115,7 @@ About
     margin: 0;
     @include trans(all, 0.3s, ease);
     @media all and (min-width:730px) {
-      font-size: 2vw;
+      font-size: 1.6vw;
       line-height: 1.2;
     }
   }
@@ -3610,14 +3621,21 @@ Case Study
 #case-study {
   .csFlexWrap {
     @include flx-p(
-      row,
+      column,
       nowrap,
-      space-between,
+      flex-start,
       center,
       center,
     );
-    height: calc(100vh - 60px);
-    min-height: 680px;
+    @media all and (min-width:760px) {
+      @include flx-p(
+        row,
+        nowrap,
+        center,
+        center,
+        center
+      );
+    }
   }
   .panel {
     height: calc(100vh - 60px);
@@ -3630,93 +3648,140 @@ Case Study
       flex-start
     );
     h2 {
-      font:$tt-thin;
-      color:$lightBlue;
-      font-size:56px;
-      line-height:110%;
+      font: $tt-thin;
+      color: $lightBlue;
+      font-size: 56px;
+      line-height: 1;
+      padding: 1em 0 .75em 0;
+      @media all and (min-width:760px) {
+        padding: 0;
+      }
     }
     p {
       font:$tt-thin;
-      font-size: 22px;
+      font-size: 18px;
       line-height: 1.6;
       margin: 0;
-      padding: 2em;
       em, i {
         font:$tt-thin-italic;
         font-size: 22px;
         line-height: 1.6;
       }
     }
-    // .row { display:flex; }
     .col {
       &.left, &.right {
         @include flx-p(
           column,
           nowrap,
-          center,
-          center,
-          center
+          flex-start,
+          flex-start,
+          flex-start
         );
-        height: 100%;
-        width: 450%;
+        width: 100%;
+        @media all and (min-width:760px) {
+          flex-basis: 50%;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+        }
       }
       &.right {
         text-align: left;
       }
     }
-    &.the-finished-product { background:#e8e8e8; }
-    &.the-strategy { padding:0; }
-  }
-
-  .the-situation {
-    background-color: #f4f4f4;
-  }
-
-  .the-strategy {
-    background-size:cover;
-    background-repeat:no-repeat;
-    .row {
-      display:flex;
-      .col {
-        flex:1;
-        .content {
-          max-width:650px;
-          color:black;
+    &.the-situation {
+      background-color: #f4f4f4;
+      height: auto;
+      .right { 
+        padding-bottom: 20px;
+      }
+      @media all and (min-width:760px) {
+        .wrap { padding: 0; }
+        .csFlexWrap { padding: 3em 0; }
+        .left { 
+          padding: 0; 
+          margin: 0;
         }
-        &.left {
-          position:relative;
-          background-size:cover;
-        }
-        &.right {
-          background:#eee;
-          text-align:left;
-          padding:120px 0px;
-          .content {
-            padding:0 20px 0 60px;
-          }
+        .right { 
+          padding: 0; 
+          margin: 2em;
         }
       }
+      @media all and (min-width:1024px) {
+        height: 50vh;
+        .csFlexWrap { height: 50vh; padding: 0;}
+      }
     }
-    h2 { color:white; }
-  }
-
-  .the-finished-product {
-    height: calc(69vh - 60px);
-    .csFlexWrap { 
-      height: calc(69vh - 60px);
-      min-height: 340px;
+    &.the-strategy { 
+      height: auto;
+      padding:0;
+      .left {
+        background-size: cover;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        @media all and (min-width:760px) {
+          height: auto;
+        }
+      }
+      .right {
+        padding: 20px;
+        width: calc(100% - 40px);
+        @media all and (min-width:760px) {
+          padding: 0;
+          width: 100%;
+          margin: 4em 2em;
+        }
+      }
+      h2 { color: white; }
+      @media all and (min-width:760px) {
+        .csFlexWrap { align-items: stretch; }
+      }
+      @media all and (min-width:1024px) {
+        height: 50vh;
+        .csFlexWrap { height: 50vh; }
+      }
+    }
+    &.the-finished-product { 
+      background:#e8e8e8;
+      height: auto;
+      .right { 
+        padding-bottom: 20px;
+        @media all and (min-width:760px) {
+          padding: 0;
+          margin: 4em 2em;
+        }
+      }
+      @media all and (min-width:760px) {
+        .wrap { padding: 0; }
+        .left {
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      @media all and (min-width:1024px) {
+        height: 50vh;
+        .csFlexWrap { height: 50vh; }
+      }
+    }
+    &.the-result {
+      height: auto;
+      @media all and (min-width:760px) {
+        .wrap { padding: 0; }
+        .csFlexWrap { padding: 3em 2em 0 2em; }
+      }
     }
   }
 
   .the-gallery {
     display:flex;
-    height: calc(31vh - 60px);
-    min-height: 350px;
     text-align:center;
     .col { 
       flex:1;
-      height: calc(31vh - 60px);
-      min-height: 350px;
+      height: auto;
       img {
         max-width:100%;
         height:auto;
@@ -3725,13 +3790,11 @@ Case Study
   }
 
   .csFlexWrap--trTxt {
-    height: calc(75vh - 60px);
-    min-height: 340px;
+    height: auto;
   }
 
   .csFlexWrap--trCta {
-    height: calc(25vh - 60px);
-    min-height: 0;
+    height: auto;
   }
   
   .talk-with-us {
@@ -3776,6 +3839,7 @@ Case Study
       text-align:center;
       padding: 0;
       width: 100%;
+      margin-bottom: 80px;
       a.button {
         border-radius:50px;
         background: #dfdfdf;
@@ -3786,13 +3850,18 @@ Case Study
         font:$tt-semibold;
         font-size:20px;
         color:white;
+        display: block;
         padding:15px 55px;
         border:none;
         text-transform:uppercase;
         text-decoration:none;
-        margin:0 10px;
-        transition:all 0.2s;
-
+        margin: 20px 0;
+        transition: all 0.2s;
+          @media all and (min-width:760px) {
+          display: inline-block;
+          margin: 20px;
+          width: 185px;
+        }
         &:hover {
           opacity:0.8;
         }
@@ -4421,55 +4490,45 @@ Responsive
     }
   }
 
-  #case-study {
-    .panel h2 {
-      text-align:left;
-      padding:0 10px;
-    }
-
-    .row, .col {
-      display:block !important;
-      width:auto !important;
-    }
-
-    .the-strategy .row .col.left {
-      min-height:300px;
-
-      h2 {
-        text-align:center;
-        padding:0;
-      }
-    }
-
-    .the-strategy .row .col.right {
-      padding:0 20px;
-      margin:0;
-
-      .content {
-        padding:20px;
-      }
-    }
-
-    .panel.the-finished-product, .panel.the-result, .panel.the-situation {
-      padding:40px 0px;
-    }
-
-    .the-gallery {
-      display:block;
-    }
-
-    .bottom-buttons br {display:none;}
-    .bottom-buttons a {display:block; margin:10px 0 !important;}
-  }
-
-  #post {
-    .left, .right {
-      float:none;
-      width:auto;
-      padding: 0;
-    }
-  }
-
+//   #case-study {
+//     .panel h2 {
+//       text-align:left;
+//       padding:0 10px;
+//     }
+//     .row, .col {
+//       display:block !important;
+//       width:auto !important;
+//     }
+//     .the-strategy .row .col.left {
+//       min-height:300px;
+//       h2 {
+//         text-align:center;
+//         padding:0;
+//       }
+//     }
+//     .the-strategy .row .col.right {
+//       padding:0 20px;
+//       margin:0;
+//       .content {
+//         padding:20px;
+//       }
+//     }
+//     .panel.the-finished-product, .panel.the-result, .panel.the-situation {
+//       padding:40px 0px;
+//     }
+//     .the-gallery {
+//       display:block;
+//     }
+//     .bottom-buttons br {display:none;}
+//     .bottom-buttons a {display:block; margin:10px 0 !important;}
+//   }
+//   #post {
+//     .left, .right {
+//       float:none;
+//       width:auto;
+//       padding: 0;
+//     }
+//   }
 }
 
 @media all and (max-width:400px) {
