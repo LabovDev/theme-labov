@@ -13,6 +13,7 @@
                 <div class="col">
                     <h1><?php the_title() ?></h1>
                     <div class="job-title"><?php the_field('job_title') ?></div>
+                    <hr class="hr__bio">
                     <div class="meta">
                         <?php the_field('phone_number') ?> <span class="sep">|</span>
                         <a href="mailto:<?php the_field('email_address') ?>">Email</a> <span class="sep">|</span>

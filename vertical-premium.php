@@ -85,9 +85,9 @@
       <div class="wrap">
         <div class="slides">
           <div class="slide">
-            <div class="main-content">
+            <div class="main-content main-content--prem">
               <h2>From scotch whisky to jet cards to wealth management to church insurance to healthcare logistics we have:</h2>
-              <p class="words">
+              <p class="words words--prem">
                 <span>Utilized a service firm’s annual report to being their top business generation tool.</span>
                 <span>Discovered, named and marketed a jet card’s customer experience.</span>
                 <span>Created a Specialist program to train and engage the channel in recommending and representing our client’s product.</span>

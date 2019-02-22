@@ -30,7 +30,7 @@ $(".words").rotateWords({fadeSpeed:500,pauseSpeed:6e3}),
 // Generic, reusable lightbox close event
 $(".lightbox-close").on("click",function(){$.colorbox.close()}),
 // Team Member lightbox
-$(".person-lightbox").colorbox({width:"auto",height:"auto",closeButton:!1,onOpen:function(){$("#team-member").css("opacity",0)},onComplete:function(){$.colorbox.resize(),$("#team-member").css("opacity",1)}}),
+$(".person-lightbox").colorbox({width:"90%",height:"90%",closeButton:!1,onOpen:function(){$("#team-member").css("opacity",0)},onComplete:function(){$.colorbox.resize(),$("#team-member").css("opacity",1)}}),
 // About Video lightbox
 $(".about-video-btn").colorbox({inline:!0,width:"90%",height:"90%",closeButton:!1}),
 // Preload home vertical background images

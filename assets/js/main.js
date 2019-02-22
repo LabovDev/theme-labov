@@ -85,8 +85,8 @@ $(document).ready(function() {
 
     // Team Member lightbox
     $('.person-lightbox').colorbox({
-        width: 'auto',
-        height: 'auto',
+        width: '90%',
+        height: '90%',
         closeButton: false,
         onOpen: function() {
             $("#team-member").css("opacity", 0);
